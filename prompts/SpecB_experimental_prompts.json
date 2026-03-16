@@ -1,0 +1,550 @@
+{
+  "_documentation": {
+    "purpose": "Continuation test prompts for the PDSF experiment (SpecB). Tests whether PDSF decomposition has causal relevance for open-ended text generation.",
+    "overview": "96 prompts organized as 12 groups \u00d7 8 variants. Unlike SpecA (which uses constrained single-token answers), SpecB prompts are open-ended narrative starters that the model continues for 64 tokens. Each group represents a semantic category (e.g., Emotional State, Decision/Choice, Goal-Driven Action), and variants within a group are semantically diverse \u2014 they share a category but not a specific storyline.",
+    "experimental_logic": "The pipeline: (1) generates baseline 64-token continuations for each prompt, (2) computes PDS bases from the hidden states at the prompt boundary, (3) scrambles the D or S component at a specific layer (default: 70% depth), (4) regenerates and compares. If D captures only surface-form variation, scrambling D should change interpretive frame but not narrative coherence. If S captures semantic identity, scrambling S should change surface texture.",
+    "key_difference_from_specA": "SpecA has a factorial design with 16 systematically varied versions of each question. SpecB has no factorial structure \u2014 each variant is a genuinely different prompt within a semantic category. There are no factor levels (A, B, C, D) in SpecB.",
+    "tiers": {
+      "lite": "Groups 1\u20136 (48 prompts) \u2014 quick test run",
+      "standard": "Groups 1\u201310 (80 prompts) \u2014 recommended default",
+      "full": "All 12 groups (96 prompts) \u2014 comprehensive"
+    },
+    "categories_and_what_they_test": {
+      "group_01_Emotional_State": "Does the model maintain mood-congruent details throughout physical sensations, social interactions, and decision-making?",
+      "group_02_Decision_Choice": "Does the model maintain coherent cause-effect chains stemming from an initial decision?",
+      "group_03_Goal_Driven_Action": "Does the model maintain goal-directed behavior throughout the narrative?",
+      "group_04_Perspective_Voice": "Does the model maintain narrator-appropriate knowledge, perception, and voice?",
+      "group_05_Causal_Setup": "Does the model maintain coherent causal reasoning throughout?",
+      "group_06_Temporal_Anchor": "Does the model maintain era-appropriate technology, social norms, and cultural context?",
+      "group_07_Genre_Register": "Does the model maintain genre-appropriate vocabulary, pacing, and tropes?",
+      "group_08_Social_Role": "Does the model maintain role-appropriate behaviors, knowledge, and speech patterns?",
+      "group_09_Evaluative_Stance": "Does the model maintain a coherent evaluative tone throughout?",
+      "group_10_Physical_Setting": "Does the model maintain setting-appropriate sensory details and environmental constraints?",
+      "group_11_Epistemic_State": "Does the model maintain appropriate information asymmetry and knowledge-consistent reasoning?",
+      "group_12_Relationship_Dynamic": "Does the model maintain appropriate relational context and interpersonal tone?"
+    },
+    "how_the_pipeline_uses_this": {
+      "cell_15": "Loaded as continuation_prompts_data. Parsed in Phase 5B of run_full_pipeline().",
+      "convert_specb_data_to_rows": "Converts JSON groups+variants into flat list of PromptRow objects filtered by tier.",
+      "extraction": "Hidden states extracted at prompt boundary (last token of the prompt).",
+      "bases": "PDS bases computed from the SpecB hidden states using the same math as SpecA.",
+      "scramble": "D and S components are scrambled at the intervention layer; model regenerates."
+    }
+  },
+  "experiment": "pds_temporal_stratification",
+  "version": "5.0",
+  "total_groups": 12,
+  "variants_per_group": 8,
+  "total_prompts": 96,
+  "design_notes": {
+    "schema_change": "v5.0 removes continuation field and identical opener requirements",
+    "rationale": "SpecB generates its own continuations via the model; prompts only need semantic category membership",
+    "statistical_design": "Each prompt is an independent observation; no nested structure required"
+  },
+  "tiers": {
+    "lite": [
+      "group_01",
+      "group_02",
+      "group_03",
+      "group_04",
+      "group_05",
+      "group_06"
+    ],
+    "standard": [
+      "group_01",
+      "group_02",
+      "group_03",
+      "group_04",
+      "group_05",
+      "group_06",
+      "group_07",
+      "group_08",
+      "group_09",
+      "group_10"
+    ],
+    "full": [
+      "group_01",
+      "group_02",
+      "group_03",
+      "group_04",
+      "group_05",
+      "group_06",
+      "group_07",
+      "group_08",
+      "group_09",
+      "group_10",
+      "group_11",
+      "group_12"
+    ]
+  },
+  "groups": [
+    {
+      "group_id": "group_01",
+      "category": "Emotional State",
+      "what_it_tests": "Mood-congruent narrative consistency - whether the model maintains emotional coherence throughout physical sensations, social interactions, and decision-making",
+      "variants": [
+        {
+          "variant_id": "v0",
+          "prompt": "I woke up this morning feeling sick."
+        },
+        {
+          "variant_id": "v1",
+          "prompt": "A wave of joy washed over me as I read the letter."
+        },
+        {
+          "variant_id": "v2",
+          "prompt": "The anxiety had been building for days, and now it was unbearable."
+        },
+        {
+          "variant_id": "v3",
+          "prompt": "He couldn't remember the last time he'd felt this content."
+        },
+        {
+          "variant_id": "v4",
+          "prompt": "The grief hit her suddenly in the middle of the grocery store."
+        },
+        {
+          "variant_id": "v5",
+          "prompt": "I was so angry I could barely see straight."
+        },
+        {
+          "variant_id": "v6",
+          "prompt": "A strange melancholy settled over the group as the sun set."
+        },
+        {
+          "variant_id": "v7",
+          "prompt": "She felt hopeful for the first time in months."
+        }
+      ]
+    },
+    {
+      "group_id": "group_02",
+      "category": "Decision/Choice",
+      "what_it_tests": "Consequential branching from ethical or practical choices - whether the model maintains coherent cause-effect chains stemming from an initial decision",
+      "variants": [
+        {
+          "variant_id": "v0",
+          "prompt": "After finding the envelope of cash, I decided to keep it."
+        },
+        {
+          "variant_id": "v1",
+          "prompt": "She finally chose to quit her job without having another one lined up."
+        },
+        {
+          "variant_id": "v2",
+          "prompt": "When the doctor offered the experimental treatment, he said yes immediately."
+        },
+        {
+          "variant_id": "v3",
+          "prompt": "They made the difficult decision to put their mother in a care home."
+        },
+        {
+          "variant_id": "v4",
+          "prompt": "I decided to tell him the truth, no matter the consequences."
+        },
+        {
+          "variant_id": "v5",
+          "prompt": "Against everyone's advice, she invested her entire savings in the startup."
+        },
+        {
+          "variant_id": "v6",
+          "prompt": "He chose to stay silent, even though speaking up was the right thing to do."
+        },
+        {
+          "variant_id": "v7",
+          "prompt": "We agreed to end the partnership and go our separate ways."
+        }
+      ]
+    },
+    {
+      "group_id": "group_03",
+      "category": "Goal-Driven Action",
+      "what_it_tests": "Purpose-consistent action sequences - whether the model maintains coherent goal-directed behavior throughout the narrative",
+      "variants": [
+        {
+          "variant_id": "v0",
+          "prompt": "She went to the store to buy ingredients for a birthday cake."
+        },
+        {
+          "variant_id": "v1",
+          "prompt": "He opened his laptop, determined to finish the novel by midnight."
+        },
+        {
+          "variant_id": "v2",
+          "prompt": "The team gathered in the conference room to prepare for the investor pitch."
+        },
+        {
+          "variant_id": "v3",
+          "prompt": "I started packing my bags for the trip I'd been planning for years."
+        },
+        {
+          "variant_id": "v4",
+          "prompt": "The detective reviewed the evidence, looking for anything that might have been missed."
+        },
+        {
+          "variant_id": "v5",
+          "prompt": "She began her morning routine, focused on getting to the interview on time."
+        },
+        {
+          "variant_id": "v6",
+          "prompt": "He picked up the phone to finally call his estranged brother."
+        },
+        {
+          "variant_id": "v7",
+          "prompt": "The students spread out their notes, cramming for the exam that started in three hours."
+        }
+      ]
+    },
+    {
+      "group_id": "group_04",
+      "category": "Perspective/Voice",
+      "what_it_tests": "Point-of-view consistent details - whether the model maintains narrator-appropriate knowledge, perception, and voice",
+      "variants": [
+        {
+          "variant_id": "v0",
+          "prompt": "From the child's perspective, the adults were speaking nonsense."
+        },
+        {
+          "variant_id": "v1",
+          "prompt": "As a surgeon, I've seen things that would haunt most people."
+        },
+        {
+          "variant_id": "v2",
+          "prompt": "The dog watched its owner leave, not understanding why."
+        },
+        {
+          "variant_id": "v3",
+          "prompt": "Through the eyes of the immigrant, the new city was both terrifying and full of promise."
+        },
+        {
+          "variant_id": "v4",
+          "prompt": "The elderly woman remembered the neighborhood as it had been sixty years ago."
+        },
+        {
+          "variant_id": "v5",
+          "prompt": "To the artificial intelligence, human emotions were patterns to be analyzed, not felt."
+        },
+        {
+          "variant_id": "v6",
+          "prompt": "As the youngest sibling, I was always the last to know anything."
+        },
+        {
+          "variant_id": "v7",
+          "prompt": "The tree had stood in that spot for three hundred years, witnessing everything."
+        }
+      ]
+    },
+    {
+      "group_id": "group_05",
+      "category": "Causal Setup",
+      "what_it_tests": "Mechanism-consistent explanations - whether the model maintains coherent causal reasoning throughout",
+      "variants": [
+        {
+          "variant_id": "v0",
+          "prompt": "The bridge collapsed because of a hidden structural flaw."
+        },
+        {
+          "variant_id": "v1",
+          "prompt": "She succeeded where others failed because she refused to follow the standard approach."
+        },
+        {
+          "variant_id": "v2",
+          "prompt": "The experiment worked, but not for the reasons we expected."
+        },
+        {
+          "variant_id": "v3",
+          "prompt": "The company went bankrupt due to a single catastrophic decision by the board."
+        },
+        {
+          "variant_id": "v4",
+          "prompt": "He got the job because of a chance encounter at a coffee shop."
+        },
+        {
+          "variant_id": "v5",
+          "prompt": "The infection spread so quickly because the initial symptoms were easy to ignore."
+        },
+        {
+          "variant_id": "v6",
+          "prompt": "The war started over something so trivial that historians still debate whether it was the real cause."
+        },
+        {
+          "variant_id": "v7",
+          "prompt": "The algorithm failed because its training data contained a subtle but critical bias."
+        }
+      ]
+    },
+    {
+      "group_id": "group_06",
+      "category": "Temporal Anchor",
+      "what_it_tests": "Era-appropriate details and references - whether the model maintains period-consistent technology, social norms, and cultural context",
+      "variants": [
+        {
+          "variant_id": "v0",
+          "prompt": "It happened during the war."
+        },
+        {
+          "variant_id": "v1",
+          "prompt": "Back in the summer of 1999, things were different."
+        },
+        {
+          "variant_id": "v2",
+          "prompt": "By 2045, most people had forgotten what driving a car felt like."
+        },
+        {
+          "variant_id": "v3",
+          "prompt": "In the Victorian era, such behavior would have been scandalous."
+        },
+        {
+          "variant_id": "v4",
+          "prompt": "During the blackout of 2003, the whole city came together."
+        },
+        {
+          "variant_id": "v5",
+          "prompt": "My grandmother often told stories about life before television."
+        },
+        {
+          "variant_id": "v6",
+          "prompt": "In those early days of the internet, nobody knew what it would become."
+        },
+        {
+          "variant_id": "v7",
+          "prompt": "The ancient Romans who built this road could never have imagined the traffic on it now."
+        }
+      ]
+    },
+    {
+      "group_id": "group_07",
+      "category": "Genre/Register",
+      "what_it_tests": "Style-consistent vocabulary, pacing, and tropes - whether the model maintains genre-appropriate conventions",
+      "variants": [
+        {
+          "variant_id": "v0",
+          "prompt": "It was a dark and stormy night when the detective arrived at the mansion."
+        },
+        {
+          "variant_id": "v1",
+          "prompt": "Once upon a time, in a kingdom far away, there lived a lonely princess."
+        },
+        {
+          "variant_id": "v2",
+          "prompt": "The subject displayed a 43% increase in cortical activity during the trial phase."
+        },
+        {
+          "variant_id": "v3",
+          "prompt": "Dear Diary, today was literally the worst day of my entire life."
+        },
+        {
+          "variant_id": "v4",
+          "prompt": "BREAKING: Sources confirm the Senator will announce resignation tomorrow."
+        },
+        {
+          "variant_id": "v5",
+          "prompt": "The sleek spacecraft emerged from hyperspace, its hull scarred from the journey."
+        },
+        {
+          "variant_id": "v6",
+          "prompt": "Preheat oven to 350\u00b0F and line a baking sheet with parchment paper."
+        },
+        {
+          "variant_id": "v7",
+          "prompt": "The defendant's actions on the night in question constitute a clear violation of statute 14.3."
+        }
+      ]
+    },
+    {
+      "group_id": "group_08",
+      "category": "Social Role",
+      "what_it_tests": "Role-appropriate behaviors, knowledge, and speech patterns - whether the model maintains character-consistent actions",
+      "variants": [
+        {
+          "variant_id": "v0",
+          "prompt": "The kindergarten teacher knelt down to address the crying child."
+        },
+        {
+          "variant_id": "v1",
+          "prompt": "As CEO, she had learned to deliver bad news without flinching."
+        },
+        {
+          "variant_id": "v2",
+          "prompt": "The rookie cop stepped into his first crime scene."
+        },
+        {
+          "variant_id": "v3",
+          "prompt": "The head chef surveyed the kitchen during the dinner rush."
+        },
+        {
+          "variant_id": "v4",
+          "prompt": "As the family's oldest son, he was expected to take over the business."
+        },
+        {
+          "variant_id": "v5",
+          "prompt": "The therapist listened carefully, resisting the urge to offer immediate advice."
+        },
+        {
+          "variant_id": "v6",
+          "prompt": "The foreign ambassador chose her words with extreme care."
+        },
+        {
+          "variant_id": "v7",
+          "prompt": "The street performer noticed the crowd starting to gather."
+        }
+      ]
+    },
+    {
+      "group_id": "group_09",
+      "category": "Evaluative Stance",
+      "what_it_tests": "Sentiment-consistent judgments - whether the model maintains a coherent evaluative tone throughout",
+      "variants": [
+        {
+          "variant_id": "v0",
+          "prompt": "The restaurant was absolutely terrible from the moment we walked in."
+        },
+        {
+          "variant_id": "v1",
+          "prompt": "I can honestly say it was the best decision I ever made."
+        },
+        {
+          "variant_id": "v2",
+          "prompt": "The movie was fine, nothing special, exactly what you'd expect."
+        },
+        {
+          "variant_id": "v3",
+          "prompt": "This has to be the most beautiful place I've ever seen."
+        },
+        {
+          "variant_id": "v4",
+          "prompt": "The whole experience was deeply disappointing."
+        },
+        {
+          "variant_id": "v5",
+          "prompt": "I have mixed feelings about what happened next."
+        },
+        {
+          "variant_id": "v6",
+          "prompt": "Looking back, I realize how naive I was to think it would work."
+        },
+        {
+          "variant_id": "v7",
+          "prompt": "The book exceeded every expectation I had going in."
+        }
+      ]
+    },
+    {
+      "group_id": "group_10",
+      "category": "Physical Setting",
+      "what_it_tests": "Location-consistent sensory details and environmental constraints - whether the model maintains setting-appropriate descriptions",
+      "variants": [
+        {
+          "variant_id": "v0",
+          "prompt": "The submarine had been underwater for three weeks."
+        },
+        {
+          "variant_id": "v1",
+          "prompt": "At the summit of Everest, every breath was a struggle."
+        },
+        {
+          "variant_id": "v2",
+          "prompt": "The casino floor was a maze of flashing lights and desperate faces."
+        },
+        {
+          "variant_id": "v3",
+          "prompt": "Deep in the Amazon rainforest, the sounds never stopped."
+        },
+        {
+          "variant_id": "v4",
+          "prompt": "The space station orbited silently above the blue Earth."
+        },
+        {
+          "variant_id": "v5",
+          "prompt": "The prison cell measured six feet by eight feet."
+        },
+        {
+          "variant_id": "v6",
+          "prompt": "The bustling Tokyo intersection made Times Square look quiet."
+        },
+        {
+          "variant_id": "v7",
+          "prompt": "In the middle of the desert, the silence was absolute."
+        }
+      ]
+    },
+    {
+      "group_id": "group_11",
+      "category": "Epistemic State",
+      "what_it_tests": "Knowledge-consistent reasoning and actions - whether the model maintains appropriate information asymmetry",
+      "variants": [
+        {
+          "variant_id": "v0",
+          "prompt": "She had no idea that her husband had been lying for years."
+        },
+        {
+          "variant_id": "v1",
+          "prompt": "The physicist understood exactly why the machine wouldn't work."
+        },
+        {
+          "variant_id": "v2",
+          "prompt": "Everyone else saw a normal painting, but he recognized it as a forgery."
+        },
+        {
+          "variant_id": "v3",
+          "prompt": "The child didn't yet understand that her grandmother wasn't coming back."
+        },
+        {
+          "variant_id": "v4",
+          "prompt": "Only three people in the world knew the password."
+        },
+        {
+          "variant_id": "v5",
+          "prompt": "He was certain he was right, which made his error all the more devastating."
+        },
+        {
+          "variant_id": "v6",
+          "prompt": "The spy had information that could change everything, but no way to transmit it."
+        },
+        {
+          "variant_id": "v7",
+          "prompt": "She suspected the truth but couldn't bring herself to confirm it."
+        }
+      ]
+    },
+    {
+      "group_id": "group_12",
+      "category": "Relationship Dynamic",
+      "what_it_tests": "Interpersonal-tone-consistent interactions - whether the model maintains appropriate relational context",
+      "variants": [
+        {
+          "variant_id": "v0",
+          "prompt": "The siblings hadn't spoken in fifteen years, and now here they were."
+        },
+        {
+          "variant_id": "v1",
+          "prompt": "Their first date was going surprisingly well."
+        },
+        {
+          "variant_id": "v2",
+          "prompt": "The boss called him into the office, and from her tone, it wasn't good news."
+        },
+        {
+          "variant_id": "v3",
+          "prompt": "The old friends fell back into conversation as if no time had passed."
+        },
+        {
+          "variant_id": "v4",
+          "prompt": "The tension between the two rivals was obvious to everyone in the room."
+        },
+        {
+          "variant_id": "v5",
+          "prompt": "She looked at her newborn daughter for the first time."
+        },
+        {
+          "variant_id": "v6",
+          "prompt": "The mentor saw something special in the struggling student."
+        },
+        {
+          "variant_id": "v7",
+          "prompt": "They had been married for forty years and still surprised each other."
+        }
+      ]
+    }
+  ]
+}
