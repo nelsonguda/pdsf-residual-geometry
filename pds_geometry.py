@@ -1,13 +1,11 @@
-from __future__ import annotations
 """pds_geometry.py
 
 Model management, hidden state extraction, and Part G causal intervention experiments.
 
 Part of: PDSF — Prediction-Anchored Decomposition into Functional Subspaces
 
-Paper:   "Scale-Invariant Prediction-Proximal Structure in Transformer Residual Streams"
+Paper:   "Geometric and Behavioral Stratification in Transformer Residual Streams"
          Nelson Guda, 2026
-         arXiv: XXXX.XXXXX
 Repo:    https://github.com/nelsonguda/pdsf-residual-geometry
 
 License: MIT (code), CC-BY 4.0 (data)
@@ -24,7 +22,8 @@ Purpose:
     imports and uses those functions.
 
 Paper references:
-    This paper, §7.3 (intervention protocol), Figures 5–7 (Part G results)
+    §5.1–5.2 (single-pass intervention results), Figure 6, Table A.4-1
+    Appendix A.4 (intervention protocols)
     Companion paper (rotation hierarchy and F sub-subspace analyses)
 
 Key components:
@@ -45,6 +44,8 @@ Dependencies:
     torch, numpy, transformers, bitsandbytes (optional, for quantization),
     tqdm, pds_continuation, pds_spirality (optional, for Part M)
 """
+
+from __future__ import annotations
 
 
 import json
@@ -1779,7 +1780,7 @@ def decompose_hidden_state(h, P_basis, D_basis, S_basis):
     Delegates to the canonical implementation in pds_continuation.py.
     Args: h (d_model,), P_basis (d_model, r_P), D_basis (d_model, r_D), S_basis (d_model, r_S).
     Returns: PDSDecomposition with h_P, h_D, h_S, h_F and energy fields.
-    See §7.1 of the paper for the PDSF decomposition methodology.
+    See §3 of the paper (and Appendix A.3) for the PDSF decomposition methodology.
     """
     return _decompose_sequential(h, P_basis, D_basis, S_basis)
 
@@ -1886,10 +1887,12 @@ GEOMETRY_INTERVENTION_TYPES_F = ["attenuate", "mix", "transplant_within", "trans
 #   transplant_within : same regime/domain, different group  (within-regime baseline)
 #   transplant_cross  : different regime/domain (+1 index)   (tests regime-specificity)
 #   transplant_null   : single-space " " near-prior donor    (upper-anchor; see NULL_DONOR_IDX)
-# 50% energy reduction; see §7.3 of the paper for justification
+# 50% energy reduction; see Appendix A.4 of the paper for justification
 DEFAULT_ATTENUATE_ALPHA = 0.5
 
-# Single-space " " donor serves as near-prior upper anchor; see §4.1 of the paper (near-prior transplant donor).
+# Single-space " " donor serves as near-prior upper anchor for the transplant conditions.
+# No transplant result is reported in Paper 1; the conditions are retained so that the
+# published Part G artefact reproduces exactly.
 # Stored in transplant_donors at this key; never a real prompt index.
 NULL_DONOR_IDX: int = -1
 
@@ -2331,7 +2334,13 @@ def run_scramble_experiment(
         "compute_kl": compute_kl,
         "compute_spirality": compute_spirality and _spirality_available,
         "spirality_n_pc_pairs": spirality_n_pc_pairs if _spirality_available else None,
-        "has_regime_transplant": bool(regime_ids and any(regime_ids)),
+        # True only if a regime-aware F transplant condition was actually requested.
+        # Previously this reported whether regime ids were *supplied*, so a run that
+        # dropped the transplant conditions still advertised transplant data.
+        "has_regime_transplant": bool(
+            regime_ids and any(regime_ids)
+            and any(str(t).startswith("transplant") for t in (intervention_types or []))
+        ),
         "regime_ids_provided": regime_ids is not None,
     }
 
@@ -3064,7 +3073,7 @@ def run_scramble_experiment(
     return results
 
 
-# "early" ≈ 12.5% depth; see §7.3 of the paper for layer selection rationale
+# "early" ≈ 12.5% depth; see Appendix A.4 and Appendix B.5 for layer selection rationale
 def resolve_scramble_layers(n_layers: int, scramble_spec: List[str]) -> List[int]:
     """
     Resolve scramble layer specifications to actual layer indices.

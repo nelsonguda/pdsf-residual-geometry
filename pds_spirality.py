@@ -1,13 +1,11 @@
-from __future__ import annotations
 """pds_spirality.py
 
 Spirality measures for residual stream trajectories (Part M).
 
 Part of: PDSF — Prediction-Anchored Decomposition into Functional Subspaces
 
-Paper:   "Scale-Invariant Prediction-Proximal Structure in Transformer Residual Streams"
+Paper:   "Geometric and Behavioral Stratification in Transformer Residual Streams"
          Nelson Guda, 2026
-         arXiv: XXXX.XXXXX
 Repo:    https://github.com/nelsonguda/pdsf-residual-geometry
 
 License: MIT (code), CC-BY 4.0 (data)
@@ -41,6 +39,8 @@ Outputs:
 Dependencies:
     numpy, scipy (optional, for correlation analyses only)
 """
+
+from __future__ import annotations
 
 
 import numpy as np

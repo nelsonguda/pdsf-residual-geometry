@@ -1,13 +1,11 @@
-from __future__ import annotations
 """pds_prompt_analysis.py
 
 Token distribution analysis and cross-prompt-set comparison (optional diagnostic).
 
 Part of: PDSF — Prediction-Anchored Decomposition into Functional Subspaces
 
-Paper:   "Scale-Invariant Prediction-Proximal Structure in Transformer Residual Streams"
+Paper:   "Geometric and Behavioral Stratification in Transformer Residual Streams"
          Nelson Guda, 2026
-         arXiv: XXXX.XXXXX
 Repo:    https://github.com/nelsonguda/pdsf-residual-geometry
 
 License: MIT (code), CC-BY 4.0 (data)
@@ -23,7 +21,9 @@ Purpose:
     intervention experiments.
 
 Paper references:
-    Used for SpecA/SpecB prediction sharpness comparison (§3.1).
+    Optional diagnostic. Quantifies the SpecA/SpecB prediction-sharpness difference
+    that motivates the prompt-set design (Appendix A.2); no result from this module
+    is reported in the paper.
 
 Inputs:
     Model, tokenizer, prompt lists with IDs.
@@ -35,6 +35,8 @@ Outputs:
 Dependencies:
     torch, numpy, pds_continuation (for chat template and device utilities)
 """
+
+from __future__ import annotations
 
 
 import json

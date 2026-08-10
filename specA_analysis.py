@@ -1,4 +1,3 @@
-from __future__ import annotations
 """
 specA_analysis.py
 
@@ -6,9 +5,8 @@ Geometry analysis module: Parts A–H of the PDSF experiment.
 
 Part of: PDSF — Prediction-Anchored Decomposition into Functional Subspaces
 
-Paper:   "Scale-Invariant Prediction-Proximal Structure in Transformer Residual Streams"
+Paper:   "Geometric and Behavioral Stratification in Transformer Residual Streams"
          Nelson Guda, 2026
-         arXiv: XXXX.XXXXX
 Repo:    https://github.com/nelsonguda/pdsf-residual-geometry
 
 License: MIT (code), CC-BY 4.0 (data)
@@ -22,14 +20,15 @@ Purpose:
     of each subspace.
 
 Analysis parts (corresponds to paper sections):
-    Part A — Participation Ratio (PR):     §3.1, Table 1, Figure 2
-    Part B — Family Separation:            §3.1, §7.6
-    Part C — Factor Effects:               §3.3 (Appendix F.4)
-    Part D — PR(D) Trajectory:             §3.1
-    Part E — μ Landscape:                  §3.2 (manifold complexity gradient)
-    Part F — Rotation Analysis:            §3.2, companion paper §3
-    Part G — Interventions:                §4 (in pds_geometry.py)
-    Part H — Injectivity:                  (supplementary)
+    Part A — Participation Ratio (PR):     §4.1, Table 1
+    Part N — Scaling rank (6 estimators):  §4.1, Table 1, Figure 2
+    Part B — Family Separation / angles:   §4.2
+    Part C — Factor Effects:               §4.5, Appendix C.3
+    Part D — PR(D) Trajectory:             §4.1
+    Part E — μ Landscape:                  diagnostic (not reported)
+    Part F — Rotation Analysis:            diagnostic here; developed in the companion paper
+    Part G — Interventions:                §5.1–5.2 (implemented in pds_geometry.py)
+    Part H — Injectivity:                  diagnostic (not reported)
 
 Mathematical conventions:
     H ∈ ℝ^(n×d): Hidden states, n=samples, d=hidden_dim
@@ -55,12 +54,15 @@ Dependencies:
     numpy, torch (for get_unembed_weight only), pds_geometry (MODEL_REGISTRY)
 """
 
+from __future__ import annotations
+
 
 import math
 import json
 from dataclasses import dataclass
 from typing import Dict, List, Tuple, Optional, Any
 
+import warnings
 import numpy as np
 import torch
 
@@ -384,7 +386,7 @@ def build_P_basis_from_expected_tokens(
 # Note: PR is computed on centered data by default, measuring variance
 # spread rather than absolute position.
 
-# §3.1, Table 1, Figure 2
+# §4.1, Table 1
 def compute_part_A_PR(
     extraction: ModelExtraction,
     P_bases: Dict[int, Dict[str, np.ndarray]],
@@ -650,7 +652,7 @@ def compute_part_D_trajectory(
     return compute_part_D_trajectory_PRD(extraction, P_bases, k_policy, k_max)
 
 
-# §3.1 (depth trajectory)
+# §4.1 (depth trajectory)
 def compute_part_D_trajectory_PRD(
     extraction: ModelExtraction,
     P_bases: Dict[int, Dict[str, np.ndarray]],
@@ -1215,7 +1217,11 @@ def _compute_aggregate_analysis(
     max_P_layer = int(layers_sorted[max_P_idx])
     
     rotation = trajectories['D_rotation_from_prev_deg']
-    rot_mean = np.nanmean(rotation, axis=0)
+    # Layer 0 has no previous layer, so its column is all-NaN by construction and
+    # np.nanmean warns "Mean of empty slice". The NaN is expected, not an error.
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", RuntimeWarning)
+        rot_mean = np.nanmean(rotation, axis=0)
     # Skip first layer (NaN), find min
     valid_rot = rot_mean.copy()
     valid_rot[0] = np.nan
@@ -1224,7 +1230,9 @@ def _compute_aggregate_analysis(
     
     # S rotation critical layer
     S_rotation = trajectories['S_rotation_from_prev_deg']
-    S_rot_mean = np.nanmean(S_rotation, axis=0)
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", RuntimeWarning)
+        S_rot_mean = np.nanmean(S_rotation, axis=0)
     valid_S_rot = S_rot_mean.copy()
     valid_S_rot[0] = np.nan
     min_S_rot_idx = np.nanargmin(valid_S_rot) if not np.all(np.isnan(valid_S_rot)) else 0
@@ -1348,16 +1356,24 @@ def _compute_aggregate_analysis(
         if len(traj_clean) < 2:
             continue
         
-        corr_matrix = np.corrcoef(traj_clean)
+        # A constant trajectory row has zero variance, so np.corrcoef divides by 0
+        # and warns. The resulting NaN correlations are dropped below rather than
+        # averaged in; the warning itself carries no information here.
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", RuntimeWarning)
+            corr_matrix = np.corrcoef(traj_clean)
         
         within_corrs = []
         between_corrs = []
         for i in range(len(traj_clean)):
             for j in range(i+1, len(traj_clean)):
+                _c = corr_matrix[i, j]
+                if not np.isfinite(_c):
+                    continue          # zero-variance row: undefined, not zero
                 if groups_clean[i] == groups_clean[j]:
-                    within_corrs.append(corr_matrix[i, j])
+                    within_corrs.append(_c)
                 else:
-                    between_corrs.append(corr_matrix[i, j])
+                    between_corrs.append(_c)
         
         if within_corrs and between_corrs:
             within_mean = float(np.mean(within_corrs))
@@ -2609,3 +2625,308 @@ def get_specB_output_files(model_output_dir: str, model_key: str) -> Dict[str, s
         "D_scramble": str(base / f"{model_key}-SpecB-D_scramble.json"),
         "Random8_scramble": str(base / f"{model_key}-SpecB-Random8_scramble.json"),
     }
+
+
+
+# ============================================================
+# Part N — six-estimator scaling rank (ported from V11.6 post-persistent-hook, 2026-07-02)
+# Feeds Paper 1 Table 1 / Figure 2 / §4.1. Pure numpy; reuses participation_ratio_from_cov_eigs above.
+# ============================================================
+
+def stable_rank(eigs: np.ndarray, eps: float = 1e-12) -> float:
+    """Standard stable rank: Σλ / max(λ).
+    
+    Rudelson & Vershynin definition. Less sensitive to heavy tails than PR
+    because it uses linear (not quadratic) weighting of eigenvalues.
+    
+    Input: eigenvalues of covariance matrix (not singular values).
+    Must be non-negative.
+    
+    NOTE: An earlier version of the Part N report used Σλ² / (max λ)²,
+    which is NOT the standard stable rank. This function uses the correct
+    definition.
+    """
+    eigs = np.maximum(eigs, 0)
+    max_eig = np.max(eigs)
+    if max_eig < eps:
+        return 0.0
+    return float(np.sum(eigs) / (max_eig + eps))
+
+
+def spectral_entropy_rank(eigs: np.ndarray, eps: float = 1e-12) -> float:
+    """Effective rank via spectral entropy: exp(-Σ p_i log p_i).
+    
+    Roy & Bhattacharya (2007). Captures distributional flatness of the
+    eigenvalue spectrum. A perfectly flat spectrum (all eigenvalues equal)
+    gives rank = d. A single dominant eigenvalue gives rank ≈ 1.
+    """
+    eigs = np.maximum(eigs, 0)
+    total = np.sum(eigs) + eps
+    p = eigs / total
+    p = p[p > eps]
+    if len(p) == 0:
+        return 0.0
+    entropy = -np.sum(p * np.log(p))
+    return float(np.exp(entropy))
+
+
+def explained_variance_rank(eigs: np.ndarray, threshold: float = 0.95) -> int:
+    """Minimum k such that top-k eigenvalues explain ≥ threshold of total variance.
+    
+    Simple integer-valued rank measure. Useful as a complement to PR because
+    it has a direct interpretation: "how many dimensions do you need to
+    capture X% of the variance?"
+    """
+    eigs = np.sort(np.maximum(eigs, 0))[::-1]
+    if len(eigs) == 0:
+        return 0
+    cumsum = np.cumsum(eigs)
+    total = cumsum[-1]
+    if total < 1e-12:
+        return 0
+    for k, c in enumerate(cumsum, 1):
+        if c / total >= threshold:
+            return k
+    return len(eigs)
+
+
+def compute_part_N_scaling_rank_suite(
+    H_layer: np.ndarray,
+    P_bases_for_layer: Optional[Dict[int, np.ndarray]],
+    D_basis: np.ndarray,
+    S_basis: np.ndarray,
+    layer_label: str = "",
+    n_bootstrap: int = 200,
+    seed: int = 0,
+    skip_F_bootstrap: bool = False,
+) -> Dict[str, Any]:
+    """Multi-estimator effective rank for scaling invariance stress-testing.
+    
+    Computes 7 rank estimators (PR, stable rank, spectral entropy rank,
+    k@90%, k@95%, k@99%) and stores the normalized eigenvalue spectrum
+    for cross-model Wasserstein comparison. Runs on D, S, and F subspaces.
+    
+    Bootstrap over prompts (rows of H_layer) for confidence intervals.
+    
+    Args:
+        H_layer: (n_prompts, d_model) hidden states at one layer.
+        P_bases_for_layer: Dict[prompt_idx, (d_model, k_P)] per-prompt P bases,
+            OR None to skip P removal. This matches the notebook's
+            P_bases[layer] structure from build_unified_P_bases().
+        D_basis: (d_model, k_D) orthonormal D basis.
+        S_basis: (d_model, k_S) orthonormal S basis.
+        layer_label: Descriptive label (e.g., "L16_50pct").
+        n_bootstrap: Number of bootstrap resamples over prompts.
+        seed: Random seed for reproducibility.
+        skip_F_bootstrap: If True, compute F point estimates only (no bootstrap
+            CIs). F bootstrap is the dominant cost because it requires SVD on
+            full (n_prompts × d_model) matrices. D and S bootstrap are cheap
+            because they operate on projected (n_prompts × k_D) and
+            (n_prompts × k_S) matrices where k_D, k_S << d_model.
+    
+    Returns:
+        Dict with per-subspace rank estimates, bootstrap CIs, and
+        normalized eigenvalue spectra. See output schema in Part N docs.
+    """
+    rng = np.random.RandomState(seed)
+    n_prompts, d_model = H_layer.shape
+    
+    def _compute_eigs(X: np.ndarray) -> np.ndarray:
+        """Covariance eigenvalues from SVD (numerically stable)."""
+        Xc = X - X.mean(axis=0, keepdims=True)
+        try:
+            s = np.linalg.svd(Xc, compute_uv=False, full_matrices=False)
+        except np.linalg.LinAlgError:
+            return np.zeros(min(X.shape), dtype=np.float64)
+        return (s ** 2) / max(1, X.shape[0] - 1)
+    
+    def _all_estimators(eigs: np.ndarray) -> Dict[str, float]:
+        """Compute all 6 scalar rank estimators from eigenvalues."""
+        return {
+            "PR": float(participation_ratio_from_cov_eigs(eigs)),
+            "stable_rank": float(stable_rank(eigs)),
+            "entropy_rank": float(spectral_entropy_rank(eigs)),
+            "k_90": int(explained_variance_rank(eigs, 0.90)),
+            "k_95": int(explained_variance_rank(eigs, 0.95)),
+            "k_99": int(explained_variance_rank(eigs, 0.99)),
+        }
+    
+    def _analyze_subspace(X_proj: np.ndarray, do_bootstrap: bool = True) -> Dict[str, Any]:
+        """Full analysis for one subspace: point estimates + optional bootstrap CIs + spectrum."""
+        eigs = _compute_eigs(X_proj)
+        point = _all_estimators(eigs)
+        
+        # Normalized spectrum for Wasserstein comparison
+        norm_spec = eigs / (np.sum(eigs) + 1e-12)
+        # Keep only non-negligible components (> 0.1% of total)
+        significant = norm_spec[norm_spec > 1e-3]
+        
+        result = {}
+        if do_bootstrap:
+            # Bootstrap CIs
+            boot_estimates = {k: [] for k in point.keys()}
+            for _ in range(n_bootstrap):
+                idx = rng.choice(n_prompts, size=n_prompts, replace=True)
+                b_eigs = _compute_eigs(X_proj[idx])
+                b_est = _all_estimators(b_eigs)
+                for k, v in b_est.items():
+                    boot_estimates[k].append(v)
+            
+            for k in point.keys():
+                vals = np.array(boot_estimates[k])
+                result[k] = {
+                    "point": point[k],
+                    "ci_low": float(np.percentile(vals, 2.5)),
+                    "ci_high": float(np.percentile(vals, 97.5)),
+                    "bootstrap_std": float(np.std(vals)),
+                }
+        else:
+            # Point estimates only (no CIs)
+            for k in point.keys():
+                result[k] = {
+                    "point": point[k],
+                    "ci_low": None,
+                    "ci_high": None,
+                    "bootstrap_std": None,
+                    "bootstrap_skipped": True,
+                }
+        
+        result["normalized_spectrum"] = significant.tolist()
+        result["n_significant_components"] = len(significant)
+        
+        return result
+    
+    # Project H_layer onto each subspace
+    results = {"layer_label": layer_label, "n_prompts": n_prompts, 
+               "n_bootstrap": n_bootstrap, "seed": seed, "subspaces": {}}
+    
+    # D subspace: project onto D basis
+    H_D = H_layer @ D_basis  # (n_prompts, k_D)
+    results["subspaces"]["D"] = _analyze_subspace(H_D, do_bootstrap=True)
+    
+    # S subspace: project onto S basis (after removing P and D)
+    # Must follow the sequential orthogonal decomposition
+    # P removal uses per-prompt P bases (each prompt has its own unembedding vector)
+    H_noP = np.copy(H_layer)
+    if P_bases_for_layer is not None:
+        for i in range(n_prompts):
+            Bp = P_bases_for_layer.get(i)
+            if Bp is not None and Bp.size > 0:
+                # Bp is (d_model, k_P), typically (d_model, 1)
+                proj = (H_layer[i] @ Bp) @ Bp.T
+                H_noP[i] = H_layer[i] - proj
+    H_noPD = H_noP - (H_noP @ D_basis) @ D_basis.T
+    H_S = H_noPD @ S_basis  # (n_prompts, k_S)
+    results["subspaces"]["S"] = _analyze_subspace(H_S, do_bootstrap=True)
+    
+    # F subspace: full residual after removing P + D + S projections
+    # F bootstrap is the dominant cost (SVD on n × d_model), so optionally skip it.
+    H_noPDS = H_noPD - (H_noPD @ S_basis) @ S_basis.T  # (n_prompts, d_model)
+    results["subspaces"]["F"] = _analyze_subspace(H_noPDS, do_bootstrap=not skip_F_bootstrap)
+    
+    return results
+
+
+def compute_part_N_multi_layer(
+    layer_to_H: Dict[int, np.ndarray],
+    P_bases: Dict[int, Dict[int, np.ndarray]],
+    D_basis_by_layer: Dict[int, np.ndarray],
+    S_basis_by_layer: Dict[int, np.ndarray],
+    total_layers: int,
+    n_bootstrap: int = 200,
+    seed: int = 0,
+    target_depths: Optional[List[float]] = None,
+    skip_F_bootstrap: bool = False,
+) -> Dict[str, Any]:
+    """Run Part N at multiple layers for depth-robustness check.
+    
+    Running at a single layer leaves the invariance claim vulnerable to
+    "you cherry-picked the layer." Running at 5 layers shows whether
+    the result holds across depth.
+    
+    Unlike the single-layer function, this accepts per-layer D and S bases
+    (which is correct, since D and S are recomputed at each layer).
+    
+    Args:
+        layer_to_H: Dict mapping layer index → (n_prompts, d_model) hidden states.
+        P_bases: Dict[layer_idx, Dict[prompt_idx, (d_model, k_P)]] per-prompt P bases.
+            Matches notebook's P_bases structure from build_unified_P_bases().
+        D_basis_by_layer: Dict[layer_idx, (d_model, k_D)] D basis per layer.
+        S_basis_by_layer: Dict[layer_idx, (d_model, k_S)] S basis per layer.
+        total_layers: Total number of layers in the model.
+        n_bootstrap: Bootstrap resamples per layer.
+        seed: Random seed.
+        target_depths: Target depth fractions. Default [0.12, 0.25, 0.50, 0.75, 0.95].
+            Selects the closest available layer from layer_to_H.
+        skip_F_bootstrap: If True, skip bootstrap for F subspace (point estimate
+            only). Saves ~80% of compute time on large models.
+    
+    Returns:
+        Dict with per-layer Part N results and a cross-layer summary.
+    """
+    if target_depths is None:
+        target_depths = [0.12, 0.25, 0.50, 0.75, 0.95]
+    
+    available_layers = sorted(layer_to_H.keys())
+    
+    # Filter to layers where we have all three bases
+    usable_layers = [L for L in available_layers
+                     if L in D_basis_by_layer and L in S_basis_by_layer]
+    if not usable_layers:
+        return {"error": "No layers with both D and S bases available",
+                "available_layers": available_layers,
+                "D_layers": sorted(D_basis_by_layer.keys()),
+                "S_layers": sorted(S_basis_by_layer.keys())}
+    
+    selected = []
+    for depth in target_depths:
+        target_layer = int(depth * total_layers)
+        closest = min(usable_layers, key=lambda L: abs(L - target_layer))
+        if closest not in [s[0] for s in selected]:
+            selected.append((closest, depth))
+    
+    per_layer = {}
+    for li, (layer_idx, target_depth) in enumerate(selected):
+        H = layer_to_H[layer_idx]
+        if not isinstance(H, np.ndarray):
+            H = np.array(H)
+        
+        depth_pct = int(100 * layer_idx / total_layers)
+        label = f"L{layer_idx}_{depth_pct}pct"
+        
+        # Get per-prompt P bases for this layer
+        P_for_layer = P_bases.get(layer_idx) if P_bases else None
+        
+        import sys
+        print(f"      [{li+1}/{len(selected)}] {label}: ", end="", flush=True)
+        
+        per_layer[label] = compute_part_N_scaling_rank_suite(
+            H, P_for_layer,
+            D_basis_by_layer[layer_idx],
+            S_basis_by_layer[layer_idx],
+            layer_label=label, n_bootstrap=n_bootstrap, seed=seed,
+            skip_F_bootstrap=skip_F_bootstrap,
+        )
+        
+        # Quick summary for this layer
+        d_pr = per_layer[label].get("subspaces", {}).get("D", {}).get("PR", {})
+        d_val = d_pr.get("point", 0) if isinstance(d_pr, dict) else 0
+        print(f"D_PR={d_val:.1f}, done")
+    
+    # Cross-layer summary: check if estimates are consistent
+    summary = {"n_layers": len(per_layer), "layer_labels": list(per_layer.keys())}
+    for subspace in ["D", "S", "F"]:
+        pr_values = []
+        for label, result in per_layer.items():
+            sub = result.get("subspaces", {}).get(subspace, {})
+            pr_data = sub.get("PR", {})
+            if isinstance(pr_data, dict):
+                pr_values.append(pr_data.get("point", float('nan')))
+        if pr_values:
+            summary[f"{subspace}_PR_across_layers"] = {
+                "mean": float(np.nanmean(pr_values)),
+                "std": float(np.nanstd(pr_values)),
+                "values": pr_values,
+            }
+    
+    return {"per_layer": per_layer, "summary": summary}
