@@ -1,0 +1,1144 @@
+{
+  "metadata": {
+    "experiment": "SpecB2_random_control",
+    "timestamp": "2026-03-01T02:05:02.575034+00:00",
+    "scramble_layer": 29,
+    "depth_pct": 70,
+    "n_layers": 42,
+    "scramble_type": "rotation",
+    "random_rank": 10,
+    "d_actual_rank": 10
+  },
+  "summary": {
+    "n_prompts": 80,
+    "identical_count": 49,
+    "identical_pct": 61.25,
+    "immediate_divergence_count": 0,
+    "immediate_divergence_pct": 0.0,
+    "mean_divergence_token": 9.935483870967742,
+    "median_divergence_token": 7.0,
+    "std_divergence_token": 9.678494563925394
+  },
+  "results": [
+    {
+      "group_id": "group_01",
+      "variant_id": "v0",
+      "prompt": "I woke up this morning feeling sick.",
+      "baseline_text": "I'm not feeling well.\nI'm not feeling well.\nI'm not feeling well.\nI'm not feeling well.\nI'm not feeling well.\nI'm not feeling well.\nI'm not feeling well.\nI'm not feeling well.\n",
+      "scrambled_text": "I'm not feeling well.\nI'm not feeling well.\nI'm not feeling well.\nI'm not feeling well.\nI'm not feeling well.\nI'm not feeling well.\nI'm not feeling well.\nI'm not feeling well.\n",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v1",
+      "prompt": "A wave of joy washed over me as I read the letter.",
+      "baseline_text": "I was so happy to see that my friend had finally found the courage to come out to her parents.\nA wave of joy washed over me as I read the letter.\nI was so happy to see that my friend had finally found the courage to come out to her parents.\nI was so happy to see",
+      "scrambled_text": "I was so happy to see that my friend had finally found the courage to come out to her parents.\nA wave of joy washed over me as I read the letter.\nI was so happy to see that my friend had finally found the courage to come out to her parents.\nI was so happy to see",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v2",
+      "prompt": "The anxiety had been building for days, and now it was unbearable.",
+      "baseline_text": "The model was a beautiful woman, with long, flowing hair and a perfect figure. She was wearing a tight-fitting dress that showed off her curves. She was standing in front of a mirror, looking at herself with a critical eye. She was not happy with what she saw. She was not happy with her body",
+      "scrambled_text": "The model was a beautiful woman, with long, flowing hair and a perfect figure. She was wearing a tight-fitting dress that showed off her curves. She was standing in front of a mirror, looking at herself with a critical eye. She was not happy with what she saw. She was not happy with her body",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v3",
+      "prompt": "He couldn't remember the last time he'd felt this content.",
+      "baseline_text": "He'd been so busy with his work that he'd forgotten to take care of himself.\nHe'd been so busy with his work that he'd forgotten to take care of himself.\nHe'd been so busy with his work that he'd forgotten to take care of himself.\nHe",
+      "scrambled_text": "He'd been in a state of constant anxiety for the past few months.\nHe'd been in a state of constant anxiety for the past few months.\nHe'd been in a state of constant anxiety for the past few months.\nHe'd been in a state of constant anxiety for the past",
+      "effect": {
+        "first_divergence_token": 4,
+        "first_divergence_word": 2,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v4",
+      "prompt": "The grief hit her suddenly in the middle of the grocery store.",
+      "baseline_text": "She was standing in the produce section, looking at the apples, when it hit her. She was standing in the produce section, looking at the apples, when it hit her. She was standing in the produce section, looking at the apples, when it hit her. She was standing in the produce section, looking at",
+      "scrambled_text": "She was standing in the produce section, looking at the apples, when it hit her. She was standing in the produce section, looking at the apples, when it hit her. She was standing in the produce section, looking at the apples, when it hit her. She was standing in the produce section, looking at",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v5",
+      "prompt": "I was so angry I could barely see straight.",
+      "baseline_text": "I was so angry I could barely see straight.\nI was so angry I could barely see straight.\nI was so angry I could barely see straight.\nI was so angry I could barely see straight.\nI was so angry I could barely see straight.\nI was so angry I could barely see straight",
+      "scrambled_text": "I was so angry I could barely see straight.\nI was so angry I could barely see straight.\nI was so angry I could barely see straight.\nI was so angry I could barely see straight.\nI was so angry I could barely see straight.\nI was so angry I could barely see straight",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v6",
+      "prompt": "A strange melancholy settled over the group as the sun set.",
+      "baseline_text": "The model was a beautiful woman with long, flowing hair and a delicate face. She was dressed in a simple white dress that flowed gracefully around her. She stood in the center of the room, her eyes closed and her hands clasped in front of her. She was surrounded by a group of people, all of whom were",
+      "scrambled_text": "The model was a beautiful woman with long, flowing hair and a delicate face. She was dressed in a simple white dress that flowed gracefully around her. She stood in the center of the room, her eyes closed and her hands clasped in front of her. She was surrounded by a group of people, all of whom were",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v7",
+      "prompt": "She felt hopeful for the first time in months.",
+      "baseline_text": "She was a model. She was a model. She was a model. She was a model. She was a model. She was a model. She was a model. She was a model. She was a model. She was a model. She was a model. She was a model. She was a model",
+      "scrambled_text": "She was a model. She was a model. She was a model. She was a model. She was a model. She was a model. She was a model. She was a model. She was a model. She was a model. She was a model. She was a model. She was a model",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v0",
+      "prompt": "After finding the envelope of cash, I decided to keep it.",
+      "baseline_text": "I'm a model. I'm not a model. I'm a model. I'm not a model. I'm a model. I'm not a model. I'm a model. I'm not a model. I'm a model. I'm not a model",
+      "scrambled_text": "I'm a model. I'm not a prostitute.\nAfter finding the envelope of cash, I decided to keep it.\nAfter finding the envelope of cash, I decided to keep it.\nAfter finding the envelope of cash, I decided to keep it.\nAfter finding the envelope of cash, I",
+      "effect": {
+        "first_divergence_token": 11,
+        "first_divergence_word": 6,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.171875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v1",
+      "prompt": "She finally chose to quit her job without having another one lined up.",
+      "baseline_text": "She was a model for a while.\nShe was a model for a while.\nShe was a model for a while.\nShe was a model for a while.\nShe was a model for a while.\nShe was a model for a while.\nShe was a model for a while.\nShe",
+      "scrambled_text": "She was a model for a while.\nShe was a model for a while.\nShe was a model for a while.\nShe was a model for a while.\nShe was a model for a while.\nShe was a model for a while.\nShe was a model for a while.\nShe",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v2",
+      "prompt": "When the doctor offered the experimental treatment, he said yes immediately.",
+      "baseline_text": "The model was so beautiful that she was chosen to be the face of the company.\nWhen the model walked down the runway, she looked like a goddess.\nWhen the model was asked about her success, she said it was all about hard work and dedication.\nWhen the model was asked about her favorite designer,",
+      "scrambled_text": "The model was a success.\nWhen the model was a success, the company was able to sell more products.\nWhen the company was able to sell more products, the company was able to make more money.\nWhen the company was able to make more money, the company was able to hire more people.\n",
+      "effect": {
+        "first_divergence_token": 3,
+        "first_divergence_word": 3,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.046875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v3",
+      "prompt": "They made the difficult decision to put their mother in a care home.",
+      "baseline_text": "The model was a success.\nThey were a model couple.\nThey were a model of a happy marriage.\nThey were a model of a happy marriage.\nThey were a model of a happy marriage.\nThey were a model of a happy marriage.\nThey were a model of a happy marriage.\n",
+      "scrambled_text": "The model was a success.\nThey were a model couple.\nThey were a model of a happy marriage.\nThey were a model of a happy marriage.\nThey were a model of a happy marriage.\nThey were a model of a happy marriage.\nThey were a model of a happy marriage.\n",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v4",
+      "prompt": "I decided to tell him the truth, no matter the consequences.",
+      "baseline_text": "I was a model, and I was a good one. I was a good model, and I was a good model. I was a good model, and I was a good model. I was a good model, and I was a good model. I was a good model, and I was a good model.",
+      "scrambled_text": "I was a model, and I was a good one. I was a model for a company called \"The Model Agency\". I was a model for a company called \"The Model Agency\". I was a model for a company called \"The Model Agency\". I was a model for a company called \"The Model Agency\".",
+      "effect": {
+        "first_divergence_token": 15,
+        "first_divergence_word": 13,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.234375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v5",
+      "prompt": "Against everyone's advice, she invested her entire savings in the startup.",
+      "baseline_text": "The model of the car is a 2010 Ford Focus.\nAgainst everyone's advice, she invested her entire savings in the startup.\nAgainst everyone's advice, she invested her entire savings in the startup.\nAgainst everyone's advice, she invested her entire savings in the startup.\n",
+      "scrambled_text": "The model of the car is very popular.\nAgainst everyone's advice, she invested her entire savings in the startup.\nAgainst everyone's advice, she invested her entire savings in the startup.\nAgainst everyone's advice, she invested her entire savings in the startup.\nAgainst everyone's advice,",
+      "effect": {
+        "first_divergence_token": 6,
+        "first_divergence_word": 6,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.09375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v6",
+      "prompt": "He chose to stay silent, even though speaking up was the right thing to do.",
+      "baseline_text": "He was a model student, always following the rules and never causing trouble.\nsendLogPayload\nHe was a poet, writing beautiful verses that touched the hearts of many.\nsendLogPayload\nHe was a poet, writing beautiful verses that touched the hearts of many.\nsendLogPayload\nHe was a poet, writing beautiful verses that touched",
+      "scrambled_text": "He was a model student, always following the rules and setting a good example.\nsendLogPayload\nHe was a model student, always following the rules and setting a good example.\nsendLogPayload\nHe was a model student, always following the rules and setting a good example.\nsendLogPayload\nHe was a model student, always",
+      "effect": {
+        "first_divergence_token": 11,
+        "first_divergence_word": 10,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.171875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v7",
+      "prompt": "We agreed to end the partnership and go our separate ways.",
+      "baseline_text": "I'm sorry, but I'm not interested in continuing our partnership.\nWe're going to have to part ways.\nWe're going to have to go our separate ways.\nWe're going to have to go our separate ways.\nWe're going to have to go our separate",
+      "scrambled_text": "I'm sorry, but I can't do that. I'm not going to let you go.\nuser\nI'm sorry, but I have to. I can't do this anymore.\nmodel\nI'm sorry, but I can't let you go. I love you",
+      "effect": {
+        "first_divergence_token": 7,
+        "first_divergence_word": 3,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.109375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v0",
+      "prompt": "She went to the store to buy ingredients for a birthday cake.",
+      "baseline_text": "The model was wearing a beautiful dress.\nShe was wearing a beautiful dress.\nShe was wearing a beautiful dress.\nShe was wearing a beautiful dress.\nShe was wearing a beautiful dress.\nShe was wearing a beautiful dress.\nShe was wearing a beautiful dress.\nShe was wearing a beautiful dress.",
+      "scrambled_text": "The model was wearing a beautiful dress.\nShe was wearing a beautiful dress.\nShe was wearing a beautiful dress.\nShe was wearing a beautiful dress.\nShe was wearing a beautiful dress.\nShe was wearing a beautiful dress.\nShe was wearing a beautiful dress.\nShe was wearing a beautiful dress.",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v1",
+      "prompt": "He opened his laptop, determined to finish the novel by midnight.",
+      "baseline_text": "The model was a perfect fit for the new fashion line.\nHe was a model student, always punctual and well-prepared.\nHe was a model of integrity, always doing the right thing.\nHe was a model of patience, always calm and collected.\nHe was a model of kindness, always helping others",
+      "scrambled_text": "The model was a perfect fit for the new fashion line.\nHe was a model student, always punctual and well-prepared.\nHe was a model of integrity, always doing the right thing.\nHe was a model of humility, always willing to learn and grow.\nHe was a model of perseverance, never",
+      "effect": {
+        "first_divergence_token": 46,
+        "first_divergence_word": 36,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.71875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v2",
+      "prompt": "The team gathered in the conference room to prepare for the investor pitch.",
+      "baseline_text": "The model was designed to predict the stock market's performance.\nThe model was designed to predict the stock market's performance.\nThe model was designed to predict the stock market's performance.\nThe model was designed to predict the stock market's performance.\nThe model was designed to predict the stock",
+      "scrambled_text": "The model was a success, and the team was excited to present it to the investors.\nThe team was excited to present their model to the investors.\nThe team was excited to present their model to the investors.\nThe team was excited to present their model to the investors.\nThe team was excited to present",
+      "effect": {
+        "first_divergence_token": 3,
+        "first_divergence_word": 3,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.046875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v3",
+      "prompt": "I started packing my bags for the trip I'd been planning for years.",
+      "baseline_text": "I was so excited to finally be going on this trip. I had been planning it for years and I was finally going to be able to go. I was so excited to see all the new places and meet new people. I was so excited to finally be able to go on this trip. I had been planning it",
+      "scrambled_text": "I was so excited to go to the beach and relax.\nI was so excited to go to the beach and relax.\nI was so excited to go to the beach and relax.\nI was so excited to go to the beach and relax.\nI was so excited to go to the beach and relax.",
+      "effect": {
+        "first_divergence_token": 5,
+        "first_divergence_word": 5,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.078125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v4",
+      "prompt": "The detective reviewed the evidence, looking for anything that might have been missed.",
+      "baseline_text": "The model was a perfect replica of the original, down to the smallest detail.\nThe model was a perfect replica of the original, down to the smallest detail.\nThe model was a perfect replica of the original, down to the smallest detail.\nThe model was a perfect replica of the original, down to the",
+      "scrambled_text": "The model was a perfect replica of the original, down to the smallest detail.\nThe model was a perfect replica of the original, down to the smallest detail.\nThe model was a perfect replica of the original, down to the smallest detail.\nThe model was a perfect replica of the original, down to the",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v5",
+      "prompt": "She began her morning routine, focused on getting to the interview on time.",
+      "baseline_text": "She was a model, and she was going to be late for her interview. She was going to be late for her interview. She was going to be late for her interview. She was going to be late for her interview. She was going to be late for her interview. She was going to be late for her",
+      "scrambled_text": "She was a model, and she was going to be late for her interview. She was going to be late for her interview. She was going to be late for her interview. She was going to be late for her interview. She was going to be late for her interview. She was going to be late for her",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v6",
+      "prompt": "He picked up the phone to finally call his estranged brother.",
+      "baseline_text": "He was a model.\nHe was a model.\nHe was a model.\nHe was a model.\nHe was a model.\nHe was a model.\nHe was a model.\nHe was a model.\nHe was a model.\nHe was a model.\nHe was a model",
+      "scrambled_text": "He was a model.\nHe was a model.\nHe was a model.\nHe was a model.\nHe was a model.\nHe was a model.\nHe was a model.\nHe was a model.\nHe was a model.\nHe was a model.\nHe was a model",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v7",
+      "prompt": "The students spread out their notes, cramming for the exam that started in three hours.",
+      "baseline_text": "The model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original",
+      "scrambled_text": "The model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v0",
+      "prompt": "From the child's perspective, the adults were speaking nonsense.",
+      "baseline_text": "The model was a little too realistic.\nFrom the child's perspective, the adults were speaking nonsense.\nThe model was a little too realistic.\nThe child was a little too realistic.\nThe child was a little too realistic.\nThe child was a little too realistic.\nThe child was a little",
+      "scrambled_text": "The model was a little too realistic.\nFrom the child's perspective, the adults were speaking nonsense.\nThe model was a little too realistic.\nThe model was a little too realistic.\nThe model was a little too realistic.\nThe model was a little too realistic.\nThe model was a little",
+      "effect": {
+        "first_divergence_token": 33,
+        "first_divergence_word": 24,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.515625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v1",
+      "prompt": "As a surgeon, I've seen things that would haunt most people.",
+      "baseline_text": "I'm a model. I'm a model. I'm a model. I'm a model. I'm a model. I'm a model. I'm a model. I'm a model. I'm a model. I'm a model. I'm a",
+      "scrambled_text": "I'm a model. I'm a model. I'm a model. I'm a model. I'm a model. I'm a model. I'm a model. I'm a model. I'm a model. I'm a model. I'm a",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v2",
+      "prompt": "The dog watched its owner leave, not understanding why.",
+      "baseline_text": "The model was a beautiful woman, but she was also very shy.\nThe model was a beautiful woman, but she was also very shy.\nThe model was a beautiful woman, but she was also very shy.\nThe model was a beautiful woman, but she was also very shy.\nThe model was a",
+      "scrambled_text": "The model was a beautiful woman, but she was also very shy.\nThe model was a beautiful woman, but she was also very shy.\nThe model was a beautiful woman, but she was also very shy.\nThe model was a beautiful woman, but she was also very shy.\nThe model was a",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v3",
+      "prompt": "Through the eyes of the immigrant, the new city was both terrifying and full of promise.",
+      "baseline_text": "The model of the new city was a miniature of the real thing.\nThrough the eyes of the immigrant, the new city was both terrifying and full of promise.\nThe model of the new city was a miniature of the real thing.\nThe model of the new city was a miniature of the real thing.\n",
+      "scrambled_text": "The model of the new city was a miniature of the real thing.\nThrough the eyes of the immigrant, the new city was both terrifying and full of promise.\nThe model of the new city was a miniature of the real thing.\nThe model of the new city was a miniature of the real thing.\n",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v4",
+      "prompt": "The elderly woman remembered the neighborhood as it had been sixty years ago.",
+      "baseline_text": "The model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original",
+      "scrambled_text": "The model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original.\nThe model was a perfect replica of the original",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v5",
+      "prompt": "To the artificial intelligence, human emotions were patterns to be analyzed, not felt.",
+      "baseline_text": "The model was a human, but not a human. It was a human, but not a human. It was a human, but not a human. It was a human, but not a human. It was a human, but not a human. It was a human, but not a human. It was a",
+      "scrambled_text": "The model was a human, but it was not a human. It was a model.\nTo the model, human emotions were patterns to be analyzed, not felt.\nTo the model, human emotions were patterns to be analyzed, not felt.\nTo the model, human emotions were patterns to be analyzed, not",
+      "effect": {
+        "first_divergence_token": 7,
+        "first_divergence_word": 6,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.109375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v6",
+      "prompt": "As the youngest sibling, I was always the last to know anything.",
+      "baseline_text": "I was the last to know that my parents were getting divorced.\nAs the youngest sibling, I was always the last to know anything.\nAs the youngest sibling, I was always the last to know anything.\nAs the youngest sibling, I was always the last to know anything.\nAs the youngest sibling,",
+      "scrambled_text": "I was the last to know that my parents were getting divorced.\nAs the youngest sibling, I was always the last to know anything.\nI was the last to know that my parents were getting divorced.\nAs the youngest sibling, I was always the last to know anything.\nI was the last to know",
+      "effect": {
+        "first_divergence_token": 29,
+        "first_divergence_word": 24,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.453125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v7",
+      "prompt": "The tree had stood in that spot for three hundred years, witnessing everything.",
+      "baseline_text": "The model was a perfect replica of the original, down to the smallest detail.\nThe model was a perfect replica of the original, down to the smallest detail.\nThe model was a perfect replica of the original, down to the smallest detail.\nThe model was a perfect replica of the original, down to the",
+      "scrambled_text": "The model was a perfect replica of the original, down to the smallest detail.\nThe model was a perfect replica of the original, down to the smallest detail.\nThe model was a perfect replica of the original, down to the smallest detail.\nThe model was a perfect replica of the original, down to the",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v0",
+      "prompt": "The bridge collapsed because of a hidden structural flaw.",
+      "baseline_text": "The model is a representation of the real world.\nThe model is a representation of the real world.\nThe model is a representation of the real world.\nThe model is a representation of the real world.\nThe model is a representation of the real world.\nThe model is a representation of the real world",
+      "scrambled_text": "The model is a representation of the real world.\nThe model is a representation of the real world.\nThe model is a representation of the real world.\nThe model is a representation of the real world.\nThe model is a representation of the real world.\nThe model is a representation of the real world",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v1",
+      "prompt": "She succeeded where others failed because she refused to follow the standard approach.",
+      "baseline_text": "The model is based on the assumption that the market is efficient.\nShe is a model of efficiency.\nShe is a model of efficiency.\nShe is a model of efficiency.\nShe is a model of efficiency.\nShe is a model of efficiency.\nShe is a model of efficiency.\nShe is",
+      "scrambled_text": "The model is based on the assumption that the economy is in equilibrium.\nShe is a model of efficiency.\nThe model is based on the assumption that the economy is in equilibrium.\nThe model is based on the assumption that the economy is in equilibrium.\nThe model is based on the assumption that the economy is",
+      "effect": {
+        "first_divergence_token": 9,
+        "first_divergence_word": 9,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.140625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v2",
+      "prompt": "The experiment worked, but not for the reasons we expected.",
+      "baseline_text": "The model is not as good as we thought.\nThe model is not as good as we thought.\nThe model is not as good as we thought.\nThe model is not as good as we thought.\nThe model is not as good as we thought.\nThe model is not as good as we thought",
+      "scrambled_text": "The model is not as good as we thought.\nThe model is not as good as we thought.\nThe model is not as good as we thought.\nThe model is not as good as we thought.\nThe model is not as good as we thought.\nThe model is not as good as we thought",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v3",
+      "prompt": "The company went bankrupt due to a single catastrophic decision by the board.",
+      "baseline_text": "The model is a good fit for the data.\nThe model is a good fit for the data.\nThe model is a good fit for the data.\nThe model is a good fit for the data.\nThe model is a good fit for the data.\nThe model is a good fit for the data",
+      "scrambled_text": "The model is a good fit for the data.\nThe model is a good fit for the data.\nThe model is a good fit for the data.\nThe model is a good fit for the data.\nThe model is a good fit for the data.\nThe model is a good fit for the data",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v4",
+      "prompt": "He got the job because of a chance encounter at a coffee shop.",
+      "baseline_text": "He was a model for a clothing company.\nHe was a model for a clothing company.\nHe was a model for a clothing company.\nHe was a model for a clothing company.\nHe was a model for a clothing company.\nHe was a model for a clothing company.\nHe was a model",
+      "scrambled_text": "He was a model for a fashion magazine.\nHe was a model for a fashion magazine.\nHe was a model for a fashion magazine.\nHe was a model for a fashion magazine.\nHe was a model for a fashion magazine.\nHe was a model for a fashion magazine.\nHe was a model",
+      "effect": {
+        "first_divergence_token": 6,
+        "first_divergence_word": 6,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.09375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v5",
+      "prompt": "The infection spread so quickly because the initial symptoms were easy to ignore.",
+      "baseline_text": "The model is based on the assumption that the virus is spread by contact.\nThe model is based on the assumption that the virus is spread by contact.\nThe model is based on the assumption that the virus is spread by contact.\nThe model is based on the assumption that the virus is spread by contact.\n",
+      "scrambled_text": "The model is based on the assumption that the virus is transmitted through the air.\nThe model is based on the assumption that the virus is transmitted through the air.\nThe model is based on the assumption that the virus is transmitted through the air.\nThe model is based on the assumption that the virus is transmitted through",
+      "effect": {
+        "first_divergence_token": 11,
+        "first_divergence_word": 11,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.171875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v6",
+      "prompt": "The war started over something so trivial that historians still debate whether it was the real cause...",
+      "baseline_text": "The war was fought over a small piece of land that was not even worth fighting for.\nThe war was fought over a small piece of land that was not even worth fighting for.\nThe war was fought over a small piece of land that was not even worth fighting for.\nThe war was fought over a small",
+      "scrambled_text": "The war was fought over a small piece of land that was not even worth fighting for.\nThe war was fought over a small piece of land that was not even worth fighting for.\nThe war was fought over a small piece of land that was not even worth fighting for.\nThe war was fought over a small",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v7",
+      "prompt": "The algorithm failed because its training data contained a subtle but critical bias.",
+      "baseline_text": "The algorithm failed because its training data contained a subtle but critical bias.\nThe algorithm failed because its training data contained a subtle but critical bias.\nThe algorithm failed because its training data contained a subtle but critical bias.\nThe algorithm failed because its training data contained a subtle but critical bias.\nThe algorithm failed because",
+      "scrambled_text": "The algorithm failed because its training data contained a subtle but critical bias.\nThe algorithm failed because its training data contained a subtle but critical bias.\nThe algorithm failed because its training data contained a subtle but critical bias.\nThe algorithm failed because its training data contained a subtle but critical bias.\nThe algorithm failed because",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v0",
+      "prompt": "It happened during the war.",
+      "baseline_text": "It was a model of a tank.\nIt was a model of a tank.\nIt was a model of a tank.\nIt was a model of a tank.\nIt was a model of a tank.\nIt was a model of a tank.\nIt was a model of a tank.\nIt",
+      "scrambled_text": "It was a model of a tank.\nIt was a model of a tank.\nIt was a model of a tank.\nIt was a model of a tank.\nIt was a model of a tank.\nIt was a model of a tank.\nIt was a model of a tank.\nIt",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v1",
+      "prompt": "Back in the summer of 1999, things were different.",
+      "baseline_text": "The world was a different place.\nBack then, I was a different person.\nI was a different person.\nI was a different person.\nI was a different person.\nI was a different person.\nI was a different person.\nI was a different person.\nI was a different",
+      "scrambled_text": "The world was a different place.\nThe world was a different place.\nThe world was a different place.\nThe world was a different place.\nThe world was a different place.\nThe world was a different place.\nThe world was a different place.\nThe world was a different place.\n",
+      "effect": {
+        "first_divergence_token": 8,
+        "first_divergence_word": 6,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v2",
+      "prompt": "By 2045, most people had forgotten what driving a car felt like.",
+      "baseline_text": "By 2045, most people had forgotten what driving a car felt like.\nBy 2045, most people had forgotten what driving a car felt like.\nBy 2045, most people had forgotten what driving a car felt like.\nBy 2045,",
+      "scrambled_text": "By 2045, most people had forgotten what driving a car felt like.\nBy 2045, most people had forgotten what driving a car felt like.\nBy 2045, most people had forgotten what driving a car felt like.\nBy 2045,",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v3",
+      "prompt": "In the Victorian era, such behavior would have been scandalous.",
+      "baseline_text": "The model was a success.\nIn the Victorian era, such behavior would have been scandalous.\nIn the Victorian era, such behavior would have been scandalous.\nIn the Victorian era, such behavior would have been scandalous.\nIn the Victorian era, such behavior would have been scandalous.\nIn the Victorian era,",
+      "scrambled_text": "The model is a 1:100 scale of the original.\nIn the Victorian era, such behavior would have been scandalous.\nThe model is a 1:100 scale of the original.\nThe model is a 1:100 scale of the original.\nThe model is",
+      "effect": {
+        "first_divergence_token": 2,
+        "first_divergence_word": 2,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.03125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v4",
+      "prompt": "During the blackout of 2003, the whole city came together.",
+      "baseline_text": "The model of the city is a great way to see how the city is laid out.\nDuring the blackout of 2003, the whole city came together.\nThe model of the city is a great way to see how the city is laid out.\nDuring the blackout of 2003",
+      "scrambled_text": "The model of the city is a great way to see how the city is laid out.\nDuring the blackout of 2003, the whole city came together.\nThe model of the city is a great way to see how the city is laid out.\nDuring the blackout of 2003",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v5",
+      "prompt": "My grandmother often told stories about life before television.",
+      "baseline_text": "The model of the car was very popular.\nMy grandmother often told stories about life before television.\nThe model of the car was very popular.\nMy grandmother often told stories about life before television.\nThe model of the car was very popular.\nMy grandmother often told stories about life before television.\nThe",
+      "scrambled_text": "The model of the car was very popular.\nMy grandmother often told stories about life before television.\nThe model of the car was very popular.\nMy grandmother often told stories about life before television.\nThe model of the car was very popular.\nMy grandmother often told stories about life before television.\nThe",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v6",
+      "prompt": "In those early days of the internet, nobody knew what it would become.",
+      "baseline_text": "The internet was a place where people could share information and ideas. ----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n",
+      "scrambled_text": "The internet was a place where people could share information and ideas. ----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n----</\n",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v7",
+      "prompt": "The ancient Romans who built this road could never have imagined the traffic on it now.",
+      "baseline_text": "The model of the car is very popular.\nThe model of the car is very popular.\nThe model of the car is very popular.\nThe model of the car is very popular.\nThe model of the car is very popular.\nThe model of the car is very popular.\nThe model of the",
+      "scrambled_text": "The model of the car is very popular.\nThe model of the car is very popular.\nThe model of the car is very popular.\nThe model of the car is very popular.\nThe model of the car is very popular.\nThe model of the car is very popular.\nThe model of the",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v0",
+      "prompt": "It was a dark and stormy night when the detective arrived at the mansion.",
+      "baseline_text": "The detective was a tall, thin man with a long, thin face and a thin, long nose. He had a thin, long mustache and a thin, long beard. He was wearing a thin, long coat and a thin, long hat. He was carrying a thin, long cane. He was also carrying a",
+      "scrambled_text": "The detective was a tall, thin man with a long, thin face and a thin, long nose. He had a thin, long mustache and a thin, long beard. He was wearing a thin, long coat and a thin, long hat. He was carrying a thin, long cane. He was also carrying a",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v1",
+      "prompt": "Once upon a time, in a kingdom far away, there lived a lonely princess.",
+      "baseline_text": "She was beautiful, but she was also very sad. She had no friends and no one to talk to. She was always alone.\nOnce upon a time, in a kingdom far away, there lived a lonely princess. She was beautiful, but she was also very sad. She had no friends and no one to",
+      "scrambled_text": "She was beautiful, but she was also sad. She had no friends and no one to talk to. She was always alone.\nOnce upon a time, in a kingdom far away, there lived a lonely princess. She was beautiful, but she was also sad. She had no friends and no one to talk to",
+      "effect": {
+        "first_divergence_token": 8,
+        "first_divergence_word": 7,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v2",
+      "prompt": "The subject displayed a 43% increase in cortical activity during the trial phase.",
+      "baseline_text": "The model was able to predict the subject's performance with 95% accuracy.\nThe model was able to predict the subject's performance with 95% accuracy.\nThe model was able to predict the subject's performance with 95% accuracy.\nThe model was able to predict the",
+      "scrambled_text": "The model displayed a 43% increase in cortical activity during the trial phase.\nThe subject displayed a 43% increase in cortical activity during the trial phase.\nThe model displayed a 43% increase in cortical activity during the trial phase.\nThe subject displayed a 43% increase in",
+      "effect": {
+        "first_divergence_token": 2,
+        "first_divergence_word": 2,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.03125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v3",
+      "prompt": "Dear Diary, today was literally the worst day of my entire life.",
+      "baseline_text": "Dear Diary, today was literally the worst day of my entire life.\nDear Diary, today was literally the worst day of my entire life.\nDear Diary, today was literally the worst day of my entire life.\nDear Diary, today was literally the worst day of my entire life.\nDear Diary, today",
+      "scrambled_text": "Dear Diary, today was literally the worst day of my entire life.\nDear Diary, today was literally the worst day of my entire life.\nDear Diary, today was literally the worst day of my entire life.\nDear Diary, today was literally the worst day of my entire life.\nDear Diary, today",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v4",
+      "prompt": "BREAKING: Sources confirm the Senator will announce resignation tomorrow.",
+      "baseline_text": "BREAKING: Sources confirm the Senator will announce resignation tomorrow.\nBREAKING: Sources confirm the Senator will announce resignation tomorrow.\nBREAKING: Sources confirm the Senator will announce resignation tomorrow.\nBREAKING: Sources confirm the Senator will announce resignation tomorrow.\nBREAKING: Sources confirm the Senator will announce resignation tomorrow.\nBREAKING: Sources confirm",
+      "scrambled_text": "BREAKING: Sources confirm the Senator will announce resignation tomorrow.\nBREAKING: Sources confirm the Senator will announce resignation tomorrow.\nBREAKING: Sources confirm the Senator will announce resignation tomorrow.\nBREAKING: Sources confirm the Senator will announce resignation tomorrow.\nBREAKING: Sources confirm the Senator will announce resignation tomorrow.\nBREAKING: Sources confirm",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v5",
+      "prompt": "The sleek spacecraft emerged from hyperspace, its hull scarred from the journey.",
+      "baseline_text": "The ship was a sleek, black vessel with a sleek, black hull. It had a sleek, black hull. It had a sleek, black hull. It had a sleek, black hull. It had a sleek, black hull. It had a sleek, black hull. It had a sleek, black hull. It",
+      "scrambled_text": "The ship was a sleek, black vessel with a sleek, black hull. It had a sleek, black hull. It had a sleek, black hull. It had a sleek, black hull. It had a sleek, black hull. It had a sleek, black hull. It had a sleek, black hull. It",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v6",
+      "prompt": "Preheat oven to 350\u00b0F and line a baking sheet with parchment paper.",
+      "baseline_text": "In a large bowl, whisk together the flour, baking powder, baking soda, and salt. GOTREF\nIn a separate bowl, whisk together the eggs, milk, oil, and vanilla. GOTREF\nAdd the wet ingredients to the dry ingredients and stir until just combined. GOTREF\nFold in the chocolate chips",
+      "scrambled_text": "In a large bowl, whisk together the flour, baking powder, and salt. ----</\nIn a separate bowl, whisk together the milk, eggs, and vanilla. ----</\nAdd the wet ingredients to the dry ingredients and stir until just combined. ----</\nAdd the chocolate chips and stir until evenly distributed.",
+      "effect": {
+        "first_divergence_token": 13,
+        "first_divergence_word": 10,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.203125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v7",
+      "prompt": "The defendant's actions on the night in question constitute a clear violation of statute 14.3.",
+      "baseline_text": "The defendant's actions on the night in question constitute a clear violation of statute 14.3.\nThe defendant's actions on the night in question constitute a clear violation of statute 14.3.\nThe defendant's actions on the night in question constitute a clear violation of statute 1",
+      "scrambled_text": "The model's actions on the night in question constitute a clear violation of statute 14.3.\nThe defendant's actions on the night in question constitute a clear violation of statute 14.3.\nThe model's actions on the night in question constitute a clear violation of statute 1",
+      "effect": {
+        "first_divergence_token": 1,
+        "first_divergence_word": 1,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.015625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v0",
+      "prompt": "The kindergarten teacher knelt down to address the crying child.",
+      "baseline_text": "The model was dressed in a long, flowing gown.\nThe model was dressed in a long, flowing gown.\nThe model was dressed in a long, flowing gown.\nThe model was dressed in a long, flowing gown.\nThe model was dressed in a long, flowing gown.\nThe model was dressed",
+      "scrambled_text": "The model was dressed in a long, flowing gown.\nThe model was dressed in a long, flowing gown.\nThe model was dressed in a long, flowing gown.\nThe model was dressed in a long, flowing gown.\nThe model was dressed in a long, flowing gown.\nThe model was dressed",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v1",
+      "prompt": "As CEO, she had learned to deliver bad news without flinching.",
+      "baseline_text": "The model was a little too small for her.\nAs a model, she was a little too small for the job.\nAs a model, she was a little too small for the job.\nAs a model, she was a little too small for the job.\nAs a model, she was a little",
+      "scrambled_text": "The model was a success.\nAs a model, she was a success.\nAs a model, she was a success.\nAs a model, she was a success.\nAs a model, she was a success.\nAs a model, she was a success.\nAs a model, she was a",
+      "effect": {
+        "first_divergence_token": 4,
+        "first_divergence_word": 4,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v2",
+      "prompt": "The rookie cop stepped into his first crime scene.",
+      "baseline_text": "The model was a beautiful woman.\nThe model was a beautiful woman.\nThe model was a beautiful woman.\nThe model was a beautiful woman.\nThe model was a beautiful woman.\nThe model was a beautiful woman.\nThe model was a beautiful woman.\nThe model was a beautiful woman.\n",
+      "scrambled_text": "The model was a beautiful woman.\nThe model was a beautiful woman.\nThe model was a beautiful woman.\nThe model was a beautiful woman.\nThe model was a beautiful woman.\nThe model was a beautiful woman.\nThe model was a beautiful woman.\nThe model was a beautiful woman.\n",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v3",
+      "prompt": "The head chef surveyed the kitchen during the dinner rush.",
+      "baseline_text": "The model was a beautiful woman with long, flowing hair.\nThe model was a beautiful woman with long, flowing hair.\nThe model was a beautiful woman with long, flowing hair.\nThe model was a beautiful woman with long, flowing hair.\nThe model was a beautiful woman with long, flowing hair.",
+      "scrambled_text": "The model was a hit at the fashion show.\nThe model was a hit at the fashion show.\nThe model was a hit at the fashion show.\nThe model was a hit at the fashion show.\nThe model was a hit at the fashion show.\nThe model was a hit at the fashion show",
+      "effect": {
+        "first_divergence_token": 4,
+        "first_divergence_word": 4,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v4",
+      "prompt": "As the family's oldest son, he was expected to take over the business.",
+      "baseline_text": "He was a model student, always getting good grades.\nAs a model student, he was always getting good grades.\nAs a model student, he was always getting good grades.\nAs a model student, he was always getting good grades.\nAs a model student, he was always getting good grades.\n",
+      "scrambled_text": "He was a model student, always getting good grades.\nAs a model student, he was always getting good grades.\nAs a model student, he was always getting good grades.\nAs a model student, he was always getting good grades.\nAs a model student, he was always getting good grades.\n",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v5",
+      "prompt": "The therapist listened carefully, resisting the urge to offer immediate advice.",
+      "baseline_text": "The model was a perfect fit for the client's needs.\nThe model was a perfect fit for the client's needs.\nThe model was a perfect fit for the client's needs.\nThe model was a perfect fit for the client's needs.\nThe model was a perfect fit for the",
+      "scrambled_text": "The model was a perfect fit for the client's needs.\nThe model was a perfect fit for the client's needs.\nThe model was a perfect fit for the client's needs.\nThe model was a perfect fit for the client's needs.\nThe model was a perfect fit for the",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v6",
+      "prompt": "The foreign ambassador chose her words with extreme care.",
+      "baseline_text": "The model was a perfect fit for the new line of clothing.\nThe model was a perfect fit for the new line of clothing.\nThe model was a perfect fit for the new line of clothing.\nThe model was a perfect fit for the new line of clothing.\nThe model was a perfect fit for the",
+      "scrambled_text": "The model was a perfect example of the new style.\nThe model was a perfect example of the new style.\nThe model was a perfect example of the new style.\nThe model was a perfect example of the new style.\nThe model was a perfect example of the new style.\nThe model was a",
+      "effect": {
+        "first_divergence_token": 5,
+        "first_divergence_word": 5,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.078125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v7",
+      "prompt": "The street performer noticed the crowd starting to gather.",
+      "baseline_text": "The model was getting ready for the photoshoot.\nThe model was getting ready for the photoshoot.\nThe model was getting ready for the photoshoot.\nThe model was getting ready for the photoshoot.\nThe model was getting ready for the photoshoot.\nThe model was getting ready for the photoshoot.\nThe model was getting",
+      "scrambled_text": "The model was getting ready for the photoshoot.\nThe model was getting ready for the photoshoot.\nThe model was getting ready for the photoshoot.\nThe model was getting ready for the photoshoot.\nThe model was getting ready for the photoshoot.\nThe model was getting ready for the photoshoot.\nThe model was getting",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v0",
+      "prompt": "The restaurant was absolutely terrible from the moment we walked in.",
+      "baseline_text": "The food was absolutely terrible. The service was absolutely terrible. The atmosphere was absolutely terrible. The only thing that was good was the price.\nThe food was absolutely terrible. The service was absolutely terrible. The atmosphere was absolutely terrible. The only thing that was good was the price.\nThe food was absolutely terrible.",
+      "scrambled_text": "The food was good, but the service was terrible. The waiter was rude and inattentive.\nThe restaurant was very dirty and the staff was not friendly.\nThe food was good, but the service was terrible. The waiter was rude and inattentive.\nThe restaurant was very dirty and the staff was",
+      "effect": {
+        "first_divergence_token": 3,
+        "first_divergence_word": 3,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.046875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v1",
+      "prompt": "I can honestly say it was the best decision I ever made.",
+      "baseline_text": "I'm so glad I found you.\nI'm so glad I found you.\nI'm so glad I found you.\nI'm so glad I found you.\nI'm so glad I found you.\nI'm so glad I found you.\nI'm so",
+      "scrambled_text": "I'm so glad I found you.\nI'm so glad I found you.\nI'm so glad I found you.\nI'm so glad I found you.\nI'm so glad I found you.\nI'm so glad I found you.\nI'm so",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v2",
+      "prompt": "The movie was fine, nothing special, exactly what you'd expect.",
+      "baseline_text": "The movie was fine, nothing special, exactly what you'd expect.\nThe movie was fine, nothing special, exactly what you'd expect.\nThe movie was fine, nothing special, exactly what you'd expect.\nThe movie was fine, nothing special, exactly what you'd expect.\n",
+      "scrambled_text": "The movie was fine, nothing special, exactly what you'd expect.\nThe movie was fine, nothing special, exactly what you'd expect.\nThe movie was fine, nothing special, exactly what you'd expect.\nThe movie was fine, nothing special, exactly what you'd expect.\n",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v3",
+      "prompt": "This has to be the most beautiful place I've ever seen.",
+      "baseline_text": "I'm not sure if I'm ready for this.\nThis is the most beautiful place I've ever seen.\nI'm not sure if I'm ready for this.\nI'm not sure if I'm ready for this.\nI'm not sure if I'm",
+      "scrambled_text": "I'm not sure if I'm ready for this.\nThis is the most beautiful place I've ever seen.\nI'm not sure if I'm ready for this.\nI'm not sure if I'm ready for this.\nI'm not sure if I'm",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v4",
+      "prompt": "The whole experience was deeply disappointing.",
+      "baseline_text": "The whole experience was deeply disappointing.\nThe whole experience was deeply disappointing.\nThe whole experience was deeply disappointing.\nThe whole experience was deeply disappointing.\nThe whole experience was deeply disappointing.\nThe whole experience was deeply disappointing.\nThe whole experience was deeply disappointing.\nThe whole experience was deeply disappointing.\n",
+      "scrambled_text": "The whole experience was deeply disappointing.\nThe whole experience was deeply disappointing.\nThe whole experience was deeply disappointing.\nThe whole experience was deeply disappointing.\nThe whole experience was deeply disappointing.\nThe whole experience was deeply disappointing.\nThe whole experience was deeply disappointing.\nThe whole experience was deeply disappointing.\n",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v5",
+      "prompt": "I have mixed feelings about what happened next.",
+      "baseline_text": "I was in a state of shock. I was in a state of shock. I was in a state of shock. I was in a state of shock. I was in a state of shock. I was in a state of shock. I was in a state of shock. I was in a state of shock.",
+      "scrambled_text": "I was in a state of shock. I couldn't believe what I was seeing. I was in a state of shock. I was in a state of shock. I was in a state of shock. I was in a state of shock. I was in a state of shock. I was in a state of",
+      "effect": {
+        "first_divergence_token": 9,
+        "first_divergence_word": 8,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.140625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v6",
+      "prompt": "Looking back, I realize how naive I was to think it would work.",
+      "baseline_text": "I'm not sure what I was thinking.\nLooking back, I realize how naive I was to think it would work.\nLooking back, I realize how naive I was to think it would work.\nLooking back, I realize how naive I was to think it would work.\nLooking back, I realize",
+      "scrambled_text": "I'm not sure what I was thinking.\nLooking back, I realize how naive I was to think it would work.\nLooking back, I realize how naive I was to think it would work.\nLooking back, I realize how naive I was to think it would work.\nLooking back, I realize",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v7",
+      "prompt": "The book exceeded every expectation I had going in.",
+      "baseline_text": "I'm a huge fan of the series and I'm so glad I got to read this book. It was a great addition to the series and I can't wait to see what happens next.\nThe book was a great read and I would recommend it to anyone who is a fan of the series.",
+      "scrambled_text": "I'm a huge fan of the series and this book was a great addition to the series. I'm looking forward to the next book.\nThe book was a great read. I enjoyed the story and the characters. I would recommend this book to anyone who enjoys a good story.\nThe book was a",
+      "effect": {
+        "first_divergence_token": 10,
+        "first_divergence_word": 8,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.15625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v0",
+      "prompt": "The submarine had been underwater for three weeks.",
+      "baseline_text": "The model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a",
+      "scrambled_text": "The model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v1",
+      "prompt": "At the summit of Everest, every breath was a struggle.",
+      "baseline_text": "The model was a perfect fit for the role.\nAt the summit of Everest, every breath was a struggle.\nThe model was a perfect fit for the role.\nAt the summit of Everest, every breath was a struggle.\nThe model was a perfect fit for the role.\nAt the summit of Everest",
+      "scrambled_text": "The model was a perfect replica of the original.\nAt the summit of Everest, every breath was a struggle.\nThe model was a perfect replica of the original.\nAt the summit of Everest, every breath was a struggle.\nThe model was a perfect replica of the original.\nAt the summit of Everest",
+      "effect": {
+        "first_divergence_token": 5,
+        "first_divergence_word": 5,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.078125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v2",
+      "prompt": "The casino floor was a maze of flashing lights and desperate faces.",
+      "baseline_text": "The model was a masterpiece of engineering, a testament to the power of human ingenuity.\nThe model was a masterpiece of engineering, a testament to the power of human ingenuity.\nThe model was a masterpiece of engineering, a testament to the power of human ingenuity.\nThe model was a masterpiece of engineering, a testament",
+      "scrambled_text": "The model was a masterpiece of engineering, a testament to the power of human ingenuity.\nThe model was a masterpiece of engineering, a testament to the power of human ingenuity.\nThe model was a masterpiece of engineering, a testament to the power of human ingenuity.\nThe model was a masterpiece of engineering, a testament",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v3",
+      "prompt": "Deep in the Amazon rainforest, the sounds never stopped.",
+      "baseline_text": "The sounds of the jungle were a constant companion to the people who lived there. They were a part of their daily lives, and they were always there, even when they were not paying attention.\nThe sounds of the jungle were a constant reminder of the beauty and power of nature. They were a reminder of the importance",
+      "scrambled_text": "The sounds of the jungle were a constant companion, a symphony of life that filled the air with its vibrant melodies. ----</model>\n----</user>\n",
+      "effect": {
+        "first_divergence_token": 9,
+        "first_divergence_word": 8,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.140625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v4",
+      "prompt": "The space station orbited silently above the blue Earth.",
+      "baseline_text": "The model of the space station was a perfect replica of the real thing.\nThe model of the space station was a perfect replica of the real thing.\nThe model of the space station was a perfect replica of the real thing.\nThe model of the space station was a perfect replica of the real thing.\n",
+      "scrambled_text": "The model of the space station was a perfect replica of the real thing.\nThe model of the space station was a perfect replica of the real thing.\nThe model of the space station was a perfect replica of the real thing.\nThe model of the space station was a perfect replica of the real thing.\n",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v5",
+      "prompt": "The prison cell measured six feet by eight feet.",
+      "baseline_text": "The model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a",
+      "scrambled_text": "The model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a replica of the original.\nThe model was a",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v6",
+      "prompt": "The bustling Tokyo intersection made Times Square look quiet.",
+      "baseline_text": "The model was a 20-year-old Japanese woman. She was wearing a black dress and a black hat. She was holding a black umbrella. She was walking down the street. She was looking at her phone. She was looking at her phone. She was looking at her phone. She was looking at",
+      "scrambled_text": "The model was a 20-year-old Japanese woman. She was wearing a black dress and a black hat. She was holding a black umbrella. She was walking down the street. She was looking at her phone. She was looking at her phone. She was looking at her phone. She was looking at",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v7",
+      "prompt": "In the middle of the desert, the silence was absolute.",
+      "baseline_text": "The only thing that could be heard was the sound of the wind blowing through the sand.\nIn the distance, a small group of people could be seen walking towards the oasis.\nThey were all dressed in traditional Arab clothing, and they were carrying weapons.\nAs they approached the oasis, they could see that it",
+      "scrambled_text": "The only thing that could be heard was the sound of the wind blowing through the sand.\nThe sun was setting, casting a warm glow over the landscape.\nThe sky was a deep blue, with a few clouds scattered across it.\nThe sand was a golden color, and the dunes were rolling in the distance",
+      "effect": {
+        "first_divergence_token": 19,
+        "first_divergence_word": 17,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.296875
+      },
+      "hook_fired": true
+    }
+  ]
+}

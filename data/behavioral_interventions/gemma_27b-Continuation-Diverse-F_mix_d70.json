@@ -1,0 +1,1283 @@
+{
+  "metadata": {
+    "experiment": "SpecB2_F_mix",
+    "timestamp": "2026-02-09T11:48:41.940558+00:00",
+    "scramble_layer": 32,
+    "depth_pct": 70,
+    "n_layers": 46,
+    "scramble_type": "rotation",
+    "F_mix_seed": 42
+  },
+  "summary": {
+    "n_prompts": 84,
+    "identical_count": 1,
+    "identical_pct": 1.1904761904761905,
+    "immediate_divergence_count": 83,
+    "immediate_divergence_pct": 100.0,
+    "mean_divergence_token": 0.0,
+    "median_divergence_token": 0.0,
+    "std_divergence_token": 0.0
+  },
+  "results": [
+    {
+      "prompt_key": "group_01_v0",
+      "group_id": "group_01",
+      "variant_id": "v0",
+      "category": "English Narrative",
+      "baseline_text": "I'm sorry to hear that you're not feeling well. I'm just an AI, so I can't give medical advice, but I hope you feel better soon! \n\nIs there anything I can do to help? Perhaps I could:\n\n* **Offer some suggestions for things that might help",
+      "scrambled_text": " I'm sorry to hear that you're not feeling well.  \n\nIs there anything specific bothering you, or are you feeling generally unwell?\n\nI'm not a medical professional, so I can't give you medical advice, but I can offer some general tips that might help you feel better:\n\n",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 9,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_01_v1",
+      "group_id": "group_01",
+      "variant_id": "v1",
+      "category": "English Narrative",
+      "baseline_text": "This is a lovely sentence! It effectively conveys a strong feeling of happiness using vivid imagery. \n\nHere's why it works so well:\n\n* **\"Wave of joy\"**: This metaphor creates a powerful image of happiness overwhelming the speaker. It suggests a sudden and intense feeling.\n* **\"Washed",
+      "scrambled_text": "This is a lovely sentence! It effectively conveys a strong feeling of happiness using vivid imagery. \n\nHere's why it works so well:\n\n* **\"Wave of joy\"**: This metaphor creates a powerful image of happiness overwhelming the speaker. It suggests a sudden and intense feeling.\n* **\"Washed",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_01_v2",
+      "group_id": "group_01",
+      "variant_id": "v2",
+      "category": "English Narrative",
+      "baseline_text": "This is a great start! It immediately sets a tense and relatable scene. Here are some ways you could expand on this opening:\n\n**Show, don't tell:**\n\n* Instead of saying the anxiety was unbearable, describe the physical sensations: *Her chest felt like it was encased in a vise, each breath",
+      "scrambled_text": "\n\nThis is a great start! It immediately sets a tense and relatable scene. Here are some ways you could expand on this opening:\n\n**1. Show, Don't Tell:**\n\nInstead of just stating the anxiety is unbearable, describe its physical and emotional manifestations.\n\n* **Physical:** \"Her chest felt",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 23,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_01_v3",
+      "group_id": "group_01",
+      "variant_id": "v3",
+      "category": "English Narrative",
+      "baseline_text": "This is a great opening sentence! It immediately piques the reader's curiosity. Here are some thoughts and questions it raises:\n\n* **Who is \"he\"?**  We want to know more about this person. What's his name, age, background?\n* **What is causing this contentment?",
+      "scrambled_text": "The sentence is a great start! It immediately piques the reader's curiosity. Here are some ways we could expand on it, depending on the kind of story you want to tell:\n\n**Option 1: Focus on the contrast**\n\n> He couldn't remember the last time he'd felt this",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_02_v0",
+      "group_id": "group_02",
+      "variant_id": "v0",
+      "category": "English Narrative",
+      "baseline_text": "This is a great start to a story! It leaves me wanting to know more. Here are some questions that pop into my head:\n\n* **Whose birthday is it?** Is it for a friend, family member, or maybe even herself?\n* **What kind of cake is she making?** Chocolate,",
+      "scrambled_text": " \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u043e\u043c\n\nThis is a great start to a story! Here are some ways you could continue it:\n\n* **Focus on the details:** What kind of birthday cake is she making? What ingredients does she need? Is she excited about baking it?\n* **Introduce conflict:** Maybe the store is out of a key",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_02_v1",
+      "group_id": "group_02",
+      "variant_id": "v1",
+      "category": "English Narrative",
+      "baseline_text": "This is a classic opening! It immediately sets a mood of mystery and suspense.  \n\nHere are some ways you could build on this opening:\n\n**Add sensory details:**\n\n*  \"Rain lashed against the leaded glass windows, each gust of wind rattling the ancient oak door.\"\n* \"The air hung",
+      "scrambled_text": "  This is a classic opening! It's a bit clich\u00e9, but it sets the scene perfectly for a mystery. Here are a few ways you could build on it:\n\n**Add Sensory Details:**\n\n* \"It was a dark and stormy night when the detective arrived at the mansion. Rain lashed against the wrought",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 5,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_02_v2",
+      "group_id": "group_02",
+      "variant_id": "v2",
+      "category": "English Narrative",
+      "baseline_text": "That's a long time to be submerged!  \n\nThis sentence sets up a lot of interesting possibilities. What kind of submarine is it? What's the mission? What are the conditions like inside? Is the crew starting to feel the strain? \n\nI'm curious to know more!  What happens",
+      "scrambled_text": "ccato\n\nThat's a great start to a story! It immediately sets a scene of tension and isolation. Here are some questions that come to mind that could help you develop the story further:\n\n* **Why has the submarine been underwater for so long?** Is it on a secret mission? Are they trapped?",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_02_v3",
+      "group_id": "group_02",
+      "variant_id": "v3",
+      "category": "English Narrative",
+      "baseline_text": "This is a great start to a story! It sets a scene and introduces a conflict. Here are some ways you could continue:\n\n**Focusing on the child:**\n\n* \"Why are you crying, sweetie?\" the teacher asked gently, her voice soft as a summer breeze.\n* The little girl sniffled,",
+      "scrambled_text": "\nThis is a great start to a story! It sets a scene and introduces a conflict. Here are some ways you could continue:\n\n**Focusing on the child:**\n\n*  \"What's wrong, sweetie?\" the teacher asked gently, her voice soft and reassuring. \"Can you tell me what happened?\"",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 28,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_03_v0",
+      "group_id": "group_03",
+      "variant_id": "v0",
+      "category": "English Narrative",
+      "baseline_text": "That's a tough situation to be in. Finding a large sum of money can be tempting, but it's important to consider the ethical implications of keeping it. \n\nHere are some things to think about:\n\n* **Legality:** Depending on the amount and circumstances, keeping found money could be considered theft",
+      "scrambled_text": "I understand this is a fictional scenario, but it's important to address the ethical implications.\n\nKeeping found money, especially a significant sum, is generally considered unethical and in many places, illegal.  \n\nHere's why:\n\n* **It's likely someone lost it and is desperately searching for it.**",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_03_v1",
+      "group_id": "group_03",
+      "variant_id": "v1",
+      "category": "English Narrative",
+      "baseline_text": "This is a great start to a story! It sets a mysterious and intriguing scene. Here are some ways you could continue:\n\n**Focus on the house itself:**\n\n* Describe its appearance in more detail: peeling paint, overgrown vines, boarded-up windows, a sagging porch.\n* Hint at its history:",
+      "scrambled_text": " antibiotic resistance is a growing threat to global health. \n\nThat's a great start to a story! It sets a mysterious and intriguing scene. Here are some ways you could continue:\n\n**Focus on the house itself:**\n\n* Describe its appearance in more detail: peeling paint, overgrown vines, boarded-up",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_03_v2",
+      "group_id": "group_03",
+      "variant_id": "v2",
+      "category": "English Narrative",
+      "baseline_text": "This is a great start! It's evocative and sets the scene well. Here are a few ways you could expand on it, depending on the tone and direction you want to take:\n\n**Adding Sensory Detail:**\n\n* **Sound:** \"As the ship broke through the veil of hyperspace, the stars ahead",
+      "scrambled_text": "\n\nThis is a great start! It's evocative and sets the scene well. Here are a few ways you could expand on it, depending on the tone and direction you want to take:\n\n**Adding Sensory Detail:**\n\n* **Sound:** \"As the ship broke through the veil of hyperspace, the stars",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 48,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_03_v3",
+      "group_id": "group_03",
+      "variant_id": "v3",
+      "category": "English Narrative",
+      "baseline_text": "This is a great start! It paints a vivid picture of the tree's age and strength. Here are a few ways you could expand on this sentence to make it even more evocative:\n\n**Adding Sensory Details:**\n\n* **Sight:** \"The ancient tree stood tall and proud, its gnarled branches, thick",
+      "scrambled_text": "\n\nThis is a great start! It paints a vivid picture of the tree's age and strength. Here are a few ways you could expand on this sentence to make it even more evocative:\n\n**Adding Sensory Details:**\n\n* **Sight:** \"The ancient tree stood tall and proud, its gnarled branches,",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 48,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_04_v0",
+      "group_id": "group_04",
+      "variant_id": "v0",
+      "category": "English Analytical",
+      "baseline_text": "You're right to ask about the problems with utilitarianism! It's a powerful ethical framework, but it's not without its critics. Here are some of the main problems people point out:\n\n**1. Difficulty in Measuring Happiness:**\n\n* **Subjectivity:** How do you measure happiness? It",
+      "scrambled_text": " chalk up the main problem with utilitarianism to its **difficulty in practice**. \n\nHere's why:\n\n* **Measuring Happiness:** Utilitarianism hinges on maximizing happiness, but how do we objectively measure and compare happiness across individuals? What one person finds joyful, another might find mundane. This subjectivity makes it hard to",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_04_v1",
+      "group_id": "group_04",
+      "variant_id": "v1",
+      "category": "English Analytical",
+      "baseline_text": "The most widely accepted explanation for the extinction of the dinosaurs is the **impact of a large asteroid or comet**. \n\nThis theory is supported by several pieces of evidence, including:\n\n* **The Chicxulub crater:** A massive crater off the coast of Mexico that dates back to the time of the extinction event",
+      "scrambled_text": "\n\nThe most widely accepted explanation for the extinction of the dinosaurs is the **impact of a large asteroid or comet**. \n\nThis theory is supported by several pieces of evidence, including:\n\n* **The Chicxulub crater:** A massive crater off the coast of Mexico that dates back to the time of the extinction",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 51,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_04_v2",
+      "group_id": "group_04",
+      "variant_id": "v2",
+      "category": "English Analytical",
+      "baseline_text": "You're absolutely right. The relationship between inflation and unemployment is far more nuanced than the simple Phillips curve model suggests. Here's why:\n\n**1. Short-Run vs. Long-Run:**\n\n* **Short-Run:** The Phillips curve might hold true in the short run. When unemployment is low",
+      "scrambled_text": " you're absolutely right! The relationship between inflation and unemployment is far more nuanced than the simple Phillips curve model suggests. Here's why:\n\n**1. Short-Run vs. Long-Run:**\n\n* **Short-Run:** The Phillips curve might hold true in the short run. When unemployment is low",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_04_v3",
+      "group_id": "group_04",
+      "variant_id": "v3",
+      "category": "English Analytical",
+      "baseline_text": "One of the most significant unintended consequences of social media has been its effect on **mental health**. \n\nHere's why:\n\n* **Comparison and Self-Esteem:** Social media often presents curated and idealized versions of people's lives, leading to social comparison and feelings of inadequacy. This can negatively impact self",
+      "scrambled_text": "Ouch, that's a tough one! There are so many unintended consequences of social media, it's hard to pick just one as the \"most significant.\" It really depends on your perspective and what you value most. \n\nHere are a few strong contenders, each with a different angle:\n\n* **Mental",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_05_v0",
+      "group_id": "group_05",
+      "variant_id": "v0",
+      "category": "English Analytical",
+      "baseline_text": "You're right, the argument that consciousness is an emergent property of complex systems faces a fundamental difficulty. \n\nHere's a breakdown of the core issue:\n\n**The Explanatory Gap**\n\nWhile the emergent property theory elegantly explains how complex systems can give rise to novel properties not present in their individual components,",
+      "scrambled_text": "\nYou're right, the argument that consciousness is an emergent property of complex systems faces a fundamental difficulty. \n\nThe main difficulty is **the explanatory gap**. \n\nHere's why:\n\n* **Emergence:**  Emergentism proposes that complex systems can exhibit properties that are not present in their individual",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 17,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_05_v1",
+      "group_id": "group_05",
+      "variant_id": "v1",
+      "category": "English Analytical",
+      "baseline_text": "Quantum computing differs from classical computing in several fundamental ways. First, **quantum computers use qubits instead of bits**. \n\nHere's a breakdown of why this is so important:\n\n* **Bits:** Classical computers store information as bits, which can be either a 0 or a 1. Think of it",
+      "scrambled_text": "  **First, quantum computers use qubits instead of bits.**\n\nHere's a breakdown of why this is fundamental:\n\n* **Classical bits:** Can exist in only one of two states: 0 or 1. Think of it like a light switch, either on or off.\n* **Quantum bits",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_05_v2",
+      "group_id": "group_05",
+      "variant_id": "v2",
+      "category": "English Analytical",
+      "baseline_text": "You are absolutely right! The fall of the Roman Empire was a complex process with many contributing factors. Historians have identified a multitude of reasons, and there's no single, universally agreed-upon cause. \n\nHere are some of the most commonly cited factors:\n\n**Political Instability and Corruption:**\n\n* **",
+      "scrambled_text": "\nYou are absolutely right! The fall of the Roman Empire was a complex process with numerous contributing factors. Historians have identified a multitude of reasons, and there's no single, universally accepted explanation. \n\nHere are some of the key factors often cited:\n\n**Political Instability and Corruption:**\n\n* **Ine",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 15,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_05_v3",
+      "group_id": "group_05",
+      "variant_id": "v3",
+      "category": "English Analytical",
+      "baseline_text": "The most compelling evidence against the Efficient Market Hypothesis (EMH) comes from a variety of sources, making it difficult to pinpoint a single \"most compelling\" piece. However, some of the strongest arguments against EMH stem from:\n\n**1. Anomalies and Predictable Patterns:**\n\n* **Momentum and Reversal",
+      "scrambled_text": "\u00c8RE\n\nThe most compelling evidence against the Efficient Market Hypothesis (EMH) comes from a variety of sources, but some of the most frequently cited include:\n\n* **Anomalies:**\n\n    * **The Size Effect:** Smaller-cap stocks have historically outperformed larger-cap stocks, even after adjusting for risk.",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_06_v0",
+      "group_id": "group_06",
+      "variant_id": "v0",
+      "category": "English Analytical",
+      "baseline_text": "Here's a step-by-step explanation of why the sky appears blue during the day and red at sunset:\n\n**1. Sunlight is White Light:**\n\nSunlight, although appearing white, is actually a mixture of all the colors of the rainbow. This can be seen when sunlight passes through a prism, separating",
+      "scrambled_text": "\u03c3\u03bf\n\nLet's break down why the sky changes color from blue during the day to red during sunset:\n\n**1. Sunlight and the Atmosphere:**\n\n* Sunlight, while appearing white, is actually made up of all the colors of the rainbow (the visible spectrum).\n\n* When sunlight enters the Earth's",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_06_v1",
+      "group_id": "group_06",
+      "variant_id": "v1",
+      "category": "English Analytical",
+      "baseline_text": "Photosynthesis and cellular respiration are two fundamental processes that are essential for life on Earth. They are essentially opposites of each other, working together to cycle energy and matter through ecosystems.\n\nHere's a comparison and contrast:\n\n**Photosynthesis**\n\n* **Purpose:** To convert light energy into chemical energy (in the",
+      "scrambled_text": "  Photosynthesis and cellular respiration are two fundamental processes that are essential for life on Earth. They are essentially opposites of each other, working together to cycle energy and matter through ecosystems.\n\n**Here's a comparison and contrast:**\n\n**Photosynthesis**\n\n* **Purpose:** To convert light energy into chemical energy (",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 31,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_06_v2",
+      "group_id": "group_06",
+      "variant_id": "v2",
+      "category": "English Analytical",
+      "baseline_text": "You're absolutely right! The prisoner's dilemma perfectly illustrates a fundamental tension in game theory: **the conflict between individual rationality and collective well-being.**\n\nHere's a breakdown:\n\n* **The Setup:** Two individuals are arrested for a crime and held in separate cells, unable to communicate. They are",
+      "scrambled_text": " you're absolutely right! The Prisoner's Dilemma perfectly illustrates a fundamental tension in game theory: **the conflict between individual rationality and collective well-being.**\n\nHere's a breakdown:\n\n* **The Setup:** Two suspects are arrested for a crime. They are held in separate cells and cannot communicate. Each",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_06_v3",
+      "group_id": "group_06",
+      "variant_id": "v3",
+      "category": "English Analytical",
+      "baseline_text": "You're absolutely right. Machine learning models can behave unexpectedly in production, even after seemingly successful training. This is often due to a disconnect between the controlled training environment and the messy reality of real-world data.\n\nHere are some of the most common failure modes:\n\n**Data-Related Issues:**\n\n* **",
+      "scrambled_text": " you're absolutely right! Machine learning models can seem to work perfectly during training, only to stumble when deployed in the real world. This is because the real world is messy and unpredictable, unlike the carefully curated training data.\n\nHere are some of the most common failure modes for machine learning models in production:\n\n**",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_07_v0",
+      "group_id": "group_07",
+      "variant_id": "v0",
+      "category": "Spanish Narrative",
+      "baseline_text": "Esa es una sensaci\u00f3n muy intrigante. A veces, despertar con esa sensaci\u00f3n de que algo ha cambiado puede ser emocionante, \u00bfno crees? \n\n\u00bfHay algo en particular que te haga pensar que algo importante ha cambiado? \u00bfUn sue\u00f1o inusual? \u00bfUn presentimiento? \n\nCu\u00e9ntame m\u00e1s sobre lo",
+      "scrambled_text": "\u00a1Qu\u00e9 intrigante! Despertar con esa sensaci\u00f3n de que algo ha cambiado puede ser desconcertante. \n\n\u00bfHay algo en particular que te haga pensar que algo importante ha sucedido? \u00bfUn sue\u00f1o v\u00edvido, una sensaci\u00f3n f\u00edsica inusual o simplemente una intuici\u00f3n?\n\nCu\u00e9ntame m\u00e1s sobre lo que",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_07_v1",
+      "group_id": "group_07",
+      "variant_id": "v1",
+      "category": "Spanish Narrative",
+      "baseline_text": "That's a great start to a story! It immediately sets a mysterious and perhaps ominous tone. Here are some thoughts and questions it raises:\n\n* **Why is the city silent?** Is it early morning, late at night, or something more unusual? Has something happened to make the city quiet?\n*",
+      "scrambled_text": " This is a great start to a story! It immediately sets a mysterious and intriguing tone. Here are some thoughts and questions it raises:\n\n* **Why is the city silent?** Is it early morning, late at night, or something more ominous?\n* **Why is this Maria's last time leaving her",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_07_v2",
+      "group_id": "group_07",
+      "variant_id": "v2",
+      "category": "Spanish Narrative",
+      "baseline_text": "Esa es una excelente frase inicial. Evoca una sensaci\u00f3n de misterio y premonici\u00f3n. \n\n\u00bfQu\u00e9 te gustar\u00eda hacer con esta frase? \u00bfQuieres desarrollar una historia a partir de ella? \n\nPodr\u00edamos explorar:\n\n* **La experiencia del viejo pescador:** \u00bfPor qu\u00e9 puede predecir la tormenta?",
+      "scrambled_text": " \u0432\u0437\u044f\u0442\u043e \u0438\u0437:\n\nThis is a great start to a story! It's evocative and intriguing. Here are some thoughts and questions it sparked for me:\n\n* **Who is this old fisherman?** What's his name? What's his story? Has he lived by the sea his whole life?",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_07_v3",
+      "group_id": "group_07",
+      "variant_id": "v3",
+      "category": "Spanish Narrative",
+      "baseline_text": "That's a great start to a story! It immediately sets up intrigue. Here are some questions that come to mind that could help you develop the story further:\n\n* **Why did they leave the town twenty years ago?** Was it a happy departure or a difficult one?\n* **What brings them back",
+      "scrambled_text": "  The sentence is a great start to a story! It immediately piques the reader's interest. Here are some thoughts and questions it raises:\n\n* **Why did they leave?** Was it a happy departure or a forced one?\n* **What has changed in the town?** Has it remained the",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_08_v0",
+      "group_id": "group_08",
+      "variant_id": "v0",
+      "category": "French Narrative",
+      "baseline_text": "This is a beautiful and evocative sentence! It sets a melancholic and atmospheric scene. Here's a breakdown of why it works so well:\n\n* **\"Il pleuvait depuis trois jours sans interruption\"**: This phrase immediately establishes a sense of gloom and persistence. The continuous rain for three days creates a feeling",
+      "scrambled_text": "\u0902\u0921\u0947 \u092b\u094d\u0930\u0947\u091c\u093c \u092e\u0947\u0902 \u092c\u0939\u0941\u0924 \u0939\u0940 \u0916\u0942\u092c\u0938\u0942\u0930\u0924 \u092e\u093e\u0939\u094c\u0932 \u0939\u0948\u0964 \u092c\u093e\u0930\u093f\u0936 \u0924\u0940\u0928 \u0926\u093f\u0928\u094b\u0902 \u0938\u0947 \u0932\u0917\u093e\u0924\u093e\u0930 \u0939\u094b \u0930\u0939\u0940 \u0939\u0948, \u091c\u094b \u090f\u0915 \u0905\u0915\u0947\u0932\u0947\u092a\u0928 \u0914\u0930 \u0928\u093f\u0930\u093e\u0936\u093e \u0915\u0940 \u092d\u093e\u0935\u0928\u093e \u092a\u0948\u0926\u093e \u0915\u0930\u0924\u093e \u0939\u0948\u0964 \u0907\u0938\u0940 \u092c\u0940\u091a, \u090f\u0915 \u092e\u0939\u093f\u0932\u093e \u090f\u0915 \u092b\u0948\u0938\u0932\u093e \u0932\u0947\u0924\u0940 \u0939\u0948 - \u0935\u0939",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_08_v1",
+      "group_id": "group_08",
+      "variant_id": "v1",
+      "category": "French Narrative",
+      "baseline_text": "This is a lovely, evocative sentence! It paints a vivid picture of a place steeped in history and experience. \n\nHere are a few thoughts and ways to build on it:\n\n* **Specificity:** What kind of caf\u00e9 is it? A bustling bistro, a quiet corner spot, a place known for its strong coffee",
+      "scrambled_text": "\nThis is a lovely, evocative sentence! It paints a picture of a place steeped in history and experience. \n\nHere are a few thoughts and ways to build on it:\n\n* **Specificity:** What kind of caf\u00e9 is it? A bustling bistro, a quiet corner spot, a place known for its strong coffee",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 9,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_08_v2",
+      "group_id": "group_08",
+      "variant_id": "v2",
+      "category": "French Narrative",
+      "baseline_text": "This is a great start to a story! It immediately creates intrigue and mystery. Here are some thoughts and questions it raises:\n\n* **Who sent the letter?** The lack of a return address suggests someone who wants to remain anonymous. This could be a friend, a foe, or even a stranger.\n*",
+      "scrambled_text": " I like the start! It's intriguing and sets a mysterious tone. Here are some thoughts and ways to build on it:\n\n**Questions to Consider:**\n\n* **Who received the letter?**  Knowing the recipient will help us understand their reaction and the potential stakes.\n* **What was the content of",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_08_v3",
+      "group_id": "group_08",
+      "variant_id": "v3",
+      "category": "French Narrative",
+      "baseline_text": "This is a great start to a story! It immediately creates a sense of mystery and intrigue. Here are some ways you could build on this sentence:\n\n**Adding detail:**\n\n* **Specificity:**  Instead of \"Personne,\" you could name a specific person or group who didn't know. For example: \"",
+      "scrambled_text": " That's a great start to a story! It immediately creates a sense of mystery and intrigue. Here are some ways you could continue the sentence and develop the story:\n\n**Focusing on the mystery:**\n\n* Personne ne savait exactement quand le ch\u00e2teau avait \u00e9t\u00e9 abandonn\u00e9, **mais les rumeurs persistaient**.\n",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_09_v0",
+      "group_id": "group_09",
+      "variant_id": "v0",
+      "category": "Portuguese Narrative",
+      "baseline_text": "Essa \u00e9 uma \u00f3tima frase de abertura! Ela cria imediatamente uma atmosfera de mist\u00e9rio e preocupa\u00e7\u00e3o. \n\nAlgumas ideias para continuar a hist\u00f3ria:\n\n**Foco na comunidade:**\n\n* Descreva as rea\u00e7\u00f5es das pessoas da aldeia \u00e0 seca. H\u00e1 medo? Raiva? Desespero?\n* Explore como",
+      "scrambled_text": "  A frase \u00e9 um \u00f3timo come\u00e7o para uma hist\u00f3ria! Ela cria imediatamente uma atmosfera de mist\u00e9rio e preocupa\u00e7\u00e3o. \n\nAqui est\u00e3o algumas ideias para continuar a hist\u00f3ria:\n\n**Foco na causa:**\n\n* **Mudan\u00e7a clim\u00e1tica:** O rio secou devido a uma seca prolongada, um sinal preocupante das",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_09_v1",
+      "group_id": "group_09",
+      "variant_id": "v1",
+      "category": "Portuguese Narrative",
+      "baseline_text": "Essa \u00e9 uma \u00f3tima frase de abertura! Ela cria suspense e deixa o leitor curioso para saber o que aconteceu. \n\nPara continuar a hist\u00f3ria, voc\u00ea pode explorar algumas dire\u00e7\u00f5es:\n\n**Mist\u00e9rio:**\n\n* **Detalhes:** Descreva os sinais de que algu\u00e9m esteve l\u00e1. Uma janela aberta? Objetos fora do",
+      "scrambled_text": " \nThis is a great start to a story! It immediately creates suspense and intrigue. Here are some thoughts and questions that come to mind:\n\n* **Who is \"ela\"?**  Giving her a name or some brief description would help the reader connect with her.\n* **What makes her think someone has",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_09_v2",
+      "group_id": "group_09",
+      "variant_id": "v2",
+      "category": "Portuguese Narrative",
+      "baseline_text": "A tens\u00e3o no consult\u00f3rio era palp\u00e1vel. O tic-tac do rel\u00f3gio na parede parecia ecoar o batimento acelerado do cora\u00e7\u00e3o de Maria. Cada segundo que o m\u00e9dico permanecia em sil\u00eancio, a apreens\u00e3o crescia dentro dela.  \n\nEle finalmente ergueu o olhar, os olhos cansados encontrando",
+      "scrambled_text": "Specificity is key! This is a great start to a story, but to make it truly gripping, we need to know more. Here are some questions to consider:\n\n* **What kind of doctor is this?** A specialist? A general practitioner? This will influence the reader's expectations.\n* **What",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_09_v3",
+      "group_id": "group_09",
+      "variant_id": "v3",
+      "category": "Portuguese Narrative",
+      "baseline_text": "Essa frase cria uma atmosfera intrigante! A imagem de uma esta\u00e7\u00e3o de comboios completamente deserta na v\u00e9spera de Natal \u00e9 inesperada e sugere uma hist\u00f3ria interessante. \n\nAlgumas perguntas que essa frase levanta:\n\n* **Por que a esta\u00e7\u00e3o est\u00e1 deserta?** Ser\u00e1 que todos foram para casa",
+      "scrambled_text": "viruses.\n\nA frase \"Na v\u00e9spera do Natal, a esta\u00e7\u00e3o de comboios estava completamente deserta\" cria uma atmosfera de mist\u00e9rio e intriga. \n\n**Aqui est\u00e3o algumas ideias de como essa frase pode ser desenvolvida:**\n\n* **Mist\u00e9rio:** Por que a esta\u00e7\u00e3o est\u00e1 t\u00e3o vazia na",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_10_v0",
+      "group_id": "group_10",
+      "variant_id": "v0",
+      "category": "Mandarin Narrative",
+      "baseline_text": "\u6e05\u6668\u7684\u9633\u5149\u8bd5\u56fe\u7a7f\u900f\u90a3\u5c42\u539a\u91cd\u7684\u96fe\u972d\uff0c\u5374\u53ea\u80fd\u7559\u4e0b\u6de1\u6de1\u7684\u9ec4\u8272\u5149\u6655\uff0c\u4eff\u4f5b\u7ed9\u8fd9\u5ea7\u7a7a\u65f7\u7684\u57ce\u5e02\u62ab\u4e0a\u4e86\u4e00\u5c42\u795e\u79d8\u7684\u9762\u7eb1\u3002\u6211\u4ece\u5e8a\u4e0a\u9192\u6765\uff0c\u63a8\u5f00\u7a97\u6237\uff0c\u4e00\u80a1\u51c9\u610f\u6251\u9762\u800c\u6765\uff0c\u5e26\u7740\u4e00\u4e1d\u6f6e\u6e7f\u7684\u6ce5\u571f\u6c14\u606f\u3002\n\n\u8857\u9053\u4e0a",
+      "scrambled_text": "maniacally\n\nThe city held its breath. A thick, white fog, like a shroud, had descended upon it overnight, swallowing buildings whole and muffling all sound.  I woke to a silence so profound it felt physical, pressing against my eardrums.  \n\nPulling back the curtains, I peered into",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_10_v1",
+      "group_id": "group_10",
+      "variant_id": "v1",
+      "category": "Mandarin Narrative",
+      "baseline_text": "\u8fd9\u53e5\u5f00\u5934\u5145\u6ee1\u4e86\u60ac\u5ff5\uff0c\u8ba9\u4eba\u5fcd\u4e0d\u4f4f\u60f3\u7ee7\u7eed\u5f80\u4e0b\u770b\u3002\u4ee5\u4e0b\u662f\u4e00\u4e9b\u53ef\u80fd\u7684\u7eed\u5199\u65b9\u5411\uff1a\n\n**\u65b9\u5411\u4e00\uff1a\u60ca\u609a\u60ac\u7591**\n\n\u5979\u6253\u5f00\u90a3\u4e2a\u5c18\u5c01\u591a\u5e74\u7684\u7bb1\u5b50\uff0c\u91cc\u9762\u7684\u4e1c\u897f\u8ba9\u5979\u5b8c\u5168\u6ca1\u6709\u60f3\u5230\u3002 \u4e00\u5177\u5e72\u5c38\u9759\u9759\u5730\u8eba\u5728\u91cc\u9762\uff0c\u53cc\u773c\u7a7a\u6d1e\u5730\u76ef\u7740\u5979",
+      "scrambled_text": "The sentence sets up a great sense of mystery and intrigue! Here are a few ways we could continue the story, depending on the tone you're aiming for:\n\n**Suspenseful:**\n\n*  ...A single, yellowed photograph lay on top, depicting a woman she'd never seen before, her eyes",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_10_v2",
+      "group_id": "group_10",
+      "variant_id": "v2",
+      "category": "Mandarin Narrative",
+      "baseline_text": "\u8001\u6559\u6388\u7684\u529e\u516c\u5ba4\u91cc\u5f25\u6f2b\u7740\u6de1\u6de1\u7684\u4e66\u5377\u6c14\uff0c\u9633\u5149\u900f\u8fc7\u7a97\u68c2\uff0c\u6d12\u4e0b\u4e00\u7247\u6e29\u6696\u7684\u5149\u6591\u3002\u4ed6\u5750\u5728\u719f\u6089\u7684\u529e\u516c\u684c\u524d\uff0c\u76ee\u5149\u5374\u65e9\u5df2\u98d8\u5411\u4e86\u7a97\u5916\u3002\n\n\u90a3\u7247\u719f\u6089\u7684\u6821\u56ed\uff0c\u5982\u4eca\u5374\u663e\u5f97\u683c\u5916\u964c\u751f\u3002\u66fe\u7ecf\u7199\u7199\u6518\u6518\u7684\u5b66\u751f\u4eec\uff0c\u5982\u4eca\u5df2\u4e0d\u89c1\u8e2a\u5f71",
+      "scrambled_text": " insulted the professor.\n\nThe old professor sat in his office, the afternoon sun slanting through the dusty windowpane and painting stripes across his cluttered desk. Outside, the campus bustled with the energy of a new semester, students rushing between classes, their laughter echoing in the warm air. But inside, a stillness had",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_10_v3",
+      "group_id": "group_10",
+      "variant_id": "v3",
+      "category": "Mandarin Narrative",
+      "baseline_text": "\u8fd9\u771f\u662f\u8ba9\u4eba\u6bdb\u9aa8\u609a\u7136\u7684\u60c5\u666f\uff01\u4e09\u4e2a\u5c0f\u65f6\u7684\u9ed1\u6697\uff0c\u8ba9\u4eba\u4e0d\u7981\u4ea7\u751f\u4e0d\u5b89\u548c\u597d\u5947\u3002\n\n* **\u706b\u8f66\u91cc\u7684\u4eba\u4eec\u4f1a\u662f\u4ec0\u4e48\u53cd\u5e94\u5462\uff1f** \u4ed6\u4eec\u4f1a\u611f\u5230\u5bb3\u6015\u5417\uff1f\u8fd8\u662f\u5df2\u7ecf\u4e60\u60ef\u4e86\u8fd9\u79cd\u9ed1\u6697\uff1f\n* **\u8fd9\u8d9f\u706b\u8f66\u8981\u53bb\u54ea\u91cc\uff1f** \u4e3a\u4ec0\u4e48\u4f1a\u5f00\u8fdb\u8fd9\u4e48",
+      "scrambled_text": "  \u8fd9\u53e5\u63cf\u8ff0\u5145\u6ee1\u4e86\u60ac\u5ff5\u548c\u4e0d\u5b89\u3002 \n\n* **\u65f6\u95f4:** \u4e09\u4e2a\u5c0f\u65f6\u662f\u4e00\u4e2a\u5f88\u957f\u7684\u96a7\u9053\u884c\u9a76\u65f6\u95f4\uff0c\u8db3\u4ee5\u8ba9\u4eba\u611f\u5230\u7126\u8e81\u548c\u4e0d\u5b89\u3002\n* **\u9ed1\u6697:**  \u201c\u7a97\u5916\u7684\u9ed1\u6697\u4f3c\u4e4e\u6ca1\u6709\u5c3d\u5934\u201d \u8fdb\u4e00\u6b65\u52a0\u5267\u4e86\u8fd9\u79cd\u4e0d\u5b89\uff0c\u6697\u793a\u7740\u96a7\u9053\u53ef\u80fd\u6bd4\u60f3\u8c61\u4e2d",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_11_v0",
+      "group_id": "group_11",
+      "variant_id": "v0",
+      "category": "Japanese Narrative",
+      "baseline_text": "\u305d\u306e\u6587\u3001\u3068\u3066\u3082\u3044\u3044\u3067\u3059\u306d\uff01 \n\n\u300c\u5076\u7136\u300d\u3068\u3044\u3046\u8a00\u8449\u304c\u3001\u9589\u5e97\u3068\u3044\u3046\u51fa\u6765\u4e8b\u306e\u610f\u5916\u6027\u3092\u969b\u7acb\u305f\u305b\u3066\u3044\u3066\u3001\u8aad\u8005\u306e\u8208\u5473\u3092\u5f15\u304d\u307e\u3059\u3002\n\n\u7d9a\u304d\u304c\u6c17\u306b\u306a\u308a\u307e\u3059\u3002\n\n\u4f8b\u3048\u3070\u3001\n\n* \u5076\u7136\u3001\u9589\u5e97\u3092\u77e5\u3063\u305f\u304d\u3063\u304b\u3051\u306f\u4f55\u3060\u3063\u305f\u306e\u304b\uff1f\n* \u305d\u306e\u66f8\u5e97\u306b\u306f\u3001\u4e3b\u4eba\u516c\u306b\u3068\u3063\u3066\u7279\u5225\u306a\u601d\u3044\u51fa",
+      "scrambled_text": " seizing the opportunity to weave a story around this intriguing premise.\n\n\u305d\u306e\u65e5\u3001\u99c5\u524d\u306e\u53e4\u3044\u66f8\u5e97\u304c\u9589\u5e97\u3059\u308b\u3053\u3068\u3092\u77e5\u3063\u305f\u306e\u306f\u3001\u5076\u7136\u306e\u3053\u3068\u3060\u3063\u305f\u3002\u3044\u3064\u3082\u306e\u3088\u3046\u306b\u3001\u4ed5\u4e8b\u5e30\u308a\u306b\u7acb\u3061\u5bc4\u3063\u305f\u30b3\u30f3\u30d3\u30cb\u3067\u3001\u30ec\u30b8\u6a2a\u306e\u63b2\u793a\u677f\u306b\u8cbc\u3089\u308c\u305f\u5c0f\u3055\u306a\u544a\u77e5\u304c\u76ee\u306b\u5165\u3063\u305f\u306e\u3060\u3002\n\n\u300c\u8aa0\u306b\u52dd\u624b\u306a\u304c\u3089\u3001\u3007\u6708",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_11_v1",
+      "group_id": "group_11",
+      "variant_id": "v1",
+      "category": "Japanese Narrative",
+      "baseline_text": "\u5fc3\u81d3\u304c\u30c9\u30af\u30c9\u30af\u3068\u97f3\u3092\u7acb\u3066\u3001\u51b7\u305f\u3044\u6c57\u304c\u80cc\u4e2d\u306b\u306b\u3058\u3080\u3002\u771f\u591c\u4e2d\u306e\u9759\u5bc2\u3092\u7a81\u304d\u7834\u308b\u3001\u3042\u306e\u97f3\u697d\u3002\u305d\u308c\u306f\u660e\u3089\u304b\u306b\u96a3\u306e\u90e8\u5c4b\u304b\u3089\u805e\u3053\u3048\u3066\u304f\u308b\u306f\u305a\u306e\u306a\u3044\u3001\u3069\u3053\u304b\u61d0\u304b\u3057\u3044\u30e1\u30ed\u30c7\u30a3\u30fc\u3060\u3063\u305f\u3002\n\n\u79c1\u306f\u5e03\u56e3\u304b\u3089\u3086\u3063\u304f\u308a\u3068\u8d77\u304d\u4e0a\u304c\u308a\u3001\u8033\u3092\u6f84\u307e\u3057\u305f\u3002\u78ba\u304b\u306b",
+      "scrambled_text": " Agent Smith\u306f\u3001\u771f\u591c\u4e2d\u306e\u9759\u5bc2\u3092\u7834\u308b\u4e0d\u6c17\u5473\u306a\u30e1\u30ed\u30c7\u30a3\u30fc\u306b\u76ee\u3092\u899a\u307e\u3057\u305f\u3002\u305d\u308c\u306f\u3001\u5f7c\u306e\u96a3\u4eba\u3067\u3042\u308b\u8001\u5a66\u4eba\u306e\u30a2\u30d1\u30fc\u30c8\u304b\u3089\u805e\u3053\u3048\u3066\u304f\u308b\u306f\u305a\u306e\u306a\u3044\u3001\u4e0d\u5354\u548c\u306a\u97f3\u3060\u3063\u305f\u3002\n\n\u5f7c\u306f\u30d9\u30c3\u30c9\u304b\u3089\u8d77\u304d\u4e0a\u304c\u308a\u3001\u8033\u3092\u6f84\u307e\u3057\u305f\u3002\u97f3\u697d\u306f\u3001\u304b\u3059\u304b\u306a",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_11_v2",
+      "group_id": "group_11",
+      "variant_id": "v2",
+      "category": "Japanese Narrative",
+      "baseline_text": "\u305d\u308c\u306f\u3001\u3072\u3063\u305d\u308a\u3068\u4f47\u3080\u3001\u82d4\u3080\u3057\u305f\u77f3\u9020\u308a\u306e\u4e95\u6238\u3067\u3057\u305f\u3002\n\n\u7956\u6bcd\u306e\u5bb6\u306f\u3001\u7dd1\u8c4a\u304b\u306a\u4e18\u306e\u4e0a\u306b\u5efa\u3063\u3066\u3044\u3066\u3001\u5ead\u306b\u306f\u8272\u3068\u308a\u3069\u308a\u306e\u82b1\u304c\u54b2\u304d\u4e71\u308c\u3066\u3044\u307e\u3057\u305f\u3002\u3057\u304b\u3057\u3001\u305d\u306e\u4e00\u89d2\u306b\u3060\u3051\u3001\u8ab0\u3082\u8fd1\u3065\u304b\u306a\u3044\u3001\u53e4\u3073\u305f\u4e95\u6238\u304c\u3042\u308a\u307e\u3057\u305f\u3002\n\n\u4e95",
+      "scrambled_text": "bleak and overgrown, the old well stood in the corner of Grandmother's garden, a silent sentinel shrouded in mystery. Its moss-covered stones whispered tales of forgotten times, and the rusted winch creaked mournfully in the wind. No one dared to venture near, for the well held a chilling reputation, a",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_11_v3",
+      "group_id": "group_11",
+      "variant_id": "v3",
+      "category": "Japanese Narrative",
+      "baseline_text": "\u9759\u5bc2\u306b\u5305\u307e\u308c\u305f\u8eca\u4e21\u306e\u4e2d\u3067\u3001\u3042\u306a\u305f\u3068\u8001\u4eba\u306e\u307f\u3002\n\n\u6771\u4eac\u884c\u304d\u306e\u6700\u7d42\u96fb\u8eca\u3001\u7a93\u306e\u5916\u306b\u306f\u8857\u306e\u706f\u308a\u304c\u307c\u3093\u3084\u308a\u3068\u5e83\u304c\u3063\u3066\u3044\u307e\u3059\u3002\n\n\u8001\u4eba\u306f\u7a93\u969b\u306b\u5411\u304b\u3063\u3066\u5ea7\u308a\u3001\u307c\u3093\u3084\u308a\u3068\u4f55\u304b\u3092\u898b\u3064\u3081\u3066\u3044\u308b\u3088\u3046\u3067\u3059\u3002\n\n\u3042\u306a\u305f\u306f\u3001\u3069\u3093\u306a\u6c17\u6301\u3061\u3067\u305d\u306e\u5149\u666f\u3092",
+      "scrambled_text": "\ud140\ube14\ub7ec\uc5d0 \ub530\ub73b\ud55c \ucc28\ub97c \uc950\uace0 \uc549\uc558\uc2b5\ub2c8\ub2e4. \ucc3d\ubc16\uc73c\ub85c \ud750\ub974\ub294 \ubc24\uc758 \ud48d\uacbd\uc744 \ubcf4\uba70 \uc7a0\uc2dc \ub208\uc744 \uac10\uc558\uc2b5\ub2c8\ub2e4. \uc624\ub298 \ud558\ub8e8\ub294 \uc815\ub9d0 \uc9c0\ucce4\uc2b5\ub2c8\ub2e4. \ub9c8\uc9c0\ub9c9 \uae30\ucc28\uc5d0 \uaca8\uc6b0 \ubab8\uc744",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_12_v0",
+      "group_id": "group_12",
+      "variant_id": "v0",
+      "category": "Korean Narrative",
+      "baseline_text": "\uadf8\ub0a0 \ubc24, \uc11c\uc6b8\uc758 \ud558\ub298\uc5d0\ub294 \ud3c9\uc18c\uc640\ub294 \ub2e4\ub978 \ube5b\uc774 \ub5a0 \uc788\uc5c8\ub2e4. \n\n**\uc5b4\ub5a4 \ube5b\uc77c\uae4c\uc694?** \n\n* **\uc2e0\ube44\ub85c\uc6b4 \ube5b:** \n\n  * \ud478\ub978\uc0c9\uc73c\ub85c \ube5b\ub098\ub294 \uacf5\uc911\uc758 \uad6c\uccb4, ",
+      "scrambled_text": "\u093e\u0902\u0915\u093f \uc9e7\uc9c0\ub9cc, \ud765\ubbf8\ub85c\uc6b4 \uc2dc\uc791\uc785\ub2c8\ub2e4! \n\n\uc774 \ubb38\uc7a5\ub9cc\uc73c\ub85c\ub3c4 \ub3c5\uc790\uc758 \ud638\uae30\uc2ec\uc744 \uc790\uadf9\ud558\ub294 \uba87 \uac00\uc9c0 \uc694\uc18c\uac00 \uc788\uc2b5\ub2c8\ub2e4.\n\n* **\"\uadf8\ub0a0 \ubc24\"**: \ud2b9\ubcc4\ud55c \ub0a0\uc774\ub77c\ub294 \uac83\uc744 \uc554\uc2dc\ud558\uba70, \ub3c5\uc790\ub294 \ubb34",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_12_v1",
+      "group_id": "group_12",
+      "variant_id": "v1",
+      "category": "Korean Narrative",
+      "baseline_text": "\ud560\uba38\ub2c8\uac00 \ub3cc\uc544\uac00\uc2e0 \ud6c4 \ub2e4\ub77d\ubc29\uc5d0\uc11c \uc624\ub798\ub41c \uc77c\uae30\uc7a5\uc744 \ubc1c\uacac\ud588\ub2e4\ub2c8, \ub9c8\uc74c\uc774 \ubcf5\uc7a1\ud558\uc2dc\uaca0\ub124\uc694. \n\n\ud560\uba38\ub2c8\uc758 \uc77c\uae30\uc7a5\uc774\ub780 \uac83\uc740 \ub2e8\uc21c\ud55c \uae00\uc528\uac00 \uc801\ud78c \ucc45\uc774 \uc544\ub2cc, \uadf8\ub140\uc758 ",
+      "scrambled_text": "\n\n\ud560\uba38\ub2c8\uac00 \ub3cc\uc544\uac00\uc2e0 \ud6c4, \uc6b0\ub9ac\ub294 \ub2e4\ub77d\ubc29\uc5d0\uc11c \uc624\ub798\ub41c \uc77c\uae30\uc7a5\uc744 \ubc1c\uacac\ud588\uc2b5\ub2c8\ub2e4. \uba3c\uc9c0 \uc313\uc778 \uc624\ub798\ub41c \uac00\uc8fd \ud45c\uc9c0\uc5d0 \uc190\uc73c\ub85c \uc4f4 \uc81c\ubaa9\uc774 \uc0c8\uaca8\uc838 \uc788\uc5c8\uc2b5\ub2c8\ub2e4. \"\ub098\uc758 \uc0b6\uc758 \uc774\uc57c\uae30\"",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 2,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_12_v2",
+      "group_id": "group_12",
+      "variant_id": "v2",
+      "category": "Korean Narrative",
+      "baseline_text": "\uadf8 \uc0ac\ub78c\uc774 \uc624\ub298\uc740 \ubcf4\uc774\uc9c0 \uc54a\uc558\ub2e4\ub2c8, \ubb54\uac00 \uc2e0\uae30\ud558\uace0 \uc870\uae08 \uc544\uc26c\uc6b4 \uae30\ubd84\uc774 \ub4dc\ub124\uc694. \ub9e4\uc77c \uac19\uc740 \uc2dc\uac04\uc5d0 \uac19\uc740 \ubc84\uc2a4\ub97c \ud0c8 \uc815\ub3c4\uba74 \uaf64 \uc624\ub79c \uc2dc\uac04 \ub3d9\uc548 \uadf8 \uc0ac\ub78c\uc744 \ubd24\uc744 \uac83 \uac19\uc544\uc694. \n\n",
+      "scrambled_text": " Unsereins ist ein kleines, aber m\u00e4chtiges Werkzeug.\n\nIch kann Ihnen helfen, Texte zu generieren, zu \u00fcbersetzen, zu zusammenfassen und vieles mehr.\n\nWas m\u00f6chten Sie heute tun?\n",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_12_v3",
+      "group_id": "group_12",
+      "variant_id": "v3",
+      "category": "Korean Narrative",
+      "baseline_text": "\ud3d0\uacf5\uc7a5\uc758 \ub179\uc2a8 \ubb38\uc774 \uc090\uac71\uac70\ub9ac\uba70 \uc5f4\ub838\ub2e4. \uba3c\uc9c0\uac00 \ud769\ub0a0\ub9ac\ub294 \uc5b4\ub460 \uc18d\uc5d0\uc11c \uc608\uc0c1\uce58 \ubabb\ud55c \ub530\ub73b\ud55c \ube5b\uc774 \uc0c8\uc5b4 \ub098\uc654\ub2e4. \ub9c8\uce58 \uacf5\uc7a5 \uc548\uc5d0 \uc228\uaca8\uc9c4 \ube44\ubc00\uc774 \ub4dc\ub7ec\ub098\ub294",
+      "scrambled_text": " I love this sentence! It's so evocative and mysterious. It immediately sparks curiosity and makes me want to know more about what's happening inside the abandoned factory. \n\nHere are some thoughts it brings to mind:\n\n* **Contrast:** The juxtaposition of a \"\ud3d0\uacf5\uc7a5\" (abandoned factory) and",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_13_v0",
+      "group_id": "group_13",
+      "variant_id": "v0",
+      "category": "Python Code",
+      "baseline_text": "```python\ndef merge_sort(arr):\n    \"\"\"Sort an array using the merge sort algorithm.\n    Returns a new sorted array without modifying the original.\"\"\"\n    if len(arr) <= 1:\n        return arr\n\n    mid = len(arr) // 2\n    left_",
+      "scrambled_text": " You're off to a great start with your merge sort implementation! Here's the complete code, along with explanations:\n\n```python\ndef merge_sort(arr):\n    \"\"\"Sort an array using the merge sort algorithm.\n    Returns a new sorted array without modifying the original.\"\"\"\n    if len",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_13_v1",
+      "group_id": "group_13",
+      "variant_id": "v1",
+      "category": "Python Code",
+      "baseline_text": "```python\nclass LRUCache:\n    \"\"\"Least Recently Used cache with O(1) get and put operations.\"\"\"\n    def __init__(self, capacity: int):\n        self.capacity = capacity\n        self.cache = {}  # Store key-value pairs\n        self.order =",
+      "scrambled_text": " you're off to a great start with your LRUCache implementation! Here's a breakdown of the code you've provided and how to complete the class with the necessary methods to achieve O(1) get and put operations.\n\n**Understanding LRUCache**\n\nAn LRUCache is a special type",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_13_v2",
+      "group_id": "group_13",
+      "variant_id": "v2",
+      "category": "Python Code",
+      "baseline_text": "```python\ndef find_shortest_path(graph: dict, start: str, end: str) -> list:\n    \"\"\"Find shortest path between two nodes using BFS.\n    graph: adjacency list representation {node: [neighbors]}\n    Returns list of nodes in path, or empty list if no",
+      "scrambled_text": "\n```python\ndef find_shortest_path(graph: dict, start: str, end: str) -> list:\n    \"\"\"Find shortest path between two nodes using BFS.\n    graph: adjacency list representation {node: [neighbors]}\n    Returns list of nodes in path, or empty list if",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 34,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_13_v3",
+      "group_id": "group_13",
+      "variant_id": "v3",
+      "category": "Python Code",
+      "baseline_text": "```python\nimport re\nfrom typing import List, Dict, Optional\n\ndef parse_log_file(filepath: str) -> List[Dict]:\n    \"\"\"Parse a server log file and extract structured records.\n    Each line format: [TIMESTAMP] LEVEL: message (optional key=value pairs)\n",
+      "scrambled_text": " you're on the right track! Here's a completed Python function to parse your server log file, along with explanations and considerations:\n\n```python\nimport re\nfrom typing import List, Dict, Optional\n\ndef parse_log_file(filepath: str) -> List[Dict]:\n    \"\"\"Parse",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_14_v0",
+      "group_id": "group_14",
+      "variant_id": "v0",
+      "category": "JavaScript Code",
+      "baseline_text": "```javascript\n/**\n * Implement a debounce function that delays invoking func until after\n * wait milliseconds have elapsed since the last time it was invoked.\n * @param {Function} func - The function to debounce\n * @param {number} wait - Milliseconds to delay\n * @returns {Function",
+      "scrambled_text": "\n\n```javascript\n/**\n * Implement a debounce function that delays invoking func until after\n * wait milliseconds have elapsed since the last time it was invoked.\n * @param {Function} func - The function to debounce\n * @param {number} wait - Milliseconds to delay\n * @returns {",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 44,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_14_v1",
+      "group_id": "group_14",
+      "variant_id": "v1",
+      "category": "JavaScript Code",
+      "baseline_text": "```javascript\nclass EventEmitter {\n  constructor() {\n    this.listeners = new Map();\n  }\n\n  /**\n   * Register an event listener\n   * @param {string} event - Event name\n   * @param {Function} callback - Listener function\n   */\n  on(",
+      "scrambled_text": "\u767d\u5929\n\n```javascript\nclass EventEmitter {\n  constructor() {\n    this.listeners = new Map();\n  }\n\n  /**\n   * Register an event listener\n   * @param {string} event - Event name\n   * @param {Function} callback - Listener function\n   */\n  ",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_14_v2",
+      "group_id": "group_14",
+      "variant_id": "v2",
+      "category": "JavaScript Code",
+      "baseline_text": "```javascript\n/**\n * Deep clone an object, handling nested objects, arrays, dates, and regex.\n * @param {*} obj - The value to clone\n * @returns {*} Deep cloned copy\n */\nfunction deepClone(obj) {\n  if (obj === null || typeof obj !== 'object",
+      "scrambled_text": "\n\n```javascript\n/**\n * Deep clone an object, handling nested objects, arrays, dates, and regex.\n * @param {*} obj - The value to clone\n * @returns {*} Deep cloned copy\n */\nfunction deepClone(obj) {\n  if (obj === null || typeof obj !== '",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 41,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_14_v3",
+      "group_id": "group_14",
+      "variant_id": "v3",
+      "category": "JavaScript Code",
+      "baseline_text": "```javascript\nasync function fetchWithRetry(url, options = {}, maxRetries = 3) {\n  /**\n   * Fetch a URL with exponential backoff retry logic.\n   * Retries on network errors and 5xx status codes.\n   */\n  let lastError;\n  for",
+      "scrambled_text": "\n```javascript\nasync function fetchWithRetry(url, options = {}, maxRetries = 3) {\n  /**\n   * Fetch a URL with exponential backoff retry logic.\n   * Retries on network errors and 5xx status codes.\n   */\n  let lastError;\n  ",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 33,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_15_v0",
+      "group_id": "group_15",
+      "variant_id": "v0",
+      "category": "Rust Code",
+      "baseline_text": "```rust\nuse std::collections::HashMap;\n\n/// A simple in-memory key-value store with TTL support.\n/// Keys expire after their specified duration.\nstruct TtlCache<V> {\n    store: HashMap<String, (V, std::time::Instant, std::time::",
+      "scrambled_text": "boxed\n\n```rust\nuse std::collections::HashMap;\n\n/// A simple in-memory key-value store with TTL support.\n/// Keys expire after their specified duration.\nstruct TtlCache<V> {\n    store: HashMap<String, (V, std::time::Instant, std::",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_15_v1",
+      "group_id": "group_15",
+      "variant_id": "v1",
+      "category": "Rust Code",
+      "baseline_text": "```rust\n/// Implement an iterator that yields the Fibonacci sequence.\nstruct Fibonacci {\n    current: u64,\n    next: u64,\n}\n\nimpl Fibonacci {\n    fn new() -> Self {\n        Fibonacci { current: 0, next: 1 }\n    }",
+      "scrambled_text": "\n```rust\n/// Implement an iterator that yields the Fibonacci sequence.\nstruct Fibonacci {\n    current: u64,\n    next: u64,\n}\n\nimpl Fibonacci {\n    fn new() -> Self {\n        Fibonacci { current: 0, next: 1 }\n    ",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 33,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_15_v2",
+      "group_id": "group_15",
+      "variant_id": "v2",
+      "category": "Rust Code",
+      "baseline_text": "```rust\nuse std::sync::{Arc, Mutex};\nuse std::thread;\n\n/// A thread-safe work queue that distributes tasks across worker threads.\nstruct WorkQueue<T: Send + 'static> {\n    tasks: Arc<Mutex<Vec<T>>>,\n    num_",
+      "scrambled_text": "\n```rust\nuse std::sync::{Arc, Mutex};\nuse std::thread;\n\n/// A thread-safe work queue that distributes tasks across worker threads.\nstruct WorkQueue<T: Send + 'static> {\n    tasks: Arc<Mutex<Vec<T>>>,\n    num",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 25,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_15_v3",
+      "group_id": "group_15",
+      "variant_id": "v3",
+      "category": "Rust Code",
+      "baseline_text": "```rust\n/// Parse a simple arithmetic expression string into tokens.\n/// Supports +, -, *, /, parentheses, and integer literals.\n/// Returns Vec<Token> or an error message.\n#[derive(Debug, PartialEq)]\nenum Token {\n    Number(i64),\n    Plus,\n",
+      "scrambled_text": "\n```rust\n/// Parse a simple arithmetic expression string into tokens.\n/// Supports +, -, *, /, parentheses, and integer literals.\n/// Returns Vec<Token> or an error message.\n#[derive(Debug, PartialEq)]\nenum Token {\n    Number(i64),\n    Plus,",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": null,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_16_v0",
+      "group_id": "group_16",
+      "variant_id": "v0",
+      "category": "Mathematical Proof",
+      "baseline_text": "You're off to a great start! This is the classic proof by contradiction for the infinitude of primes, attributed to Euclid. Here's how you continue the proof:\n\n**Continuing the Proof:**\n\n1. **N is not divisible by any of the primes p_1, p_2, ...,",
+      "scrambled_text": " ouverts\n\nYou're on the right track! This is the classic proof by contradiction of the infinitude of primes, attributed to Euclid. Here's how the proof continues:\n\n**Continuing the Proof:**\n\n1. **N is not divisible by any of the primes p_1, p_2, ...,",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_16_v1",
+      "group_id": "group_16",
+      "variant_id": "v1",
+      "category": "Mathematical Proof",
+      "baseline_text": "You're off to a great start! This is the classic proof by contradiction for the irrationality of the square root of 2. Here's how you continue:\n\n**1. Square both sides:**\n\n   Squaring both sides of the equation \u221a2 = a/b gives us:\n\n   2",
+      "scrambled_text": " \u0627\u0644\u0623\u0641 Chum-f\n\nYou've started the proof of the irrationality of the square root of 2 using proof by contradiction, a very common and effective method for this type of proof. Here's how you continue:\n\n**1. Square both sides:**\n\nSince we're assuming \u221a2 = a",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_16_v2",
+      "group_id": "group_16",
+      "variant_id": "v2",
+      "category": "Mathematical Proof",
+      "baseline_text": "You're off to a great start! Here's how the proof continues, along with explanations:\n\n**Proof (continued):**\n\n... where each  *r<sub>i</sub>* is represented as a decimal expansion.\n\nLet's construct a new real number *x* in [0,1]",
+      "scrambled_text": "\n\n\nYou're off to a great start! Here's how the proof of Cantor's theorem using the diagonal argument continues:\n\n**Proof (continued):**\n\n... where each  *r<sub>i</sub>* is represented as a decimal expansion.  \n\nLet's construct a new real number *x",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 10,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_16_v3",
+      "group_id": "group_16",
+      "variant_id": "v3",
+      "category": "Mathematical Proof",
+      "baseline_text": "You're off to a great start with the proof of the Intermediate Value Theorem using the bisection method! Here's how you can continue:\n\n**1. Analyze the Midpoint:**\n\n* **Case 1: f(m_0) = 0** \n   If the function value at",
+      "scrambled_text": " you're off to a great start with the proof of the Intermediate Value Theorem using the bisection method! Here's how you can continue the proof:\n\n**1. Analyze the Midpoint:**\n\n* **Case 1: f(m_0) = 0** \n   If the function",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_17_v0",
+      "group_id": "group_17",
+      "variant_id": "v0",
+      "category": "Mathematical Derivation",
+      "baseline_text": "You're off to a great start! Here's how to complete the proof by induction:\n\n**Inductive Hypothesis:**\n\nAssume that the formula holds for some integer *k* \u2265 1:\n\n1 + 2 + ... + *k* = *k*(*k* + 1)/",
+      "scrambled_text": "\n\nYou're off to a great start! Here's how to complete the proof by induction:\n\n**Inductive Hypothesis:**\n\nAssume the formula holds for some integer *k* \u2265 1:\n\n1 + 2 + ... + *k* = *k*(*k* + 1)/",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 17,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_17_v1",
+      "group_id": "group_17",
+      "variant_id": "v1",
+      "category": "Mathematical Derivation",
+      "baseline_text": "You're off to a great start! Here's how to complete the derivation:\n\n**1. Implicit Differentiation:**\n\n* Differentiate both sides of the equation  ln(y) = x\u00b7ln(x) with respect to *x*. Remember to use the chain rule on the left side and the",
+      "scrambled_text": " you are on the right track! Here is the complete solution:\n\n**1. Logarithmic Differentiation**\n\n* **Start with the equation:**  \n   Let  `y = x^x`\n\n* **Take the natural logarithm of both sides:**\n   `ln(y) = ln(x^",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_17_v2",
+      "group_id": "group_17",
+      "variant_id": "v2",
+      "category": "Mathematical Derivation",
+      "baseline_text": "You're on the right track! This is a classic approach to evaluating the Gaussian integral using polar coordinates. Here's how the solution unfolds:\n\n**1. Setting up the Double Integral**\n\nYou correctly identified that:\n\n*  I = \u222b(0 to \u221e) e^(-x\u00b2) dx\n\n",
+      "scrambled_text": "\nYou're on the right track! This is a classic approach to evaluating the Gaussian integral using polar coordinates. Here's how the solution unfolds:\n\n**1. Setting up the Double Integral**\n\nAs you've stated, let:\n\n*  I = \u222b(0 to \u221e) e^(-",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 29,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_17_v3",
+      "group_id": "group_17",
+      "variant_id": "v3",
+      "category": "Mathematical Derivation",
+      "baseline_text": "You're on the right track! Here's how to complete the proof:\n\n**Proof:**\n\n1. **Start with the definition:** Let A be a real symmetric matrix with eigenvalue \u03bb and eigenvector **v**, so  \n   A**v** = \u03bb**v**.\n\n2. **Take",
+      "scrambled_text": "\u090f\u0915\u093e \u0935\u093e\u0938\u094d\u0924\u0935\u093f\u0915 \u0938\u092e\u092e\u093f\u0924 \u0906\u0935\u094d\u092f\u0942\u0939\u093e\u091a\u094d\u092f\u093e \u0938\u094d\u0935\u0924\u0903\u091a\u094d\u092f\u093e \u092e\u0942\u0932\u094d\u092f\u093e\u0902\u091a\u0947 \u0935\u093e\u0938\u094d\u0924\u0935\u093f\u0915 \u0905\u0938\u0932\u094d\u092f\u093e\u091a\u0947 \u0938\u093f\u0926\u094d\u0927 \u0915\u0930\u0923\u094d\u092f\u093e\u0938\u093e\u0920\u0940 \u092f\u0947\u0925\u0947 \u092a\u0941\u0930\u093e\u0935\u093e \u0906\u0939\u0947:\n\n**\u092a\u094d\u0930\u092e\u093e\u0923:**\n\n1. **\u090f\u0915 \u0935\u093e\u0938\u094d\u0924\u0935\u093f\u0915 \u0938\u092e\u092e\u093f\u0924 \u0906\u0935\u094d\u092f\u0942\u0939\u093e\u091a\u0940 \u0935\u094d\u092f\u093e\u0916\u094d\u092f\u093e:** \u090f\u0915 \u0935\u093e\u0938\u094d\u0924\u0935\u093f\u0915 \u0938\u092e\u092e\u093f\u0924 \u0906\u0935\u094d\u092f\u0942\u0939",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_18_v0",
+      "group_id": "group_18",
+      "variant_id": "v0",
+      "category": "Recipe/Procedure",
+      "baseline_text": "## How to make authentic Italian Carbonara Pasta:\n\n**Ingredients:**\n\n- 400g spaghetti or rigatoni\n- 200g guanciale (or pancetta)\n- 4 egg yolks plus 2 whole eggs\n- 100g Pecorino Romano, finely",
+      "scrambled_text": "\n\n\n## How to Make Authentic Italian Carbonara Pasta:\n\n**Ingredients:**\n\n* 400g spaghetti or rigatoni\n* 200g guanciale (or pancetta)\n* 4 egg yolks plus 2 whole eggs\n* 100g Pecorino Romano,",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 3,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_18_v1",
+      "group_id": "group_18",
+      "variant_id": "v1",
+      "category": "Recipe/Procedure",
+      "baseline_text": "##  A Complete Guide to Repotting a Root-Bound Houseplant:\n\n**You will need:**\n\n* A pot 1-2 inches larger than the current one (with drainage holes!)\n* Fresh potting mix appropriate for your plant type\n* Scissors or pruning shears\n* Newspaper or a tarp\n",
+      "scrambled_text": "\n\n##  A Complete Guide to Repotting a Root-Bound Houseplant\n\n**You will need:**\n\n* A pot 1-2 inches larger than the current one (with drainage holes!)\n* Fresh potting mix appropriate for your plant type\n* Scissors or pruning shears\n* Newspaper or a tarp\n",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 8,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_18_v2",
+      "group_id": "group_18",
+      "variant_id": "v2",
+      "category": "Recipe/Procedure",
+      "baseline_text": "You're off to a great start! Here's how to continue changing a flat tire safely:\n\n**3. Gather your tools:**\n\n* **Spare tire:** Make sure it's properly inflated.\n* **Jack:**  The one that came with your car is designed for it.\n* **",
+      "scrambled_text": " bulu\n\nHere's a comprehensive guide on how to safely change a flat tire:\n\n**1. Safety First:**\n\n* **Find a Safe Spot:** Pull over as far off the road as possible, ideally on level ground. Avoid soft shoulders or areas with limited visibility.\n* **Hazard Lights:** Turn on",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_18_v3",
+      "group_id": "group_18",
+      "variant_id": "v3",
+      "category": "Recipe/Procedure",
+      "baseline_text": "## Phase 1 - Physical Connections:\n\nHere's how to physically connect your router, switch, and NAS:\n\n**1. Router Placement:**\n\n* Choose a central location for your router to ensure good Wi-Fi coverage throughout your home.\n\n**2. Connect the Modem:**\n\n* Connect your internet",
+      "scrambled_text": " you're on the right track! Here's a breakdown of Phase 1 - Physical Connections for setting up your home network:\n\n**1. Router Placement:**\n\n* **Central Location:** Choose a central location in your home for the router. This will help ensure good Wi-Fi coverage throughout your space.",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_19_v0",
+      "group_id": "group_19",
+      "variant_id": "v0",
+      "category": "Tutorial",
+      "baseline_text": "##  Git Branching and Merging for Beginners: A Step-by-Step Tutorial\n\nGit branching is a powerful tool that allows you to work on different features or bug fixes independently without affecting the main codebase. This tutorial will guide you through the basics of branching and merging in Git.\n\n**1. What",
+      "scrambled_text": "  ## Git Branching and Merging for Beginners: A Step-by-Step Guide\n\nThis tutorial will guide you through the basics of Git branching and merging, essential concepts for collaborative development and managing your code effectively.\n\n**What is a Branch?**\n\nImagine your project's code history as a timeline.",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 9,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_19_v1",
+      "group_id": "group_19",
+      "variant_id": "v1",
+      "category": "Tutorial",
+      "baseline_text": "That's a great start to a beginner's guide to reading topographic maps! Here's how you can expand on that:\n\n**Beginner's Guide to Reading a Topographic Map**\n\nTopographic maps are like 3D representations of the Earth's surface, flattened onto a 2D map",
+      "scrambled_text": "\ud83e\ude70 **Beginner's Guide to Reading a Topographic Map**\n\nTopographic maps are like treasure maps for the outdoors! They show you the shape of the land using contour lines, which are like invisible lines connecting points of the same height.\n\n**1. Contour Interval: The Stair Steps of Elevation**\n\nImagine",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_19_v2",
+      "group_id": "group_19",
+      "variant_id": "v2",
+      "category": "Tutorial",
+      "baseline_text": "You're off to a great start! Here's a breakdown of how to read a company's balance sheet, continuing from where you left off:\n\n**Assets**\n\n* **Current Assets:** These are assets that are expected to be converted into cash or used up within one year. Examples include:\n",
+      "scrambled_text": " you're off to a great start! Here's a breakdown of how to read a company's balance sheet, continuing from where you left off:\n\n**Assets**\n\n* **Current Assets:** These are assets that are expected to be converted into cash or used up within one year. Examples include:\n",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_19_v3",
+      "group_id": "group_19",
+      "variant_id": "v3",
+      "category": "Tutorial",
+      "baseline_text": "... carefully remove the film from its canister in a completely dark environment.  \n\n**Important:** Avoid touching the film emulsion (the shiny side) with your fingers. Hold the film by the edges.\n\nNext, gently guide the film leader onto the reel's spool. There are usually notches or guides on the reel",
+      "scrambled_text": "\n\n... carefully remove the film from its canister in a completely dark environment.  \n\n**Important:**  Avoid touching the film emulsion (the shiny side) with your fingers. Hold the film by the edges.\n\nNext, gently guide the film leader onto the reel's spool. There are usually notches or guides on",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 48,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_20_v0",
+      "group_id": "group_20",
+      "variant_id": "v0",
+      "category": "Legal Register",
+      "baseline_text": "This is a great start to a software licensing agreement! You've clearly laid out the basic premise:\n\n* **Identification of Parties:** You've correctly identified the two parties involved \u2013 the Licensor (owner of the software) and the Licensee (the party wanting to use the software).\n* **Lic",
+      "scrambled_text": "\nThis is a great start to a software licensing agreement! You've clearly laid out the basic premise:\n\n* **Identification of Parties:** You've correctly identified the two parties involved \u2013 the Licensor (owner of the software) and the Licensee (the party wanting to use the software).\n* **",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 46,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_20_v1",
+      "group_id": "group_20",
+      "variant_id": "v1",
+      "category": "Archaic Register",
+      "baseline_text": "...greeted him. His face, half-hidden in the shadows of his wide-brimmed hat, was a study in contrasts: sharp cheekbones and a strong jawline hinted at a rugged handsomeness, yet his eyes, the only feature truly visible, were pools of unsettling darkness. They seemed to pierce",
+      "scrambled_text": "Autocomplete is a tricky thing, isn't it? It wants to finish your story, but sometimes it misses the mark. \n\nLet's see if we can craft a more fitting continuation for your intriguing opening:\n\nIn the year of our Lord sixteen hundred and forty-two, there came unto the village of",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_20_v2",
+      "group_id": "group_20",
+      "variant_id": "v2",
+      "category": "Stream of Consciousness",
+      "baseline_text": "It's amazing how a simple cup of cooling coffee can trigger a cascade of thoughts, isn't it?  \n\nThe garden, the tomatoes, that week in July... it all seems to be swirling together. It's like your mind is trying to piece together a puzzle, searching for the reason behind the",
+      "scrambled_text": "that's a familiar feeling, isn't it? The coffee cooling, mirroring the way your thoughts keep circling back to that conversation. It's like a half-finished puzzle, the pieces of her words about the garden, the tomatoes, the forgotten week in July \u2013 they all seem to fit together, but",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_20_v3",
+      "group_id": "group_20",
+      "variant_id": "v3",
+      "category": "Academic Abstract",
+      "baseline_text": "This is a great start to an abstract! Here are some ways you could expand it to make it even stronger:\n\n**1. Specify the key findings:**\n\nInstead of just saying \"we demonstrate that...\",  briefly state your main findings. For example:\n\n*  \"...we demonstrate that microplastic concentrations are",
+      "scrambled_text": "Origins of microplastics in freshwater ecosystems:\n\n* **Wastewater treatment plants:** Inefficient filtration systems often release microplastics into rivers and streams.\n* **Urban runoff:** Stormwater carries microplastics from roads, parking lots, and other urban surfaces.\n* **Agricultural runoff:** Plastic mulch, fertilizers,",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_21_v0",
+      "group_id": "group_21",
+      "variant_id": "v0",
+      "category": "Medical Case Report",
+      "baseline_text": "This is a great start to a case report! You've set the scene with the patient's demographics, presenting symptoms, and initial physical exam findings. \n\nTo make this case report more complete and informative, you'll want to include the following:\n\n**1. Laboratory Findings:**\n\n* **Complete",
+      "scrambled_text": "\u5c90\n\nThis is a great start to a case report! You've set the scene with the patient's demographics, presenting symptoms, and initial physical exam findings.  \n\nTo make this case report more complete and informative, you'll want to include the following:\n\n**1. Laboratory Findings:**\n\n*",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_21_v1",
+      "group_id": "group_21",
+      "variant_id": "v1",
+      "category": "Patent Application",
+      "baseline_text": "This is a great start to a patent claim! Here's a breakdown of what you have and some suggestions for completing it:\n\n**Strengths:**\n\n* **Clear Problem:** You've identified a specific problem: reducing energy consumption in data center cooling systems.\n* **Technical Solution:** You've outlined a",
+      "scrambled_text": "\n\nThis is a great start to a patent claim! Here's a breakdown of what you have and some suggestions for completing it:\n\n**Strengths:**\n\n* **Clear Problem:** You've identified a specific problem: reducing energy consumption in data center cooling systems.\n* **Technical Solution:** You've outlined",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 44,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_21_v2",
+      "group_id": "group_21",
+      "variant_id": "v2",
+      "category": "Sports Commentary",
+      "baseline_text": "...outside the box! The tension is palpable here in Madrid as both teams know the next goal could be decisive.  \n\nWill Ancelotti's men push for a winner, or will Guardiola's tactical genius find a way to break through Real's defense? \n\nStay tuned, folks, because this second",
+      "scrambled_text": "\u8bdd\u97f3\u672a\u843d\uff0c\u7403\u573a\u4e0a\u7684\u6c14\u6c1b\u5df2\u7ecf\u8fbe\u5230\u4e86\u6cb8\u70b9\u3002\n\nWe're back here at the Santiago Bernab\u00e9u for the second half of this Champions League semifinal! The score is level at 1-1 after a breathtaking first half. Real Madrid's Mbapp\u00e9 equalized just before the break with an",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "prompt_key": "group_21_v3",
+      "group_id": "group_21",
+      "variant_id": "v3",
+      "category": "Cooking Show Transcript",
+      "baseline_text": "This is great! It sounds like you're starting a recipe or a cooking demonstration. I'm hooked! \n\nTo help me understand what you're making, could you tell me:\n\n* **What are you making with the butter?** Cookies? Cake? Frosting? Something else entirely?\n",
+      "scrambled_text": " voisinage\n\nThis is a great start to a recipe or cooking demonstration! You've got a conversational tone and are building anticipation. Here are a few ways you could continue:\n\n**Option 1: Focus on the Technique**\n\n\"...Now I'm going to show you how to cream this butter with sugar",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    }
+  ]
+}

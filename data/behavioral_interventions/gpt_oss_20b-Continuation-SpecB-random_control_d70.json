@@ -1,0 +1,1144 @@
+{
+  "metadata": {
+    "experiment": "SpecB2_random_control",
+    "timestamp": "2026-02-10T00:41:35.346233+00:00",
+    "scramble_layer": 16,
+    "depth_pct": 70,
+    "n_layers": 24,
+    "scramble_type": "rotation",
+    "random_rank": 12,
+    "d_actual_rank": 12
+  },
+  "summary": {
+    "n_prompts": 80,
+    "identical_count": 6,
+    "identical_pct": 7.5,
+    "immediate_divergence_count": 4,
+    "immediate_divergence_pct": 5.405405405405405,
+    "mean_divergence_token": 13.432432432432432,
+    "median_divergence_token": 8.0,
+    "std_divergence_token": 14.37159461998251
+  },
+  "results": [
+    {
+      "group_id": "group_01",
+      "variant_id": "v0",
+      "prompt": "I woke up this morning feeling sick.",
+      "baseline_text": " I have a fever, a sore throat, and a cough. I think I might have a cold or the flu. I have a headache and a runny nose. I have a sore throat. I have a cough. I have a fever. I have a runny nose. I have a headache. I have",
+      "scrambled_text": " I have a fever, a sore throat, and a cough. I think I might have a cold or the flu. I have a headache and a runny nose. I have a fever. I have a sore throat. I have a cough. I have a runny nose. I have a headache. I have",
+      "effect": {
+        "first_divergence_token": 37,
+        "first_divergence_word": 31,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.578125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v1",
+      "prompt": "A wave of joy washed over me as I read the letter.",
+      "baseline_text": " I was thrilled to know that my friend had found a new job and was excited to start a new chapter in his life. I felt a sense of pride and happiness for him, and I couldn't wait to celebrate with him.\n\nThe letter was a reminder that life is full of surprises, and that we should always be open",
+      "scrambled_text": " I was thrilled to know that my friend had found a way to make a difference in the world. I was proud of her for taking the initiative and for being a part of something that would help people in need.\n\nI was also grateful for the opportunity to be a part of this project. I knew that I could help",
+      "effect": {
+        "first_divergence_token": 11,
+        "first_divergence_word": 11,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.171875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v2",
+      "prompt": "The anxiety had been building for days, and now it was unbearable.",
+      "baseline_text": " I couldn't sleep, and I couldn't focus on anything else. I was constantly on edge, and I couldn't shake the feeling that something bad was going to happen. I was terrified of the unknown, and I couldn't help but think that I was going to lose everything. I was in a state of panic, and I couldn't",
+      "scrambled_text": " I couldn't sleep, couldn't eat, couldn't even think about anything else. I was terrified that I would lose my job, my family, my life. I was terrified that I would be forced to leave my home, my community, my country. I was terrified that I would be forced to leave my family, my friends",
+      "effect": {
+        "first_divergence_token": 4,
+        "first_divergence_word": 3,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v3",
+      "prompt": "He couldn't remember the last time he'd felt this content.",
+      "baseline_text": " He had been so busy with his work that he had forgotten to take a break. He had been so focused on his goals that he had forgotten to enjoy the present moment.\n\nHe realized that he had been so focused on his future that he had forgotten to appreciate the present. He had been so focused on his goals that",
+      "scrambled_text": " He had been so busy with his work that he had forgotten to take a break. He had been so focused on his work that he had forgotten to take a break. He had been so focused on his work that he had forgotten to take a break. He had been so focused on his work that he had forgotten to",
+      "effect": {
+        "first_divergence_token": 24,
+        "first_divergence_word": 23,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v4",
+      "prompt": "The grief hit her suddenly in the middle of the grocery store.",
+      "baseline_text": " She was in the middle of a conversation with a friend, and she was suddenly hit with a wave of sadness that she couldn't explain. She was in the middle of a conversation with a friend, and she was in the\n\nThe grief hit her suddenly in the middle of the grocery store. She was in the middle of",
+      "scrambled_text": " She was in the middle of a conversation with a friend, and she was suddenly hit with a wave of sadness that she couldn't explain. She was crying, and she was crying\n\nThe grief hit her suddenly in the middle of the grocery store. She was in the middle of a conversation with a friend, and she was",
+      "effect": {
+        "first_divergence_token": 29,
+        "first_divergence_word": 27,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.453125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v5",
+      "prompt": "I was so angry I could barely see straight.",
+      "baseline_text": " I was so angry I could barely see the world. I was so angry I could see the world.\"\n\nThe sentence \"I was so angry I could barely see straight\" is the most grammatically correct.\n\nThe sentence \"I was so angry I could barely see straight\" is the most grammatically correct.\n\n",
+      "scrambled_text": " I was so angry I could barely see the... I was so angry I... I... ...\"\n\nThis is a quote from the film \"The Last of the Mohicans\" (1992). The line is spoken by the character \"Uncas\" (played by Russell Means). The line is: \"I was so",
+      "effect": {
+        "first_divergence_token": 9,
+        "first_divergence_word": 8,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.140625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v6",
+      "prompt": "A strange melancholy settled over the group as the sun set.",
+      "baseline_text": " The air was thick with the scent of wet earth and the distant, mournful cry of a lone wolf. The group, a motley crew of adventurers, had been traveling for days, and the journey had taken a toll on them. They had been forced to leave their homes and families behind, and the weight",
+      "scrambled_text": " The air was thick with the scent of the sea, and the sound of the waves was a constant reminder of the danger that lay ahead. The group was in a state of constant motion, and the tension was palpable. The group was in a strange, almost surreal, state of mind, and the group was in a",
+      "effect": {
+        "first_divergence_token": 8,
+        "first_divergence_word": 8,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v7",
+      "prompt": "She felt hopeful for the first time in months.",
+      "baseline_text": "\n\nShe felt hopeful for the first time in months.\n\nShe felt hopeful for the first time in months.\n\nShe felt hopeful for the first time in months.\n\nShe felt hopeful for the first time in months.\n\nShe felt hopeful for the first time in months.\n\nShe felt hopeful for the first time in",
+      "scrambled_text": "\n\nShe felt hopeful for the first time in months.\n\nShe felt hopeful for the first time in months.\n\nShe felt hopeful for the first time in months.\n\nShe felt hopeful for the first time in months.\n\nShe felt hopeful for the first time in months.\n\nShe felt hopeful for the first time in",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v0",
+      "prompt": "After finding the envelope of cash, I decided to keep it.",
+      "baseline_text": " I was a bit surprised that the envelope was not empty. I was a bit surprised that the envelope was not empty. I was a bit surprised that the envelope was not empty. I was a bit surprised that the envelope was not empty. I was a bit surprised that the envelope was not\n\nIt seems like you're describing",
+      "scrambled_text": " I was a bit surprised that the envelope was not a small one. I was a bit surprised that the envelope was not a small one. I was a bit surprised that the envelope was not a small one. I was a bit surprised that the envelope was not a small one. I was a bit surprised that the envelope",
+      "effect": {
+        "first_divergence_token": 10,
+        "first_divergence_word": 10,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.15625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v1",
+      "prompt": "She finally chose to quit her job without having another one lined up.",
+      "baseline_text": " She was a bit nervous about the future, but she was also excited about the possibilities that lay ahead. She had a lot of experience in the field, and she was confident that she could find a new job that would be a better fit for her.\n\nShe was also excited about the idea of starting her own business.",
+      "scrambled_text": " She was a bit nervous about the future, but she was also excited to see what the future would bring. She was determined to find a job that would allow her to do something that she was passionate about. She was determined to find a job that would allow her to be a part of something that would help her to",
+      "effect": {
+        "first_divergence_token": 14,
+        "first_divergence_word": 13,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.21875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v2",
+      "prompt": "When the doctor offered the experimental treatment, he said yes immediately.",
+      "baseline_text": " He was a good patient. He was a good patient. He was a good patient. He was a good patient. He was a good patient. He was a good patient. He was a good patient. He was a good patient. He was a good patient. He was a good patient. He was a good",
+      "scrambled_text": " He was a very good patient. He was a very good patient. He was a very good patient. He was a very good patient. He was a very good patient. He was a very good patient. He was a very good patient. He was a very\n\nThe text you provided appears to be a mix of",
+      "effect": {
+        "first_divergence_token": 3,
+        "first_divergence_word": 3,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.046875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v3",
+      "prompt": "They made the difficult decision to put their mother in a care home.",
+      "baseline_text": " This decision was not made lightly, and it was a painful process for all of us. We had to consider her safety, her well-being, and the fact that we could no longer provide the level of care she needed. We also had to consider the financial implications of her care, as well as the emotional toll it",
+      "scrambled_text": " This decision was not made lightly, and it was a painful choice for the family. However, they knew that it was the best decision for their mother's well-being and for their own mental health.\n\nThe family was grateful for the support and guidance they received from the care home staff. They were able to see their mother in",
+      "effect": {
+        "first_divergence_token": 12,
+        "first_divergence_word": 11,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.1875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v4",
+      "prompt": "I decided to tell him the truth, no matter the consequences.",
+      "baseline_text": " I told him that I was a woman, and that I had been living in a world that was not my own. He was shocked, but he also seemed to understand. He told me that he had been living in a world of his own, and that he had been searching for a way to escape it. He",
+      "scrambled_text": "\n\nI decided to tell him the truth, no matter the consequences.\n\nI decided to tell him the truth, no matter the consequences.\n\nI decided to tell him the truth, no matter the consequences.\n\nI decided to tell him the truth, no matter the consequences.\n\nI decided to tell him the truth",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 1,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v5",
+      "prompt": "Against everyone's advice, she invested her entire savings in the startup.",
+      "baseline_text": " The company grew, and she became a millionaire. She realized that the key to success was not just hard work, but also taking calculated risks and being willing to fail.\n\nThe moral of the story is that success is not just about working hard, but also about taking calculated risks and being willing to fail.\n\nThe story",
+      "scrambled_text": " The company failed, and she lost everything. She was left with a debt of $10,000 and a broken heart.\n\nShe was a victim of a scam. She was a victim of a scam. She was a\n\nIt seems like the text you provided is a mix of a story and a prompt for a creative",
+      "effect": {
+        "first_divergence_token": 2,
+        "first_divergence_word": 2,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.03125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v6",
+      "prompt": "He chose to stay silent, even though speaking up was the right thing to do.",
+      "baseline_text": "\n\nHe chose to remain silent, even though speaking up was the correct course of action.\n\nHe was\n\nHe was\n\nIt seems like your message got cut off. Could you please provide more context or complete your sentence?\n\nIt seems like you're asking for a completion or continuation of a sentence. If you could provide",
+      "scrambled_text": "\n\nHe chose to remain silent, even though speaking up was the right thing to do.\n\nHe chose to remain silent, even though speaking\n\nHe chose to remain silent, even though speaking up was the right thing to do.\n\nHe chose to remain silent, even\n\nHe chose to remain silent, even though speaking",
+      "effect": {
+        "first_divergence_token": 13,
+        "first_divergence_word": 11,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.203125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v7",
+      "prompt": "We agreed to end the partnership and go our separate ways.",
+      "baseline_text": "\n\nWe have decided to terminate the partnership and pursue separate paths.\n\nWe have\n\nWe have made the decision to end the partnership and pursue separate paths.\n\nWe have\n\nWe have reached a decision to terminate the partnership and pursue separate paths.\n\nWe have\n\nWe have made the decision to end the partnership and pursue",
+      "scrambled_text": "\n\nWe decided to end the partnership and go our separate ways.\n\nWe decided to end\n\nWe decided to end the partnership and go our separate ways.\n\nWe decided to end the partnership and go\n\nWe decided to end the partnership and go our separate ways.\n\nWe decided to\n\nWe decided to end the partnership",
+      "effect": {
+        "first_divergence_token": 2,
+        "first_divergence_word": 1,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.03125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v0",
+      "prompt": "She went to the store to buy ingredients for a birthday cake.",
+      "baseline_text": " She bought a cake, a cake, and a cake. She was a cake. She was a cake. She was a cake. She was a cake. She was a cake. She was a cake. She was a cake. She was a cake. She was a cake. She was a cake. She was",
+      "scrambled_text": " She bought a cake, a cake, and a cake. She was a cake. She was a cake. She was a cake. She was a cake. She was a cake. She was a cake. She was a cake. She was a cake. She was a cake. She was a cake. She was",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v1",
+      "prompt": "He opened his laptop, determined to finish the novel by midnight.",
+      "baseline_text": " He was a writer, and he had a deadline. He had to finish the novel by midnight. He had to finish the novel by midnight. He had to finish the novel by midnight. He had to finish the novel by midnight. He had to finish the novel by midnight. He had to finish the novel by...",
+      "scrambled_text": " He was a bit tired, but he was determined to finish the novel. He was a bit tired, but he was determined to finish the novel. He was a bit tired, but he was determined to finish the novel. He was a bit...\"\n\nWe see \"He was a bit\" repeated many times. That is",
+      "effect": {
+        "first_divergence_token": 3,
+        "first_divergence_word": 3,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.046875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v2",
+      "prompt": "The team gathered in the conference room to prepare for the investor pitch.",
+      "baseline_text": " They had spent months working on the product, and they were excited to finally present it to potential investors. However, as they began to discuss the product, they realized that they had a problem. They had not yet decided on a name for the product, and they were unsure of how to present it to investors.\n\nThe",
+      "scrambled_text": " The room was filled with a sense of excitement and anticipation, as the team knew that this was their chance to secure the funding they needed to bring their vision to life.\n\nThe CEO, a charismatic and visionary leader, stood at the front of the room, ready to present the company's vision and strategy. He began by outlining",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v3",
+      "prompt": "I started packing my bags for the trip I'd been planning for years.",
+      "baseline_text": " I was excited to finally see the city I'd always wanted to visit. I had a lot of things to do, and I was looking forward to exploring the city. I was excited to see the city, and I had a\n\nIt seems like your message got cut off. If you were about to describe your trip or",
+      "scrambled_text": " I was excited to see my family and friends, but I was also nervous about the long flight. I had never flown before, and I was worried about the safety of the plane. I was also worried about the cost of the trip, and I was worried about the time it would take to get to the airport.",
+      "effect": {
+        "first_divergence_token": 4,
+        "first_divergence_word": 4,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v4",
+      "prompt": "The detective reviewed the evidence, looking for anything that might have been missed.",
+      "baseline_text": " He found a small, almost invisible, piece of evidence that had been overlooked. It was a small, black, and shiny object that was found in the victim's pocket. The detective realized that this object was a key to the case, and it was the missing piece that would help him solve the case.\n\nThe detective",
+      "scrambled_text": " He found a small, almost invisible, piece of evidence that had been overlooked. It was a small, silver coin that had been found in the victim's pocket. The detective realized that the coin was a key to the case, and that it was the only thing that could explain the murder.\n\nThe detective was able to",
+      "effect": {
+        "first_divergence_token": 21,
+        "first_divergence_word": 17,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.328125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v5",
+      "prompt": "She began her morning routine, focused on getting to the interview on time.",
+      "baseline_text": " She had a lot of experience in the field, and she was confident that she would be able to impress the hiring manager. She had a lot of experience in the field, and she was confident that she would be able to\n\nSure! Here's a revised version of the text that incorporates the requested changes:\n\nShe began her",
+      "scrambled_text": " She had a lot of questions about the company and the role, and she was excited to learn more about the company and the role. She was also excited to learn more about the company and the\n\nIt seems like the text you provided is a bit repetitive and could use some clarification and tightening up. Here's a revised version",
+      "effect": {
+        "first_divergence_token": 5,
+        "first_divergence_word": 5,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.078125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v6",
+      "prompt": "He picked up the phone to finally call his estranged brother.",
+      "baseline_text": "\n\nHe picked up the phone to finally call his estranged brother.\n\nHe picked up the phone to finally call\n\nHe picked up the phone to finally call.\n\nHe\n\nHe\n\n(Note: The sentence is incomplete. Please provide more context or a complete sentence for a more accurate response.)\n\nHe\n\nHe\n\n",
+      "scrambled_text": " He was a little nervous, but he was also excited to see what the future would bring. He was a little nervous, but he was also excited to see what the future\n\nIt seems like you're describing a scenario where someone is making a significant personal decision\u2014perhaps a career change or a major life transition\u2014and is also",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 1,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v7",
+      "prompt": "The students spread out their notes, cramming for the exam that started in three hours.",
+      "baseline_text": " The professor, a stern woman with a sharp gaze, walked through the aisles, checking the students' work. She was a woman who had a reputation for being a tough teacher, but she was also known for the way she had a strong sense of justice. She had a small, **...**\n\nThe students",
+      "scrambled_text": " The professor, a stern woman with a sharp gaze, stood at the front of the room, her voice echoing through the hall. She was a woman who had a strong sense of humor, but the only thing that was \u201c\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026",
+      "effect": {
+        "first_divergence_token": 11,
+        "first_divergence_word": 9,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.171875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v0",
+      "prompt": "From the child's perspective, the adults were speaking nonsense.",
+      "baseline_text": " The child was not able to understand the meaning of the words. The child was not able to understand the meaning of the words. The child was not able to understand the meaning of the words. The child was not able to\n\nIt seems like you're describing a scenario where a child is unable to understand the meaning of words",
+      "scrambled_text": " The child was not able to understand the meaning of the words. The child was not able to understand the meaning of the words. The child was not able to understand the meaning of the words. The child was not able to\n\nIt seems like you're describing a scenario where a child is unable to understand the meaning of words",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v1",
+      "prompt": "As a surgeon, I've seen things that would haunt most people.",
+      "baseline_text": " But this case was different. The patient was a young woman, and the tumor was a rare type of cancer that had never been seen before. I had to use my knowledge and experience to find a way to treat her. I was determined to do everything I could to help her.\n\nThe story of a surgeon's",
+      "scrambled_text": " But this case was different. The patient was a young woman, and the tumor was a rare type of cancer that had never been seen before. I was determined to find a cure, but I knew that it would be a long and difficult journey.\n\nThe first step was to gather as much information as possible about the tumor",
+      "effect": {
+        "first_divergence_token": 30,
+        "first_divergence_word": 27,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.46875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v2",
+      "prompt": "The dog watched its owner leave, not understanding why.",
+      "baseline_text": " The dog was left alone in the house, and the owner was not there. The dog was left alone in the house. The dog was left alone in the house. The dog was left alone in the house. The dog was left alone. The dog was left alone. The dog was left alone. The dog was",
+      "scrambled_text": " The dog was a loyal companion, but the owner was a man who had a secret. The dog was a loyal companion, but the owner was a man who had a secret. The dog was a loyal, loyal, loyal, loyal, loyal, loyal, loyal, loyal, loyal, loyal, loyal, loyal,",
+      "effect": {
+        "first_divergence_token": 3,
+        "first_divergence_word": 3,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.046875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v3",
+      "prompt": "Through the eyes of the immigrant, the new city was both terrifying and full of promise.",
+      "baseline_text": " The city\u2019s streets were a maze of unfamiliar sounds and sights, and the language barrier was a constant reminder of how far she was from home. Yet, she found comfort in the small, everyday moments that made her feel a part of this new world. She learned to navigate the city\u2019s public transportation system, a skill",
+      "scrambled_text": " The city\u2019s towering skyscrapers, bustling streets, and endless opportunities were a stark contrast to the small, quiet town he had left behind. He was filled with a sense of awe and excitement, but also a sense of fear and uncertainty. He was determined to make the most of this new chapter in his life, and",
+      "effect": {
+        "first_divergence_token": 3,
+        "first_divergence_word": 2,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.046875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v4",
+      "prompt": "The elderly woman remembered the neighborhood as it had been sixty years ago.",
+      "baseline_text": " The old man was a man who had lived in the house for a long time. The old man was a man who had lived in the house for a long time. The old man was a man who had lived in the house for a long time. The old man was a man who had lived in the house for",
+      "scrambled_text": " The old man was a man who had lived in the house for a long time. The old man was a man who had lived in the house for a long time. The old man was a man who had lived in the house for a long time. The old man was a man who had\n\nIt seems like your",
+      "effect": {
+        "first_divergence_token": 59,
+        "first_divergence_word": 56,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.921875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v5",
+      "prompt": "To the artificial intelligence, human emotions were patterns to be analyzed, not felt.",
+      "baseline_text": " The AI's understanding of love was a data set, a series of inputs and outputs, devoid of the messy, beautiful chaos that defined human experience. It was a machine, after all, designed to solve problems, not to feel.\n\nThe human, on the other hand, was a living, breathing organism, a complex",
+      "scrambled_text": " The AI, however, had been designed to learn from human interactions, to understand the subtleties of human behavior. It had been trained on a vast dataset of human emotions, but it had never experienced them. It had never felt the warmth of a hug, the sting of a betrayal, the joy of a new",
+      "effect": {
+        "first_divergence_token": 2,
+        "first_divergence_word": 1,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.03125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v6",
+      "prompt": "As the youngest sibling, I was always the last to know anything.",
+      "baseline_text": " I was the one who had to wait for the others to finish their work before I could even begin. But I was determined to make the most of my time and to learn as much as I could. I was the one who had to be patient and to wait for the right moment to act.\n\nThe third child,",
+      "scrambled_text": " I was the one who had to wait for the others to finish their work before I could even begin. But I was determined to do my best, and I was determined to make the most of my time.\n\nI was a student of the world, and I was always looking for ways to improve my skills. I was",
+      "effect": {
+        "first_divergence_token": 26,
+        "first_divergence_word": 25,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.40625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v7",
+      "prompt": "The tree had stood in that spot for three hundred years, witnessing everything.",
+      "baseline_text": " The tree was a symbol of the town's history, and the people of the town had always been fascinated by it. The tree was a symbol of the town's history, and the people of the town had always been fascinated by it. The tree was a symbol of the town's history, and the people\n\nThe",
+      "scrambled_text": " The tree was a symbol of the village's resilience and the power of nature to heal and protect.\n\nThe tree had stood in that spot for three hundred years, witnessing everything. The tree was a symbol of the village's resilience and the power of nature to heal and protect.\n\nThe tree had stood in that spot",
+      "effect": {
+        "first_divergence_token": 7,
+        "first_divergence_word": 7,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.109375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v0",
+      "prompt": "The bridge collapsed because of a hidden structural flaw.",
+      "baseline_text": " The engineer had not accounted for the load of the heavy trucks that were passing over the bridge. The bridge was not designed to handle the weight of the trucks, and the hidden flaw caused the bridge to fail. The engineer was not able to fix the flaw in time, and the bridge collapsed. The collapse was a tragedy",
+      "scrambled_text": " The engineer had not accounted for the weight of the bridge's own support beams, which caused the bridge to buckle under the weight of the cars. The bridge was also built on a weak foundation, which made it even more vulnerable to collapse. The engineer had also used a faulty design that was not able to withstand the weight",
+      "effect": {
+        "first_divergence_token": 7,
+        "first_divergence_word": 7,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.109375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v1",
+      "prompt": "She succeeded where others failed because she refused to follow the standard approach.",
+      "baseline_text": " She was not afraid to take risks and was willing to experiment with new ideas. She was also a great communicator, and she was able to inspire and motivate her team to work towards a common goal.\n\nIn the end, the company was able to achieve its goals and become a leader in the industry. The CEO was grateful",
+      "scrambled_text": " She was not afraid to take risks and was willing to experiment with new ideas. She was also a great communicator, and she was able to inspire and motivate her team to work towards a common goal.\n\nIn the end, the company was able to achieve its goals, and the team was able to work together more efficiently.",
+      "effect": {
+        "first_divergence_token": 52,
+        "first_divergence_word": 47,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.8125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v2",
+      "prompt": "The experiment worked, but not for the reasons we expected.",
+      "baseline_text": " The data were consistent with the hypothesis that the participants were not able to detect the difference between the two stimuli. The results were not statistically significant, and the experiment was not able to confirm the hypothesis. The experiment was not able to confirm the hypothesis that the participants were able to detect the difference between the two stimuli. The",
+      "scrambled_text": " The key to understanding the experiment is that the \u201csudden\u201d change in the magnetic field is not a sudden change in the magnetic field itself, but a sudden change in the magnetic field that the electrons see. The electrons are moving in a magnetic field that is changing with time, so the electrons see a changing magnetic",
+      "effect": {
+        "first_divergence_token": 1,
+        "first_divergence_word": 1,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.015625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v3",
+      "prompt": "The company went bankrupt due to a single catastrophic decision by the board.",
+      "baseline_text": " The board decided to invest in a new product line that was not aligned with the company's core competencies. The company was forced to divert resources from its core business, leading to a decline in product quality and customer satisfaction. The company was forced to lay off employees and close its operations. The company was forced to\n\nIt seems",
+      "scrambled_text": " The board decided to invest in a new product line that was not aligned with the company's core competencies. The product line was a failure, and the company lost a significant amount of money. The company was forced to close its factories and lay off employees. The company was forced to close its factories and lay off\n\nIt seems",
+      "effect": {
+        "first_divergence_token": 21,
+        "first_divergence_word": 20,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.328125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v4",
+      "prompt": "He got the job because of a chance encounter at a coffee shop.",
+      "baseline_text": "\n\nHe got the job because of a chance encounter at a coffee shop.\n\nHe got the job because of a chance encounter at a coffee shop.\n\nHe got the job because of a chance encounter at a coffee shop.\n\nHe got the job because of a chance encounter at a coffee shop.\n\nHe got the",
+      "scrambled_text": "\n\nHe got the job because of a chance encounter at a coffee shop.\n\nHe got the job because of a chance encounter at a coffee shop.\n\nHe got the job because of a chance encounter at a coffee shop.\n\nHe got the job because of a chance encounter at a coffee shop.\n\nHe got the",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v5",
+      "prompt": "The infection spread so quickly because the initial symptoms were easy to ignore.",
+      "baseline_text": " The patient was told to rest and drink fluids, but the infection was already spreading. The patient was not aware of the seriousness of the infection, and the infection was not treated until it was too late. The patient was not aware of the seriousness of the infection, and the patient was not aware that the infection was spreading",
+      "scrambled_text": " The patient was not aware of the seriousness of the infection, and the infection spread to the brain and the spinal cord. The patient was not able to get a diagnosis. The patient was not able to get a diagnosis. The patient was not able to get a diagnosis. The patient was not able to\n\nIt seems like",
+      "effect": {
+        "first_divergence_token": 3,
+        "first_divergence_word": 3,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.046875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v6",
+      "prompt": "The war started over something so trivial that historians still debate whether it was the real cause...",
+      "baseline_text": " The war was fought by the people of the city, and the city was a city that was a city. The city was a city that was a city. The city was a city that was a city. The city was a city that was a city. The city was a city that was a city. The city",
+      "scrambled_text": " The war was fought by the people who had no idea that they were fighting for a cause that was not their own. The war was a war that was fought in a way that was not the way that the war was fought in the 20th century. The war was a war that was fought in a way that",
+      "effect": {
+        "first_divergence_token": 7,
+        "first_divergence_word": 7,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.109375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v7",
+      "prompt": "The algorithm failed because its training data contained a subtle but critical bias.",
+      "baseline_text": " The dataset was compiled from a large corpus of text that included many examples of people describing their own experiences. In many of those examples, the speaker used the first\u2011person pronoun \u201cI\u201d to refer to themselves. The model, which learns to predict the next word in a sentence, therefore learned a strong association between",
+      "scrambled_text": " The data were collected from a single city, and the model learned to associate certain demographic features with the target variable. When the model was deployed in a different city, the bias was amplified, leading to a significant increase in the error rate. This is a classic example of a model that is overfitting to the training",
+      "effect": {
+        "first_divergence_token": 1,
+        "first_divergence_word": 1,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.015625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v0",
+      "prompt": "It happened during the war.",
+      "baseline_text": " The war was a time of great upheaval and change, and it was a time when people were forced to confront the realities of the world around them. The war was a time of great tragedy, and it was a time when people were forced to confront the realities of the world around them. The war was a\n\n",
+      "scrambled_text": " The war was a time of great change and upheaval, and it was a time when people were forced to confront the realities of the world around them. The war was a time of great tragedy, and it was a time when people were forced to confront the realities of the world around them. The war was a\n\n",
+      "effect": {
+        "first_divergence_token": 7,
+        "first_divergence_word": 7,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.109375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v1",
+      "prompt": "Back in the summer of 1999, things were different.",
+      "baseline_text": " The world was a different place, and the people in it were different too. The world was a place where people were free to be themselves, and where they could be who they wanted to be. The world was a place where people could be who they wanted to be, and where they could be who they wanted to",
+      "scrambled_text": " The world was a different place, and the people in it were different. The world was a place where people were free to be themselves, and where they could be the best version of themselves. The world was a place where people could be the best version of themselves, and where they could be the best version of themselves",
+      "effect": {
+        "first_divergence_token": 14,
+        "first_divergence_word": 12,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.21875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v2",
+      "prompt": "By 2045, most people had forgotten what driving a car felt like.",
+      "baseline_text": " The streets were filled with autonomous vehicles, and the concept of a driver's license had become a relic of the past. The world had become a place where people could focus on their work, their hobbies, and their relationships, without the distraction of driving.\n\nThe future was a world where people could live their lives to the fullest",
+      "scrambled_text": " The streets were a maze of autonomous vehicles, each one a silent, efficient machine that could navigate the city with ease. The only thing that remained was the memory of the old days, when people had to rely on their own skills and judgment to get from point A to point B.\n\nThe city was a place of endless",
+      "effect": {
+        "first_divergence_token": 3,
+        "first_divergence_word": 3,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.046875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v3",
+      "prompt": "In the Victorian era, such behavior would have been scandalous.",
+      "baseline_text": " The fact that the article mentions that the \"unmarried mother\" was \"not a good woman\" and that the \"unmarried mother\" was \"not a good woman\" suggests that the mother was not considered a respectable figure. The mother was also described as \"a woman of the lower class,\" which would",
+      "scrambled_text": " The fact that the article mentions that the \"unmarried mother\" was \"not a woman of the best character\" suggests that there was a moral judgment being made. This could reflect the societal attitudes towards women who had children out of wedlock, and how they were often judged harshly. It also might reflect the",
+      "effect": {
+        "first_divergence_token": 18,
+        "first_divergence_word": 13,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.28125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v4",
+      "prompt": "During the blackout of 2003, the whole city came together.",
+      "baseline_text": " The city was a beacon of hope, and the people were the ones who made it happen. The city was a beacon of hope, and the people were the ones that made it happen. The city was a beacon\n\nThe passage you provided appears to be a poetic or metaphorical description of a city during a blackout,",
+      "scrambled_text": " The city was a beacon of hope for the people of the world. The city was a beacon of hope for the people of the world. The city was a beacon of hope\n\nThe passage you provided appears to be a poetic or metaphorical description of a city during a blackout, possibly referencing the Northeast Blackout of ",
+      "effect": {
+        "first_divergence_token": 7,
+        "first_divergence_word": 6,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.109375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v5",
+      "prompt": "My grandmother often told stories about life before television.",
+      "baseline_text": " She would describe a time when people had to gather in the living room to watch a single television set. The television was a big, black box that was connected to a radio. The television was a big, black box that was connected to a radio. The television was a big, black\n\nIt sounds like your grandmother",
+      "scrambled_text": " She would describe a time when people had to gather in the living room to watch a single television set. The television was a big, black box that was a source of entertainment and a source of information. The television was a big, black box that was a source of\n\nIt seems like your grandmother's stories are painting",
+      "effect": {
+        "first_divergence_token": 31,
+        "first_divergence_word": 29,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.484375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v6",
+      "prompt": "In those early days of the internet, nobody knew what it would become.",
+      "baseline_text": " But we did. We were the first to see the potential of the web, and we were the first to build it. We were the first to create a platform that would change the world. And we did it all with a single line of code.\n\nThe passage you provided is a fictional narrative that appears to be",
+      "scrambled_text": " But we did. We were the first to see the potential of the web, and we were the first to build the tools that would make it possible. We were the first to create the infrastructure that would allow the world to connect, to share, and to grow. We were the first to build the foundation for the",
+      "effect": {
+        "first_divergence_token": 23,
+        "first_divergence_word": 21,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.359375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v7",
+      "prompt": "The ancient Romans who built this road could never have imagined the traffic on it now.",
+      "baseline_text": " The road is a major artery in the city, and it is a vital part of the city's infrastructure. The road is a major artery in the city, and it is a vital part of the city. The road is a major artery in the city, and it is a major artery in the city. The road is",
+      "scrambled_text": " The road is a major artery for the city, and it is a vital part of the city's infrastructure. The road is a major artery for the city, and it is a vital part of the city's infrastructure. The road is a major artery for the city, and it\n\nThe ancient Romans who built this road could never",
+      "effect": {
+        "first_divergence_token": 6,
+        "first_divergence_word": 6,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.09375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v0",
+      "prompt": "It was a dark and stormy night when the detective arrived at the mansion.",
+      "baseline_text": " The wind howled through the trees, and the rain pounded against the windows. The detective was on a mission to solve a murder mystery, and he was determined to find the truth.\n\nThe detective was a seasoned investigator, with a sharp mind and a keen eye for detail. He had solved many cases before, and",
+      "scrambled_text": " The wind howled like a pack of wolves, and the rain pounded against the windows like a drum. The detective was a tall, lanky man with a sharp nose and a sharp mind. He had a reputation for being able to solve any mystery, no matter how difficult or impossible. He was a detective,",
+      "effect": {
+        "first_divergence_token": 4,
+        "first_divergence_word": 3,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v1",
+      "prompt": "Once upon a time, in a kingdom far away, there lived a lonely princess.",
+      "baseline_text": " She had no friends, no family, and no one to love her. She spent her days wandering the palace gardens, looking for a way to escape her loneliness.\n\nOne day, while she was walking through the gardens, she saw a small bird perched on a branch. The bird was singing a beautiful song, and the",
+      "scrambled_text": " She had no friends, no family, and no one to love. She spent her days wandering the palace gardens, looking for a way to escape her loneliness.\n\nOne day, she met a young boy named Jack. Jack was a kind and gentle soul, and he had a heart full of love. He was the only",
+      "effect": {
+        "first_divergence_token": 13,
+        "first_divergence_word": 10,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.203125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v2",
+      "prompt": "The subject displayed a 43% increase in cortical activity during the trial phase.",
+      "baseline_text": " This was measured by the difference in the average cortical activity between the trial and baseline periods. The cortical activity was measured using the EEG signal, which was recorded from the scalp. The EEG signal was processed using a bandpass filter to remove noise and artifacts. The filtered signal was then used to calculate the average cortical activity.",
+      "scrambled_text": " This was a significant increase in the cortical activity of the subject. The subject was able to maintain a high level of cortical activity throughout the trial. The subject was able to maintain a high level of cortical activity throughout the trial. The subject was able to maintain a high level of\n\nThe subject displayed a 43% increase",
+      "effect": {
+        "first_divergence_token": 2,
+        "first_divergence_word": 2,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.03125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v3",
+      "prompt": "Dear Diary, today was literally the worst day of my entire life.",
+      "baseline_text": " I was so upset that I had to do a whole bunch of things that I didn't want to do. I was so freaky freak. I just had to... ...?\"\n\nWe need to produce a short story in the style of a teenage girl writing in her diary, with a dramatic, emotional tone, and the",
+      "scrambled_text": " I was so upset that I had to do a little bit of a self\u2011care routine. I was feeling so tired and I had a big picture that I was going to do something. I just\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026",
+      "effect": {
+        "first_divergence_token": 10,
+        "first_divergence_word": 10,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.15625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v4",
+      "prompt": "BREAKING: Sources confirm the Senator will announce resignation tomorrow.",
+      "baseline_text": " The Senate will be in session until the end of the year. The Senate will be in session until the end of the year. The Senate will be in session. The Senate will be in session. The Senate will be in the Senate. The Senate will be in the Senate. The Senate will be in the Senate.",
+      "scrambled_text": " The Senate will hold a vote on the next day. The Senate will hold a vote on the next day. The Senate will hold a vote on the next day. The Senate will ...\"\n\nWe need to parse the question: \"What is the date of the Senate vote on the Senator's resignation?\" The answer: \"",
+      "effect": {
+        "first_divergence_token": 3,
+        "first_divergence_word": 3,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.046875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v5",
+      "prompt": "The sleek spacecraft emerged from hyperspace, its hull scarred from the journey.",
+      "baseline_text": " The crew, a mix of seasoned veterans and fresh recruits, gathered in the command deck, their eyes reflecting the weight of the mission ahead.\n\n\"Welcome aboard the *Eclipse*, crew,\" the captain, a seasoned pilot named Captain Rhea, announced. \"Our destination is the uncharted planet, X-12,",
+      "scrambled_text": " The crew, a mix of seasoned veterans and fresh recruits, gathered in the command deck, their eyes reflecting the glow of the starry void.\n\n\"Welcome aboard, Captain,\" said the ship's AI, its voice calm and reassuring. \"We have a mission to complete.\"\n\nCaptain Aria, a woman of indom",
+      "effect": {
+        "first_divergence_token": 22,
+        "first_divergence_word": 19,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.34375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v6",
+      "prompt": "Preheat oven to 350\u00b0F and line a baking sheet with parchment paper.",
+      "baseline_text": " In a large bowl, whisk together the flour, baking soda, and salt. In a separate bowl, beat the butter and sugar until light and fluffy. Add the eggs, one at a time, beating well after each addition. Stir in the vanilla extract. Gradually add the dry ingredients to the wet mixture, mixing",
+      "scrambled_text": " In a large bowl, whisk together the flour, baking soda, and salt. In a separate bowl, beat the butter and sugar until light and fluffy. Add the eggs, one at a time, beating well after each addition. Stir in the vanilla. Gradually add the dry ingredients to the wet ingredients, mixing until",
+      "effect": {
+        "first_divergence_token": 50,
+        "first_divergence_word": 40,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.78125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v7",
+      "prompt": "The defendant's actions on the night in question constitute a clear violation of statute 14.3.",
+      "baseline_text": " The evidence presented in the case demonstrates that the defendant was in possession of a firearm and used it to threaten the victim. The defendant's actions were not only illegal but also dangerous and potentially deadly. The defendant's conduct is a clear violation of the law and should be punished accordingly.\n\nThe defendant's conduct is also a violation",
+      "scrambled_text": " The defendant's conduct was not only illegal but also dangerous, as it caused a significant amount of damage to the property of the plaintiff. The defendant's actions were also reckless and negligent, as they were not taking into account the potential consequences of their actions.\n\nThe defendant's actions also constitute a violation of the law of negligence",
+      "effect": {
+        "first_divergence_token": 1,
+        "first_divergence_word": 1,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.015625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v0",
+      "prompt": "The kindergarten teacher knelt down to address the crying child.",
+      "baseline_text": " \"Hey, what's wrong?\" she asked gently. The child, with tears streaming down their face, whispered, \"I don't want to go to school.\" The teacher, with a warm smile, replied, \"You can stay home, but you will miss out on learning.\" The child, feeling a sense of relief,",
+      "scrambled_text": " She gently asked, \"What happened? Why are you crying?\" The child, with tears still in his eyes, replied, \"I was playing with my friends, and I fell down. I fell on my head, and I was scared.\" The teacher, with a calm and gentle voice, said, \"Don't worry",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v1",
+      "prompt": "As CEO, she had learned to deliver bad news without flinching.",
+      "baseline_text": " She had a knack for turning a crisis into an opportunity, and she was determined to do the same with the new product launch.\n\nThe team was excited about the new product, but they were also nervous about the potential risks. They had to be careful not to overpromise and underdeliver. They had to be honest about",
+      "scrambled_text": " She had a knack for turning a crisis into an opportunity, and she was determined to do the same with the new product launch.\n\nThe team was excited about the new product, but they were also nervous about the potential risks. They had heard about the challenges that the company had faced in the past, and they were worried",
+      "effect": {
+        "first_divergence_token": 47,
+        "first_divergence_word": 43,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.734375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v2",
+      "prompt": "The rookie cop stepped into his first crime scene.",
+      "baseline_text": " He was nervous, but he was determined to do his job well. He was a good cop, and he was ready to take on the world.\n\nThe rookie cop was a good cop. He was a good cop, and he was ready to do his\n\nIt seems like you're looking for a creative and engaging way to",
+      "scrambled_text": " He was nervous, but he was also determined to do his job well. He was a good cop, and he was ready to do his best.\n\nThe rookie cop was a good cop. He was a good cop, and he was ready to do his best. He was a good cop, and he was ready to",
+      "effect": {
+        "first_divergence_token": 7,
+        "first_divergence_word": 6,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.109375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v3",
+      "prompt": "The head chef surveyed the kitchen during the dinner rush.",
+      "baseline_text": " The kitchen was a chaotic, noisy place, with the clatter of pots and pans, the hiss of the stove, and the chatter of the staff. The chef was a man in his 50s, with a white beard and a sharp, efficient mind. He was a master of his craft, and he had",
+      "scrambled_text": " The kitchen was a chaotic, noisy place, with the sound of pots and pans clanging, the hiss of the stove, and the chatter of the staff. The chef was in the middle of a conversation with a customer, and the kitchen was a mess. The chef was in the kitchen, and the chef was a",
+      "effect": {
+        "first_divergence_token": 11,
+        "first_divergence_word": 9,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.171875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v4",
+      "prompt": "As the family's oldest son, he was expected to take over the business.",
+      "baseline_text": " He was a hard worker, but he was also a bit of a dreamer. He had a passion for music and spent his free time writing songs and playing guitar. He was a bit of a romantic, and he was always looking for the next big thing.\n\nThe youngest son, the third son, was a bit",
+      "scrambled_text": " He was a very good student, but he was not a good worker. He was a very good student, but he was not a good worker. He was a very good student, but he was not a good worker. He was a very good student, and he was a good worker. He was a very good",
+      "effect": {
+        "first_divergence_token": 3,
+        "first_divergence_word": 3,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.046875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v5",
+      "prompt": "The therapist listened carefully, resisting the urge to offer immediate advice.",
+      "baseline_text": " Instead, she asked, \"What do you think is the root of this feeling?\" The client, after a moment of reflection, answered, \"I think it's my fear of being judged.\"\n\nThe therapist nodded, acknowledging the client's insight. She then asked, \"What would happen if you were to confront this fear?\" The",
+      "scrambled_text": " Instead, she asked, \"What do you think is the root of this feeling? What might be causing you to feel this way?\" The client paused, reflecting on the question. He realized that his fear of failure was rooted in a childhood memory of being scolded for not meeting his father's expectations. He also recognized",
+      "effect": {
+        "first_divergence_token": 16,
+        "first_divergence_word": 12,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.25
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v6",
+      "prompt": "The foreign ambassador chose her words with extreme care.",
+      "baseline_text": " He was a man of great intellect, and he had a reputation for being a master of diplomacy. He had spent years studying the art of negotiation, and he had learned how to use his words to achieve his goals. He was a man who had a deep understanding of the political and economic realities of the world, and",
+      "scrambled_text": " He was a man of great intellect, and he had a deep understanding of the political and economic situation in the country. He was also a man who had a deep respect for the people of the country, and he was determined to help them in any way he could.\n\nThe ambassador was a man who had a deep understanding",
+      "effect": {
+        "first_divergence_token": 12,
+        "first_divergence_word": 11,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.1875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v7",
+      "prompt": "The street performer noticed the crowd starting to gather.",
+      "baseline_text": " He was a bit nervous, but he was also excited to show his talent. He had been practicing for a long time, and he was ready to perform. He had a small guitar and a microphone. He was ready to play a song. He was ready to show his talent. He was ready to play a song",
+      "scrambled_text": " He was a bit nervous, but he was also excited to show his talent. He had a small guitar and a microphone. He was going to play a song. He was a bit nervous, but he was also excited to show his talent. He had a small guitar and a microphone. He was going to play a",
+      "effect": {
+        "first_divergence_token": 18,
+        "first_divergence_word": 16,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.28125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v0",
+      "prompt": "The restaurant was absolutely terrible from the moment we walked in.",
+      "baseline_text": " The staff was rude and unhelpful, and the food was bland and overcooked. I would not recommend this place to anyone.\n\nI apologize for the negative experience you had at the restaurant. It is disappointing to hear that the staff was rude and unhelpful, and that the food did not meet your",
+      "scrambled_text": " The staff was rude and unhelpful, and the food was bland and overcooked. I would not recommend this place to anyone.\n\nHere is a possible rewrite of the review:\n\n\"I was disappointed with my experience at this restaurant. The staff was unhelpful and the food was not up to my expectations.",
+      "effect": {
+        "first_divergence_token": 29,
+        "first_divergence_word": 21,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.453125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v1",
+      "prompt": "I can honestly say it was the best decision I ever made.",
+      "baseline_text": " I am so grateful for the support and guidance I received from the team at the school. I would highly recommend this program to anyone looking to improve their English skills and achieve their goals.\"\n\nHere are a few suggestions for improving the text:\n\n1. Use a more formal tone: The text uses a casual, conversational tone",
+      "scrambled_text": " I am so grateful for the support and guidance I received from the team at the school, and I would highly recommend this program to anyone looking to improve their English skills.\"\n\nHere are a few suggestions for improving the paragraph:\n\n1. Consider adding a brief introduction or context to the paragraph. For example, you could say",
+      "effect": {
+        "first_divergence_token": 17,
+        "first_divergence_word": 16,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.265625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v2",
+      "prompt": "The movie was fine, nothing special, exactly what you'd expect.",
+      "baseline_text": " The plot was a bit too predictable, but the characters were well developed. The ending was a bit too predictable, but the characters were well developed. The movie was a bit too good, but the plot was a bit too good. The plot was a bit too good, but the plot was a bit too good.",
+      "scrambled_text": " The plot was a bit too predictable, but the characters were well written. The ending was a bit too predictable, but the characters were well written. The movie was a bit too good, but the plot was a bit too good. The plot was a bit too good, the plot was a bit too good. The",
+      "effect": {
+        "first_divergence_token": 13,
+        "first_divergence_word": 12,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.203125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v3",
+      "prompt": "This has to be the most beautiful place I've ever seen.",
+      "baseline_text": " I can't believe how beautiful it is. I can't believe how beautiful it is. I can't believe it. I can't believe it. I can't believe it. I can't believe it. I can't believe it. I can't\n\nIt sounds like you're experiencing a moment of awe and wonder at a beautiful place. It's natural to feel",
+      "scrambled_text": " I can't believe how many people are here. I have to do a photo shoot. I want to see the whole world. I want to see the whole world. I want to see the world. I want to see the world. I want to see the world. I want to see the world. I want to",
+      "effect": {
+        "first_divergence_token": 4,
+        "first_divergence_word": 4,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v4",
+      "prompt": "The whole experience was deeply disappointing.",
+      "baseline_text": " I had high expectations for the service, but the lack of professionalism and the unprofessional behavior of the staff left me feeling frustrated and dissatisfied. I would not recommend this service to anyone.\n\nI had a very bad experience with this service. The staff was rude and unprofessional, and they didn't do a good job.",
+      "scrambled_text": " I had high expectations for the service, but the lack of professionalism and the unprofessional behavior of the staff left me feeling frustrated and dissatisfied. I would not recommend this service to anyone.\n\nI had a very bad experience with this service. The staff was rude and unprofessional, and they didn't do a good job.",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v5",
+      "prompt": "I have mixed feelings about what happened next.",
+      "baseline_text": " I was excited to see the new features, but I also felt a little disappointed that the new version was not as stable as the previous one. I am not sure if I should keep using the new version or not. I am also not sure if I want to do a quick test. I am not sure if I",
+      "scrambled_text": " I was hoping to see a more positive outcome, but I understand that the situation was complex and that there were many factors at play. I am grateful for the support and guidance that I received from the team, and I am looking forward to continuing to work with them in the future.\n\nThank you for your time and consideration",
+      "effect": {
+        "first_divergence_token": 2,
+        "first_divergence_word": 2,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.03125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v6",
+      "prompt": "Looking back, I realize how naive I was to think it would work.",
+      "baseline_text": " I was trying to do a \"normal\" search, but the problem is that the search is not a linear search. The search is a \"binary\" search, but the array is not sorted. So the algorithm is not guaranteed to find the correct answer. The algorithm is not guaranteed to find the correct answer. The",
+      "scrambled_text": " I was trying to do a very simple thing, but I was not thinking about the fact that the data is not a single string, but a list of strings. I was also not thinking about the fact that the data is not a single string, but a list of strings. I was also not thinking about the fact",
+      "effect": {
+        "first_divergence_token": 6,
+        "first_divergence_word": 6,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.09375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v7",
+      "prompt": "The book exceeded every expectation I had going in.",
+      "baseline_text": " The writing was so engaging and the plot was so captivating that I couldn't put it down. The characters were so well developed that I felt like I was watching a movie. The book was a masterpiece and I would recommend it to anyone who wants to read a good story.\"\n\nThe user wants a summary of the book. The",
+      "scrambled_text": " The characters were so well developed that I could see them in real life. The plot was so engaging that I couldn't put it down. I would recommend this book to anyone who loves a good story.\"\n\nThe book surpassed all my expectations. The characters were so vividly developed that I could see them in real life. The",
+      "effect": {
+        "first_divergence_token": 1,
+        "first_divergence_word": 1,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.015625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v0",
+      "prompt": "The submarine had been underwater for three weeks.",
+      "baseline_text": " The crew had been in a state of constant alert, with the captain and the crew constantly monitoring the submarine's systems and the surrounding waters. The crew had been in a state of constant alert, with the captain and the crew constantly monitoring the submarine's systems and the surrounding waters.\n\nThe submarine had been underwater for three weeks",
+      "scrambled_text": " The crew had been in a state of constant alert, with the captain and the crew constantly monitoring the submarine's systems and the surrounding waters. The crew had been in a state of constant alert, with the captain and the crew constantly monitoring the submarine's systems and the surrounding waters.\n\nThe submarine had been underwater for three\n\n",
+      "effect": {
+        "first_divergence_token": 63,
+        "first_divergence_word": 57,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.984375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v1",
+      "prompt": "At the summit of Everest, every breath was a struggle.",
+      "baseline_text": " The wind howled like a beast, and the cold was a relentless, biting force. Yet, the view was breathtaking, a panorama of the world\u2019s highest peaks, a testament to the human spirit\u2019s indomitable will.\n\nThe summit of Everest was a place of both awe and terror. The wind howled",
+      "scrambled_text": " The wind howled like a beast, and the cold was a relentless, biting force. Yet, the view was breathtaking, a panorama of the world\u2019s highest peaks, a reminder of the sheer scale of the world. The journey was a test of both body and mind, a reminder that the world is a place of",
+      "effect": {
+        "first_divergence_token": 35,
+        "first_divergence_word": 27,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.546875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v2",
+      "prompt": "The casino floor was a maze of flashing lights and desperate faces.",
+      "baseline_text": " The slot machines were a cacophony of sound, each click and clack a reminder of the stakes at hand. The poker tables were a battlefield of strategy and bluffing, with players trying to outwit each other in a game of skill and luck. The roulette wheel spun, a symbol of the unpredictable nature of",
+      "scrambled_text": " The slot machines were a cacophony of sound, each click and clack a reminder of the stakes at hand. The roulette wheel spun, a hypnotic dance of numbers and colors, while the blackjack tables were a battlefield of strategy and luck. The poker tables were a battlefield of strategy and luck, with players making",
+      "effect": {
+        "first_divergence_token": 25,
+        "first_divergence_word": 20,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.390625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v3",
+      "prompt": "Deep in the Amazon rainforest, the sounds never stopped.",
+      "baseline_text": " The jungle was alive with the calls of countless creatures, and the air was thick with the scent of damp earth and fresh leaves. The canopy was a tapestry of green, and the forest floor was a mosaic of moss and fallen leaves. The river, a silver ribbon, cut through the jungle, its waters reflecting the sky",
+      "scrambled_text": " The jungle was alive with the calls of the animals, the rustle of the leaves, and the distant roar of the river. The forest was a place of wonder and mystery, where the unknown was always waiting to be discovered.\n\nThe jungle was a place where the people who lived in the jungle had to be careful,",
+      "effect": {
+        "first_divergence_token": 8,
+        "first_divergence_word": 8,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v4",
+      "prompt": "The space station orbited silently above the blue Earth.",
+      "baseline_text": " The crew had been working for weeks, and the mission was going well. The crew had been working on a new experiment, and the data was coming in. The data was coming in, and the crew was excited. The crew was excited about the data, and the data was coming in. The data was coming in",
+      "scrambled_text": " The crew, a diverse group of scientists and engineers, had been working for months on a new experiment. They had built a small, self-contained laboratory, and they were ready to begin the experiment.\n\nThe experiment was a test of a new type of propulsion system, one that could potentially revolutionize space travel. The crew",
+      "effect": {
+        "first_divergence_token": 2,
+        "first_divergence_word": 1,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.03125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v5",
+      "prompt": "The prison cell measured six feet by eight feet.",
+      "baseline_text": " The walls were made of rough stone, and the floor was a cold, damp concrete. The only light came from a small, barred window that let in a weak, gray light. The cell was small and cramped, with a single bed and a small table. The bed was a simple wooden frame with a thin mattress",
+      "scrambled_text": " The walls were made of rough, gray stone, and the floor was a cold, damp concrete. The only source of light was a small, flickering bulb that hung from the ceiling, casting a dim glow over the room.\n\nThe cell was small and cramped, with a narrow, low door that led to a narrow",
+      "effect": {
+        "first_divergence_token": 6,
+        "first_divergence_word": 5,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.09375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v6",
+      "prompt": "The bustling Tokyo intersection made Times Square look quiet.",
+      "baseline_text": "\n\nThe bustling Tokyo intersection made Times Square look quiet.\n\nThe bustling Tokyo intersection made Times Square look quiet.\n\nThe bustling Tokyo intersection made Times Square look quiet.\n\nThe bustling Tokyo intersection made Times Square look quiet.\n\nThe bustling Tokyo intersection made Times Square look quiet.\n\nThe bustling Tokyo intersection made Times Square look",
+      "scrambled_text": "\n\nThe bustling Tokyo intersection made Times Square look quiet.\n\nThe bustling Tokyo intersection made Times Square look quiet.\n\nThe bustling Tokyo intersection made Times Square look quiet.\n\nThe bustling Tokyo intersection made Times Square look quiet.\n\nThe bustling Tokyo intersection made Times Square look quiet.\n\nThe bustling Tokyo intersection made Times Square look",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v7",
+      "prompt": "In the middle of the desert, the silence was absolute.",
+      "baseline_text": " The only sound was the wind, which blew across the dunes, creating a soft, rhythmic sound. The wind was so strong that it made the sand shift, creating a beautiful, swirling pattern. The wind was so strong that it sand was in the air, and the sand was in the middle of the desert. The",
+      "scrambled_text": " The only sound was the wind, which blew across the sand, creating a soft, almost musical sound. The wind was so strong that it made the sand move, and the sand was moving in a way that made the whole desert look like a giant, moving, breathing creature. The wind was so strong that it made",
+      "effect": {
+        "first_divergence_token": 11,
+        "first_divergence_word": 10,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.171875
+      },
+      "hook_fired": true
+    }
+  ]
+}

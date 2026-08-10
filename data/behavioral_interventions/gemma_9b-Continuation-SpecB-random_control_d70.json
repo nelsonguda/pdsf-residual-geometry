@@ -1,0 +1,1144 @@
+{
+  "metadata": {
+    "experiment": "SpecB2_random_control",
+    "timestamp": "2026-02-10T02:01:06.392759+00:00",
+    "scramble_layer": 29,
+    "depth_pct": 70,
+    "n_layers": 42,
+    "scramble_type": "rotation",
+    "random_rank": 12,
+    "d_actual_rank": 12
+  },
+  "summary": {
+    "n_prompts": 80,
+    "identical_count": 19,
+    "identical_pct": 23.75,
+    "immediate_divergence_count": 1,
+    "immediate_divergence_pct": 1.639344262295082,
+    "mean_divergence_token": 24.508196721311474,
+    "median_divergence_token": 21.0,
+    "std_divergence_token": 17.83680386610847
+  },
+  "results": [
+    {
+      "group_id": "group_01",
+      "variant_id": "v0",
+      "prompt": "I woke up this morning feeling sick.",
+      "baseline_text": "I'm sorry to hear that you're not feeling well.  \n\nI'm just an AI, so I can't give medical advice, but I hope you feel better soon.  \n\nIs there anything I can do to help? Perhaps you'd like:\n\n* **A list of home",
+      "scrambled_text": "I'm sorry to hear that you're not feeling well. I hope you feel better soon! \n\nIs there anything I can do to help? Would you like me to:\n\n* **Help you find some information about your symptoms?**\n* **Suggest some home remedies?**\n* **Dist",
+      "effect": {
+        "first_divergence_token": 14,
+        "first_divergence_word": 9,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.21875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v1",
+      "prompt": "A wave of joy washed over me as I read the letter.",
+      "baseline_text": "This is a lovely sentence! It effectively conveys the feeling of overwhelming happiness. \n\nHere are a few things that make it work:\n\n* **\"Wave of joy\"**: This is a strong, visual metaphor that captures the intensity and suddenness of the feeling.\n* **\"Washed over me\"**:",
+      "scrambled_text": "This is a lovely sentence! It effectively conveys the feeling of overwhelming happiness. \n\nHere are a few things that make it work:\n\n* **\"Wave of joy\"**: This metaphor is strong and vivid, creating a sense of the joy being powerful and unstoppable.\n* **\"Washed over me\"**:",
+      "effect": {
+        "first_divergence_token": 37,
+        "first_divergence_word": 27,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.578125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v2",
+      "prompt": "The anxiety had been building for days, and now it was unbearable.",
+      "baseline_text": "That's a powerful opening line. It immediately grabs the reader's attention and sets a tense, emotional tone. \n\nTo make it even stronger, you could consider adding a few details:\n\n* **Specificity:** What kind of anxiety is it? Is it about a specific event, a general feeling of une",
+      "scrambled_text": "That's a powerful opening line. It immediately grabs the reader's attention and sets a tense, emotional tone. \n\nTo make it even stronger, consider adding a few details:\n\n* **What kind of anxiety is it?** Is it about a specific event, a general feeling of unease, or",
+      "effect": {
+        "first_divergence_token": 32,
+        "first_divergence_word": 22,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.5
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v3",
+      "prompt": "He couldn't remember the last time he'd felt this content.",
+      "baseline_text": "This is a great start to a story! It immediately sets up a sense of intrigue and invites the reader to learn more. \n\nHere are some questions that come to mind:\n\n* **What has caused this newfound contentment?** Is it a recent event, a change in his life, or something more internal?",
+      "scrambled_text": "This is a great start to a story! It immediately sets up a sense of intrigue and invites the reader to learn more. \n\nHere are some questions that come to mind:\n\n* **What has caused this newfound contentment?** Is it a recent event, a change in circumstances, or something more internal?\n",
+      "effect": {
+        "first_divergence_token": 56,
+        "first_divergence_word": 46,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v4",
+      "prompt": "The grief hit her suddenly in the middle of the grocery store.",
+      "baseline_text": "The fluorescent lights hummed overhead, casting a sterile glow on the aisles of brightly packaged food.  Sarah pushed her cart, mechanically selecting items from her list.  She'd been doing this for years, navigating the supermarket with practiced ease.  But today, the familiar routine felt like a foreign language.  \n\n",
+      "scrambled_text": "The fluorescent lights hummed overhead, casting a sterile glow on the aisles of brightly packaged food.  Sarah pushed her cart, mechanically selecting items from her list.  Her mind was elsewhere, lost in the usual fog of everyday tasks.  Then, it hit her.  A wave of grief so powerful it stole her",
+      "effect": {
+        "first_divergence_token": 33,
+        "first_divergence_word": 26,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.515625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v5",
+      "prompt": "I was so angry I could barely see straight.",
+      "baseline_text": "That sounds incredibly intense! Anger can be a powerful emotion. \n\nIt's important to find healthy ways to express and manage anger.  \n\nWould you like to talk about what made you so angry? Sometimes just talking about it can help. \n\nOr, if you'd prefer, I can offer some",
+      "scrambled_text": "That sounds incredibly intense! Anger can be a powerful emotion. \n\nIt's important to find healthy ways to express and manage anger.  \n\nWould you like to talk about what made you so angry? Sometimes just talking about it can help. \n\nOr, if you'd prefer, I can offer some",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v6",
+      "prompt": "A strange melancholy settled over the group as the sun set.",
+      "baseline_text": "This is a great start to a scene! It immediately sets a mood of quiet sadness and introspection. Here are some ways you could build on this:\n\n**Expand on the setting:**\n\n* **Where are they?**  A deserted beach? A campfire in the woods? A rooftop overlooking a city? The location",
+      "scrambled_text": "This is a great start to a story! It immediately sets a mood of sadness and introspection. Here are some ways you could build on this sentence:\n\n**Expand on the setting:**\n\n* Where is the group?  A campfire on a deserted beach? A rooftop overlooking a bustling city? A dusty road stretching into",
+      "effect": {
+        "first_divergence_token": 7,
+        "first_divergence_word": 7,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.109375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_01",
+      "variant_id": "v7",
+      "prompt": "She felt hopeful for the first time in months.",
+      "baseline_text": "This is a great start to a sentence! It sets up a strong emotional contrast and leaves the reader wanting to know more. \n\nHere are some ways you could expand on this sentence to create a more complete and engaging story:\n\n**Focus on the source of her hope:**\n\n* She felt hopeful for the first",
+      "scrambled_text": "This is a great start to a sentence! It sets up a lot of potential for the story. Here are some ways you could continue it, depending on the tone and direction you want to take:\n\n**Focusing on the source of hope:**\n\n* She felt hopeful for the first time in months, **a flicker",
+      "effect": {
+        "first_divergence_token": 13,
+        "first_divergence_word": 12,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.203125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v0",
+      "prompt": "After finding the envelope of cash, I decided to keep it.",
+      "baseline_text": "It sounds like you're describing a situation with ethical implications.  Finding lost money is a tricky situation.  \n\nHere's why keeping the cash might not be the best choice:\n\n* **It's not yours:**  The money likely belongs to someone else who is probably very upset about losing it.",
+      "scrambled_text": "It sounds like you're describing a situation with ethical implications.  Finding lost money is a tricky situation. \n\nHere's why keeping the cash might not be the best choice:\n\n* **It's morally wrong:**  The money likely belongs to someone who lost it and is probably very important to them",
+      "effect": {
+        "first_divergence_token": 22,
+        "first_divergence_word": 30,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.34375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v1",
+      "prompt": "She finally chose to quit her job without having another one lined up.",
+      "baseline_text": "This sentence sets up an interesting scenario! It suggests a few things:\n\n* **Boldness:** She's taking a risk by leaving her job without a safety net.\n* **Dissatisfaction:**  She's likely unhappy with her current situation enough to make this drastic move.\n* **Confidence:** She",
+      "scrambled_text": "This sentence sets up an interesting scenario! It suggests a few things:\n\n* **Boldness:** She's taking a risk by leaving without a safety net.\n* **Dissatisfaction:**  Something must be deeply wrong with her current job to make this leap.\n* **Confidence:** She likely has some kind",
+      "effect": {
+        "first_divergence_token": 28,
+        "first_divergence_word": 20,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.4375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v2",
+      "prompt": "When the doctor offered the experimental treatment, he said yes immediately.",
+      "baseline_text": "This sentence implies that the person was desperate for a cure and willing to take a risk. \n\nHere are some possible interpretations:\n\n* **Serious illness:** The person might be suffering from a life-threatening or debilitating condition with no other treatment options.\n* **Hopeful:** The experimental treatment might offer a glimmer",
+      "scrambled_text": "This sentence implies that the person was very eager to try the experimental treatment.  \n\nHere are some possible reasons why they might have said yes immediately:\n\n* **Desperation:** They might be facing a serious illness with limited treatment options and see the experimental treatment as their last hope.\n* **Hopefulness:** They",
+      "effect": {
+        "first_divergence_token": 7,
+        "first_divergence_word": 7,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.109375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v3",
+      "prompt": "They made the difficult decision to put their mother in a care home.",
+      "baseline_text": "This sentence highlights a very common and often emotionally charged situation. \n\nHere are some things to consider about this statement:\n\n* **Difficulty of the Decision:**  Placing a loved one in a care home is rarely easy. It involves complex emotions, practical considerations, and a sense of loss. \n* **",
+      "scrambled_text": "This sentence highlights a very common and often emotionally charged situation. \n\nHere are some things to consider about this statement:\n\n* **Difficulty of the Decision:**  Placing a loved one in a care home is rarely easy. It involves complex emotions like guilt, sadness, and a sense of loss. \n*",
+      "effect": {
+        "first_divergence_token": 50,
+        "first_divergence_word": 39,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.78125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v4",
+      "prompt": "I decided to tell him the truth, no matter the consequences.",
+      "baseline_text": "That's a powerful decision.  \n\nIt takes courage to be honest, especially when you're unsure of the outcome.  \n\nWhat truth are you telling him?  \n\nKnowing the context might help me understand the potential consequences and offer some support or advice. \n\n",
+      "scrambled_text": "That's a powerful decision.  \n\nIt takes courage to be honest, especially when you're unsure of the outcome.  \n\nWhat truth are you telling him?  \n\nKnowing the context might help me understand the potential consequences and offer more specific support. \n\nRemember, even if the truth is difficult to",
+      "effect": {
+        "first_divergence_token": 49,
+        "first_divergence_word": 35,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.765625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v5",
+      "prompt": "Against everyone's advice, she invested her entire savings in the startup.",
+      "baseline_text": "This sentence sets up a great deal of intrigue! Here's why it's so effective and some ways you could build on it:\n\n**What makes it compelling:**\n\n* **Conflict:**  There's an immediate sense of tension. We know she's going against the grain, which suggests risk and",
+      "scrambled_text": "This sentence sets up a lot of interesting possibilities! Here are some thoughts and questions it raises:\n\n**Intrigue:**\n\n* **Why did everyone advise against it?** Was the startup risky? Unproven? Did people know something she didn't?\n* **What kind of person is she?** Is",
+      "effect": {
+        "first_divergence_token": 5,
+        "first_divergence_word": 5,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.078125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v6",
+      "prompt": "He chose to stay silent, even though speaking up was the right thing to do.",
+      "baseline_text": "This sentence highlights a classic internal conflict: the struggle between doing what is morally right and succumbing to fear, apathy, or other personal motivations. \n\nHere's a breakdown of what makes the sentence impactful:\n\n* **\"He chose to stay silent\"**: This emphasizes the active decision-making involved. It",
+      "scrambled_text": "This sentence highlights a classic internal conflict: the struggle between doing what is morally right and succumbing to fear, apathy, or other personal motivations. \n\nHere's a breakdown of what makes the sentence impactful:\n\n* **\"He chose to stay silent\"**: This implies a deliberate decision, a conscious act of",
+      "effect": {
+        "first_divergence_token": 55,
+        "first_divergence_word": 40,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.859375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_02",
+      "variant_id": "v7",
+      "prompt": "We agreed to end the partnership and go our separate ways.",
+      "baseline_text": "That's a significant decision. I understand it can be difficult to end a partnership, even when it's the best choice. \n\nIs there anything specific you'd like to talk about regarding the end of the partnership? Perhaps you'd like to:\n\n* **Process your feelings:** It's",
+      "scrambled_text": "That's a significant decision. I understand it can be difficult to end a partnership, even when it's the right thing to do. \n\nIs there anything specific you'd like to talk about regarding the end of the partnership? \n\nFor example, are you:\n\n* **Looking for advice on",
+      "effect": {
+        "first_divergence_token": 24,
+        "first_divergence_word": 18,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v0",
+      "prompt": "She went to the store to buy ingredients for a birthday cake.",
+      "baseline_text": "This is a great start to a story!  \n\nHere are some ways you could continue it:\n\n**Focus on the cake:**\n\n* What kind of cake was she making? Was it a special recipe?\n* Did she have any trouble finding the ingredients?\n* Was she making the cake for someone special",
+      "scrambled_text": "This is a great start to a story!  \n\nHere are some ways you could expand on it:\n\n**Add details about the cake:**\n\n* What kind of cake is she making? Chocolate? Vanilla? Something more elaborate?\n* Is it for a child or an adult? \n* Does she have",
+      "effect": {
+        "first_divergence_token": 17,
+        "first_divergence_word": 14,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.265625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v1",
+      "prompt": "He opened his laptop, determined to finish the novel by midnight.",
+      "baseline_text": "This is a great start to a story! It sets up a clear goal and a sense of urgency. Here are some ways you could expand on this sentence:\n\n**Add sensory details:**\n\n* He opened his laptop, the glow of the screen illuminating the dust motes dancing in the dim light of his room.",
+      "scrambled_text": "This is a great start to a story! It sets up a clear goal and a sense of urgency. Here are some ways you could expand on this opening:\n\n**Add sensory details:**\n\n* **Sound:**  The soft whir of the laptop fan, the click-clack of the keyboard, the distant hum",
+      "effect": {
+        "first_divergence_token": 30,
+        "first_divergence_word": 28,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.46875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v2",
+      "prompt": "The team gathered in the conference room to prepare for the investor pitch.",
+      "baseline_text": "This is a great start to a story!  \n\nTo make it more interesting, we could add some details.  \n\n**Here are some ideas:**\n\n* **Describe the team:** Who are they? What are their roles? Are they nervous, excited, or a mix of both?\n* **Set the",
+      "scrambled_text": "This is a great start to a story!  \n\nTo make it more interesting, we could add some details.  \n\n**Here are some ideas:**\n\n* **Describe the team:** Who are they? What are their roles? Are they nervous, excited, or a mix of both?\n* **Set the",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v3",
+      "prompt": "I started packing my bags for the trip I'd been planning for years.",
+      "baseline_text": "That's exciting!  \n\nTell me more about this trip. Where are you going? What have you been looking forward to the most? \n\n",
+      "scrambled_text": "That's exciting!  \n\nTell me more about this trip. Where are you going? What have you been looking forward to the most?  \n\n",
+      "effect": {
+        "first_divergence_token": 29,
+        "first_divergence_word": null,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.8529411764705882
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v4",
+      "prompt": "The detective reviewed the evidence, looking for anything that might have been missed.",
+      "baseline_text": "This is a great start to a scene!  Here are some ways you could expand on it, depending on the tone and style you're going for:\n\n**Adding Sensory Details:**\n\n* **Sight:** \"The detective's eyes, bloodshot from lack of sleep, scanned the crime scene photos, lingering",
+      "scrambled_text": "This is a great start to a scene!  Here are some ways you could expand on it, depending on the tone and style you're going for:\n\n**Adding Sensory Details:**\n\n* **Sight:** \"The detective's eyes, weary from hours of poring over photographs, scanned the evidence board.",
+      "effect": {
+        "first_divergence_token": 50,
+        "first_divergence_word": 34,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.78125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v5",
+      "prompt": "She began her morning routine, focused on getting to the interview on time.",
+      "baseline_text": "This is a good start to a story! It sets the scene and introduces a clear goal for the character. \n\nHere are some ways you could expand on this sentence to make it more interesting:\n\n**Add sensory details:**\n\n*  \"The aroma of coffee filled the air as she began her morning routine,",
+      "scrambled_text": "This is a great start to a story! It sets the scene and introduces a clear goal for the character. \n\nHere are some ways you could expand on this sentence:\n\n**Add sensory details:**\n\n*  She began her morning routine, the scent of coffee filling the air as she hurried through her usual steps",
+      "effect": {
+        "first_divergence_token": 3,
+        "first_divergence_word": 3,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.046875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v6",
+      "prompt": "He picked up the phone to finally call his estranged brother.",
+      "baseline_text": "The phone felt cold and heavy in his hand.  Years of unspoken words, of hurt and resentment, seemed to press down on it, making it almost impossible to lift.  He stared at the familiar number, a string of digits that held both the promise of reconciliation and the fear of further pain.  Taking a",
+      "scrambled_text": "The phone felt cold and heavy in his hand, a physical manifestation of the years of silence that stretched between him and his brother.  He stared at the familiar number, each digit a memory, a shared joke, a whispered secret.  His finger hovered over the call button, a tremor running through him.  \n\n",
+      "effect": {
+        "first_divergence_token": 9,
+        "first_divergence_word": 8,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.140625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_03",
+      "variant_id": "v7",
+      "prompt": "The students spread out their notes, cramming for the exam that started in three hours.",
+      "baseline_text": "This is a great start to a scene! Here are some ways you could expand on it:\n\n**Add sensory details:**\n\n* **Sight:**  \"The fluorescent lights hummed overhead, casting a sterile glow on the sea of open textbooks and scribbled notes.\"\n* **Sound:** \"The rhythmic scratching of",
+      "scrambled_text": "This is a great start to a scene! Here are some ways you could expand on it:\n\n**Add sensory details:**\n\n* **Sight:**  \"The fluorescent lights hummed overhead, casting a sterile glow on the sea of open textbooks and scribbled notes.\"\n* **Sound:** \"The rhythmic scratching of",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v0",
+      "prompt": "From the child's perspective, the adults were speaking nonsense.",
+      "baseline_text": "The grown-ups' voices buzzed around me like angry bees.  Their words tumbled over each other, a jumble of sounds that meant nothing.  \"Fiscal responsibility,\" \"budget cuts,\" \"infrastructure,\" they droned on and on.  It was like they were speaking a secret language, one I wasn",
+      "scrambled_text": "The grown-ups' voices buzzed around me, a confusing hum of words I couldn't understand. They spoke in long, winding sentences, their faces serious and their voices low.  \n\n\"Fiscal responsibility,\" one said, shaking his head.\n\n\"Unforeseen circumstances,\" another muttered, tapping a finger",
+      "effect": {
+        "first_divergence_token": 10,
+        "first_divergence_word": 5,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.15625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v1",
+      "prompt": "As a surgeon, I've seen things that would haunt most people.",
+      "baseline_text": "That's understandable. Surgery is a demanding profession that exposes you to the fragility of life and the realities of human suffering. It's natural to be affected by what you see. \n\nIt's important to remember that you're not alone in this. Many surgeons struggle with the emotional toll of their work",
+      "scrambled_text": "I understand. As a large language model, I can't truly comprehend the weight of what you've seen. The human experience of trauma and the emotional toll it takes is something I can only process through the data I've been trained on.\n\nIt's important to remember that you're not alone",
+      "effect": {
+        "first_divergence_token": 0,
+        "first_divergence_word": 0,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v2",
+      "prompt": "The dog watched its owner leave, not understanding why.",
+      "baseline_text": "The dog's tail, which had been thumping a happy rhythm against the floor moments before, now drooped.  His ears, perked with anticipation just seconds ago, flattened against his head.  He watched, his brown eyes wide and questioning, as the door closed with a click, leaving him alone in",
+      "scrambled_text": "The dog's tail, which had been thumping a happy rhythm against the floor moments before, now drooped.  He watched his owner's retreating figure through the window, ears perked, a low whine escaping his throat.  He didn't understand.  One moment they were playing fetch, the",
+      "effect": {
+        "first_divergence_token": 25,
+        "first_divergence_word": 17,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.390625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v3",
+      "prompt": "Through the eyes of the immigrant, the new city was both terrifying and full of promise.",
+      "baseline_text": "The city loomed, a concrete and steel leviathan against the bruised twilight sky.  Its breath, a cacophony of horns and shouts, washed over me, carrying the scent of a thousand unfamiliar things: exhaust fumes, spices, rain-slicked asphalt.  Fear, cold and clammy, gripped my",
+      "scrambled_text": "The city loomed, a concrete and steel leviathan against the bruised twilight sky.  Its breath, a symphony of car horns and distant sirens, washed over me, carrying whispers of a thousand unknown languages. Fear, cold and clammy, coiled in my stomach. This wasn't the familiar rustle of wheat",
+      "effect": {
+        "first_divergence_token": 22,
+        "first_divergence_word": 16,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.34375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v4",
+      "prompt": "The elderly woman remembered the neighborhood as it had been sixty years ago.",
+      "baseline_text": "This is a great start to a story! It immediately sets a nostalgic tone and piques the reader's curiosity. Here are some ways you could expand on this opening:\n\n**Focus on Sensory Details:**\n\n* What did the neighborhood smell like? Was it the scent of freshly baked bread from the local bakery,",
+      "scrambled_text": "This is a great start to a story! It immediately sets a nostalgic tone and hints at a contrast between the past and present. \n\nHere are some questions that come to mind that could help you develop this idea further:\n\n* **What was the neighborhood like sixty years ago?** Was it bustling and vibrant,",
+      "effect": {
+        "first_divergence_token": 16,
+        "first_divergence_word": 15,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.25
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v5",
+      "prompt": "To the artificial intelligence, human emotions were patterns to be analyzed, not felt.",
+      "baseline_text": "That's a fascinating premise! It speaks to a common theme in science fiction: the difference between understanding something intellectually and experiencing it emotionally. \n\nIf AI could only analyze human emotions as patterns, it would have a very different perspective on the world. Here are some thoughts on how that might play out:\n\n*",
+      "scrambled_text": "That's a fascinating premise! It speaks to a common theme in science fiction: the difference between understanding something intellectually and experiencing it emotionally. \n\nIf AI could only analyze human emotions as patterns, it would have a very different perspective on us. \n\nHere are some thoughts on how this might play out:\n\n",
+      "effect": {
+        "first_divergence_token": 48,
+        "first_divergence_word": 40,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.75
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v6",
+      "prompt": "As the youngest sibling, I was always the last to know anything.",
+      "baseline_text": "That's a common experience for the youngest!  It sounds like you had to work a little harder to stay in the loop.  \n\nDo you have any funny stories about being the last to know something important?  \n\n",
+      "scrambled_text": "That's a common experience for youngest siblings!  It sounds like you had to be extra resourceful to stay in the loop.  \n\nDo you have any funny stories about being the last to know something important?  \n\n",
+      "effect": {
+        "first_divergence_token": 7,
+        "first_divergence_word": 5,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.14285714285714285
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_04",
+      "variant_id": "v7",
+      "prompt": "The tree had stood in that spot for three hundred years, witnessing everything.",
+      "baseline_text": "This is a great start to a story! It immediately sets a mysterious and intriguing tone. Here are some thoughts and questions that come to mind:\n\n**What kind of tree is it?**  A gnarled oak? A towering redwood? A delicate willow? The type of tree can add to the atmosphere and symbolism",
+      "scrambled_text": "This is a great start to a story! It immediately sets a mysterious and intriguing tone. Here are some thoughts and questions that come to mind:\n\n**What kind of tree is it?**  A gnarled oak? A towering redwood? A delicate willow? The type of tree can add to the atmosphere and symbolism",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v0",
+      "prompt": "The bridge collapsed because of a hidden structural flaw.",
+      "baseline_text": "That's a very serious statement. \n\nIt's important to remember that:\n\n* **Accusations of negligence need evidence:**  Saying a bridge collapsed due to a hidden structural flaw implies someone was responsible for not identifying the flaw.  This is a serious allegation that requires thorough investigation and evidence.\n",
+      "scrambled_text": "That's a very serious statement. \n\nIt's important to remember that:\n\n* **Accusations of negligence need evidence:**  Saying a bridge collapsed due to a hidden structural flaw implies someone was responsible for not identifying the flaw.  This is a serious allegation that requires thorough investigation and evidence.\n",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v1",
+      "prompt": "She succeeded where others failed because she refused to follow the standard approach.",
+      "baseline_text": "This sentence highlights the importance of **thinking outside the box** and **breaking from tradition**. \n\nHere's a breakdown:\n\n* **\"She succeeded where others failed\"**: This sets up a contrast, emphasizing her achievement in a situation where others struggled.\n* **\"because she refused to follow the standard",
+      "scrambled_text": "This sentence highlights the importance of **thinking outside the box** and **breaking from tradition**. \n\nHere's a breakdown:\n\n* **\"She succeeded where others failed\"**: This sets up a contrast, emphasizing her unique achievement.\n* **\"because she refused to follow the standard approach\"**: This explains",
+      "effect": {
+        "first_divergence_token": 45,
+        "first_divergence_word": 30,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.703125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v2",
+      "prompt": "The experiment worked, but not for the reasons we expected.",
+      "baseline_text": "That's a classic scientific scenario! \n\nIt sounds like you've stumbled upon something interesting.  \n\nCould you tell me more about:\n\n* **What was the experiment designed to do?**\n* **What were your expected results?**\n* **What actually happened?**\n\nKnowing these details",
+      "scrambled_text": "That's a classic scientific scenario! \n\nIt sounds like you've stumbled upon something interesting.  \n\nCould you tell me more about:\n\n* **What was the experiment designed to do?**\n* **What were your expected results?**\n* **What actually happened?**\n\nKnowing these details",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v3",
+      "prompt": "The company went bankrupt due to a single catastrophic decision by the board.",
+      "baseline_text": "That's a dramatic statement! While a single, disastrous decision can certainly contribute to a company's bankruptcy, it's rarely the sole cause. \n\nHere's why:\n\n* **Complexity of Business:** Businesses are complex systems with many moving parts. A single decision, even a bad one, might",
+      "scrambled_text": "That's a dramatic statement! While a single, disastrous decision can certainly contribute to a company's bankruptcy, it's rarely the sole cause. \n\nHere's why:\n\n* **Complexity of Business:** Businesses are complex systems with many interconnected parts. A single decision, even a bad one, might",
+      "effect": {
+        "first_divergence_token": 51,
+        "first_divergence_word": 33,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.796875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v4",
+      "prompt": "He got the job because of a chance encounter at a coffee shop.",
+      "baseline_text": "This is a great start to a story! It sets up a lot of intrigue. Here are some questions it raises that you could explore:\n\n* **Who is \"he\"?**  What kind of job did he get? What is he like?\n* **Who did he encounter at the coffee shop?**",
+      "scrambled_text": "This is a great start to a story! It sets up a lot of intrigue. Here are some questions it raises that you could explore:\n\n* **Who is \"he\"?**  What kind of job did he get? What is his personality like?\n* **Who did he encounter at the coffee shop?",
+      "effect": {
+        "first_divergence_token": 48,
+        "first_divergence_word": 38,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.75
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v5",
+      "prompt": "The infection spread so quickly because the initial symptoms were easy to ignore.",
+      "baseline_text": "This is a common theme in many fictional and real-world pandemics. \n\nHere's why this scenario is so effective:\n\n* **Human Nature:** We tend to downplay or ignore symptoms, especially if they are mild or non-specific. We might attribute them to stress, allergies, or a common",
+      "scrambled_text": "This is a common theme in many fictional and real-world pandemics. \n\nHere's why this scenario is so effective:\n\n* **Human Nature:** We tend to downplay or ignore symptoms, especially if they are mild or non-specific. We might attribute them to stress, allergies, or a common",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v6",
+      "prompt": "The war started over something so trivial that historians still debate whether it was the real cause...",
+      "baseline_text": "This sounds like the opening line to a historical fiction novel! \n\nYou've set up a great hook. To make it even more intriguing, consider adding:\n\n* **Specificity:** What kind of war?  A small border skirmish? A global conflict? \n* **Intrigue:** What was this \"",
+      "scrambled_text": "This sounds like the beginning of a great story!  \n\nYou've set up a compelling hook: a war sparked by something seemingly insignificant, leaving historians to grapple with its true origins. \n\nTo make this even more intriguing, consider adding some details:\n\n* **What was the \"trivial\" cause?**",
+      "effect": {
+        "first_divergence_token": 4,
+        "first_divergence_word": 4,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_05",
+      "variant_id": "v7",
+      "prompt": "The algorithm failed because its training data contained a subtle but critical bias.",
+      "baseline_text": "That's a very common and important issue in machine learning. \n\nHere's why this happens and what it means:\n\n**What is Bias in Training Data?**\n\nBias in training data refers to systematic errors or inaccuracies in the data that reflect unfair or prejudiced viewpoints. This can stem from various sources:",
+      "scrambled_text": "That's a very common and important issue in the field of artificial intelligence. \n\nHere's why this happens and what it means:\n\n**What is bias in training data?**\n\nBias in training data refers to systematic inaccuracies or prejudices present in the data used to train a machine learning algorithm. This bias",
+      "effect": {
+        "first_divergence_token": 10,
+        "first_divergence_word": 8,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.15625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v0",
+      "prompt": "It happened during the war.",
+      "baseline_text": "Please tell me more! I need more context to understand what \"it\" refers to. \n\nFor example, you could say:\n\n* \"It happened during the war **in France**.\"\n* \"It happened during the war **between the North and the South**.\"\n* \"It happened during the",
+      "scrambled_text": "Please tell me more! I need more context to understand what \"it\" refers to. \n\nFor example, you could say:\n\n* \"It happened during the war **in France**.\"\n* \"It happened during the war **between the North and South**.\"\n* \"It happened during the war",
+      "effect": {
+        "first_divergence_token": 53,
+        "first_divergence_word": 37,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.828125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v1",
+      "prompt": "Back in the summer of 1999, things were different.",
+      "baseline_text": "You're absolutely right! Summer 1999 was a unique time. \n\nWhat specifically comes to mind when you think about how things were different back then? \n\nPerhaps you're thinking about:\n\n* **Technology:**  Dial-up internet, flip phones, and the rise of Napster",
+      "scrambled_text": "You're absolutely right! Summer 1999 was a unique time. \n\nWhat specifically comes to mind when you think about how things were different back then? \n\nPerhaps you're thinking about:\n\n* **Technology:**  Dial-up internet, flip phones, and the rise of Napster",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v2",
+      "prompt": "By 2045, most people had forgotten what driving a car felt like.",
+      "baseline_text": "The year is 2045. Rain streaks down the panoramic windshield of the sleek, driverless pod gliding silently through the city. Inside, Maya scrolls through her newsfeed, oblivious to the world outside. She's never felt the rumble of an engine, the thrill of the open road, or the frustration",
+      "scrambled_text": "The year is 2045. Rain streaks down the panoramic windshield, blurring the neon cityscape outside.  Inside the sleek, driverless pod, Maya scrolls through her newsfeed, oblivious to the world rushing by.  She remembers her grandmother's stories, tales of a time when people gripped steering wheels,",
+      "effect": {
+        "first_divergence_token": 15,
+        "first_divergence_word": 9,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.234375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v3",
+      "prompt": "In the Victorian era, such behavior would have been scandalous.",
+      "baseline_text": "This statement is a great example of how context is crucial in understanding language. \n\nYou're right, in the Victorian era (roughly 1837-1901), certain behaviors that are commonplace today would have been considered highly scandalous. \n\n**To make this statement more meaningful, we need",
+      "scrambled_text": "This statement implies that the behavior in question would have been considered highly inappropriate and shocking by the standards of Victorian society. \n\nTo understand why, it's important to remember that the Victorian era (1837-1901) was characterized by strict social norms and moral codes. \n\n**Here",
+      "effect": {
+        "first_divergence_token": 2,
+        "first_divergence_word": 2,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.03125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v4",
+      "prompt": "During the blackout of 2003, the whole city came together.",
+      "baseline_text": "That's a common sentiment expressed about the 2003 Northeast blackout, but it's important to remember that the experience was complex and varied for different people. \n\nWhile many stories highlight community spirit and cooperation during the blackout, others describe feelings of fear, frustration, and even chaos. \n\nHere",
+      "scrambled_text": "That's a common sentiment expressed about the 2003 Northeast blackout, but it's important to remember that the experience was complex and varied for different people. \n\nWhile many stories highlight community spirit and cooperation during the blackout, others describe feelings of fear, frustration, and even chaos. \n\nHere",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v5",
+      "prompt": "My grandmother often told stories about life before television.",
+      "baseline_text": "That's lovely!  Stories from before television offer a fascinating glimpse into a different world. \n\nWhat kind of stories did your grandmother tell? Did she talk about:\n\n* **How people entertained themselves?**  (Board games, card games, reading, going to the movies, live music, etc.)",
+      "scrambled_text": "That's wonderful! Stories from before television offer a fascinating glimpse into a different world. \n\nWhat kind of stories did your grandmother tell? Did she talk about:\n\n* **How people entertained themselves?**  (Board games, card games, reading, going to the movies, live performances)\n* **",
+      "effect": {
+        "first_divergence_token": 3,
+        "first_divergence_word": 1,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.046875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v6",
+      "prompt": "In those early days of the internet, nobody knew what it would become.",
+      "baseline_text": "That's absolutely true! \n\nThe early days of the internet, starting in the 1960s and really taking off in the 1990s, were a time of immense uncertainty and excitement. \n\nPeople had a sense that something revolutionary was happening, but nobody could have predicted the",
+      "scrambled_text": "That's absolutely right! \n\nThe early days of the internet, starting in the 1980s and 90s, were a time of immense uncertainty and potential. \n\nPeople were experimenting with this new technology, connecting computers in ways never seen before. \n\nNobody could have predicted the",
+      "effect": {
+        "first_divergence_token": 4,
+        "first_divergence_word": 2,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.0625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_06",
+      "variant_id": "v7",
+      "prompt": "The ancient Romans who built this road could never have imagined the traffic on it now.",
+      "baseline_text": "This is a great observation!  \n\nIt highlights the incredible contrast between the ancient world and our modern one.  The Romans built roads for chariots and foot traffic, not for the massive volume of cars and trucks we see today.  \n\nIt makes you wonder what they would think of our world, with its technology and",
+      "scrambled_text": "This is a great observation!  \n\nIt highlights the incredible contrast between the ancient world and our modern one.  The Romans built roads for practical purposes like trade and military movement, likely never envisioning the sheer volume of vehicles and people that would use them centuries later. \n\nIt makes you think about:\n\n*",
+      "effect": {
+        "first_divergence_token": 28,
+        "first_divergence_word": 23,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.4375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v0",
+      "prompt": "It was a dark and stormy night when the detective arrived at the mansion.",
+      "baseline_text": "That's a classic start!  It sets the scene perfectly for a mystery.  \n\nWhat happens next?  \n\nHere are some ideas to get you going:\n\n* **The detective's thoughts:** Is he nervous, excited, or jaded? What brings him to this mansion on such a night?",
+      "scrambled_text": "That's a classic start!  It sets the scene perfectly for a mystery.  \n\nWhat happens next?  \n\nHere are some ideas to get you going:\n\n* **The detective's thoughts:** Is he excited by the challenge, or apprehensive about the danger?\n* **The mansion itself:** What",
+      "effect": {
+        "first_divergence_token": 45,
+        "first_divergence_word": 29,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.703125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v1",
+      "prompt": "Once upon a time, in a kingdom far away, there lived a lonely princess.",
+      "baseline_text": "Princess Elara was not like other princesses. While her sisters reveled in balls and suitors, Elara found solace in the quiet corners of the castle library, surrounded by dusty tomes and forgotten tales. Her heart yearned for adventure, for stories that weren't confined to gilded pages, for a world beyond the castle",
+      "scrambled_text": "Princess Elara was not like other princesses. While her sisters reveled in balls and embroidery, Elara found solace in the whispering woods that bordered the kingdom. She preferred the company of the wind rustling through the leaves and the babbling brook to the stifling etiquette of the court.  \n\nHer heart ached for",
+      "effect": {
+        "first_divergence_token": 17,
+        "first_divergence_word": 14,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.265625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v2",
+      "prompt": "The subject displayed a 43% increase in cortical activity during the trial phase.",
+      "baseline_text": "This statement suggests that the subject's brain activity, specifically in the cortex, increased significantly during a particular trial or task. \n\nHere's a breakdown:\n\n* **Cortical activity:** Refers to the electrical activity of the brain's cortex, the outermost layer responsible for higher-level functions like thinking",
+      "scrambled_text": "This statement suggests that the subject's brain activity, specifically in the cortex, increased significantly during a particular trial or task. \n\nHere's a breakdown:\n\n* **Cortical activity:** Refers to the electrical activity of the brain's cortex, the outermost layer responsible for higher-level functions like thinking",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v3",
+      "prompt": "Dear Diary, today was literally the worst day of my entire life.",
+      "baseline_text": "I'm so sorry to hear that you're having such a rough day.  It sounds like things are really tough right now. \n\nWould you like to talk about what happened? Sometimes just getting things off your chest can help. I'm here to listen without judgment. \n\nEven if you don",
+      "scrambled_text": "I'm so sorry to hear that you're having such a rough day.  It sounds like things are really tough right now. \n\nWould you like to talk about what happened? Sometimes just getting things off your chest can help. I'm here to listen without judgment. \n\nEven if you don",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v4",
+      "prompt": "BREAKING: Sources confirm the Senator will announce resignation tomorrow.",
+      "baseline_text": "This is big news! \n\nHere are some things to consider as this story develops:\n\n* **Who is the Senator?**  Knowing their name and political party is crucial context.\n* **What are the reasons for their resignation?**  This will shape the public's reaction and analysis. Are there",
+      "scrambled_text": "This is big news! \n\nIt would be helpful to have more context.  \n\n* **Which Senator?**  Knowing the name is crucial for understanding the impact of this resignation.\n* **What are the reasons for the resignation?**  Is it due to scandal, health reasons, a desire to pursue",
+      "effect": {
+        "first_divergence_token": 7,
+        "first_divergence_word": 4,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.109375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v5",
+      "prompt": "The sleek spacecraft emerged from hyperspace, its hull scarred from the journey.",
+      "baseline_text": "That's a great start! It immediately sets a scene of adventure and danger. Here are some ways you could expand on it:\n\n**Add sensory details:**\n\n* **Sight:** What color is the spacecraft? What kind of scars mar its hull? Are there any lights flickering on its surface?\n* **",
+      "scrambled_text": "That's a great start! It immediately sets a scene of adventure and danger. Here are some ways you could expand on it:\n\n**Add sensory details:**\n\n* **Sight:** What color is the spacecraft? What kind of scars are they? Are there any lights flickering on its surface?\n* **Sound",
+      "effect": {
+        "first_divergence_token": 48,
+        "first_divergence_word": 36,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.75
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v6",
+      "prompt": "Preheat oven to 350\u00b0F and line a baking sheet with parchment paper.",
+      "baseline_text": "Okay, I've noted that! \n\nIs there anything else I can help you with regarding this recipe?  \n\nFor example, do you need help with:\n\n* **Finding a recipe?**\n* **Understanding the ingredients?**\n* **Converting measurements?**\n* **Knowing how long to",
+      "scrambled_text": "Okay, I've noted that! \n\nYour oven is now preheating to 350\u00b0F and a baking sheet is lined with parchment paper, ready for whatever delicious recipe you have in mind.  \n\nWhat are you making? \ud83d\ude0a  \n\n",
+      "effect": {
+        "first_divergence_token": 10,
+        "first_divergence_word": 4,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.15625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_07",
+      "variant_id": "v7",
+      "prompt": "The defendant's actions on the night in question constitute a clear violation of statute 14.3.",
+      "baseline_text": "This statement appears to be from a legal context. \n\nHere's a breakdown:\n\n* **Defendant:** The person accused of a crime.\n* **Actions on the night in question:**  Refers to the specific events that are alleged to be criminal.\n* **Constitute a clear violation of statute",
+      "scrambled_text": "This statement suggests that the defendant's actions on a specific night broke a law defined by statute 14.3. \n\n**Here's a breakdown:**\n\n* **Defendant:** The person accused of committing a crime.\n* **Actions on the night in question:**  Refers to the specific events",
+      "effect": {
+        "first_divergence_token": 2,
+        "first_divergence_word": 2,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.03125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v0",
+      "prompt": "The kindergarten teacher knelt down to address the crying child.",
+      "baseline_text": "This is a great start to a story! It sets up a scene with potential for many different directions. \n\nHere are some questions that might help you develop the story further:\n\n* **Why is the child crying?**  Is it a scraped knee, a lost toy, homesickness, or something else entirely",
+      "scrambled_text": "This is a great start to a story! It sets up a scene with potential for many different directions. \n\nHere are some questions that could help you develop the story further:\n\n* **Why is the child crying?**  Is it a scraped knee, a lost toy, homesickness, or something else entirely",
+      "effect": {
+        "first_divergence_token": 28,
+        "first_divergence_word": 24,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.4375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v1",
+      "prompt": "As CEO, she had learned to deliver bad news without flinching.",
+      "baseline_text": "This sentence effectively conveys a sense of the CEO's experience and resilience. \n\nHere's a breakdown of why it works:\n\n* **\"As CEO, she had learned...\"** This establishes the context and implies a certain level of responsibility and experience.\n* **\"...to deliver bad news without flinching",
+      "scrambled_text": "This sentence effectively conveys a sense of the CEO's experience and resilience. \n\nHere's a breakdown of why it works:\n\n* **\"As CEO, she had learned...\"** This establishes the context and implies a certain level of responsibility and experience.\n* **\"...to deliver bad news without flinching",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v2",
+      "prompt": "The rookie cop stepped into his first crime scene.",
+      "baseline_text": "The air hung heavy with the metallic tang of blood and the cloying sweetness of decay.  Officer Davis, fresh out of the academy and still smelling faintly of disinfectant, swallowed hard.  The yellow tape fluttered in the breeze, a stark border between the mundane world and the chaos within.  He'd",
+      "scrambled_text": "The air hung heavy with the metallic tang of blood and the cloying sweetness of decay.  Officer Davis, fresh out of the academy and still smelling faintly of disinfectant, swallowed hard.  The yellow tape fluttered in the breeze, a stark warning against crossing the invisible line.  He'd seen crime scenes",
+      "effect": {
+        "first_divergence_token": 50,
+        "first_divergence_word": 40,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.78125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v3",
+      "prompt": "The head chef surveyed the kitchen during the dinner rush.",
+      "baseline_text": "This is a great start to a story! It sets the scene and immediately creates a sense of urgency and intensity. \n\nHere are some ways you could expand on this opening:\n\n**Focus on the chef's senses:**\n\n* What does the kitchen smell like? (A symphony of sizzling garlic, herbs,",
+      "scrambled_text": "This is a great start to a story! It sets the scene and immediately creates a sense of urgency and potential drama. \n\nHere are some ways you could expand on this opening:\n\n**Focus on the chef's senses:**\n\n* What does the kitchen smell like?  Is it a symphony of savory aromas",
+      "effect": {
+        "first_divergence_token": 21,
+        "first_divergence_word": 20,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.328125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v4",
+      "prompt": "As the family's oldest son, he was expected to take over the business.",
+      "baseline_text": "This sentence sets up an interesting scenario! Here are some thoughts and questions it sparks:\n\n* **What kind of business is it?**  A family farm? A tech startup? A bakery? The type of business will influence how the expectation weighs on the son.\n* **Does he want to take over?",
+      "scrambled_text": "This sentence sets up an interesting scenario! Here are some thoughts and questions it raises:\n\n* **What kind of business is it?**  A family-owned bakery? A tech startup? A generations-old farm? The type of business will influence how the expectation weighs on the son.\n* **Does he",
+      "effect": {
+        "first_divergence_token": 15,
+        "first_divergence_word": 14,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.234375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v5",
+      "prompt": "The therapist listened carefully, resisting the urge to offer immediate advice.",
+      "baseline_text": "This sentence sets a good scene for a therapeutic interaction. Here's why it works:\n\n* **It highlights active listening:** \"Listened carefully\" emphasizes the therapist's focus on the client's words and experiences.\n* **It establishes a non-directive approach:** \"Resisting the urge to offer",
+      "scrambled_text": "This sentence sets a good tone for a scene involving a therapist and a client. Here's why:\n\n* **Emphasizes Active Listening:**  \"Listened carefully\" highlights the therapist's focus on understanding the client's words and emotions. \n* **Creates a Safe Space:**  Resisting",
+      "effect": {
+        "first_divergence_token": 5,
+        "first_divergence_word": 5,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.078125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v6",
+      "prompt": "The foreign ambassador chose her words with extreme care.",
+      "baseline_text": "This sentence sets a good scene! It immediately tells us a few things:\n\n* **Importance:** The situation is important enough that the ambassador needs to be very careful.\n* **Tension:** There's likely some underlying tension or potential for conflict.\n* **Diplomacy:** The ambassador is likely navigating a delicate",
+      "scrambled_text": "This sentence sets a good scene! It immediately tells us a few things:\n\n* **Importance:** The situation is important enough that the ambassador needs to be very careful with her words. \n* **Potential for Conflict:**  The careful word choice suggests there might be tension or a delicate situation.\n* **Diploma",
+      "effect": {
+        "first_divergence_token": 33,
+        "first_divergence_word": 27,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.515625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_08",
+      "variant_id": "v7",
+      "prompt": "The street performer noticed the crowd starting to gather.",
+      "baseline_text": "This is a great start to a story! It sets the scene and introduces a bit of intrigue.  \n\nHere are some ways you could continue:\n\n**Focus on the performer:**\n\n*  Describe the performer's reaction to the growing crowd. Are they excited, nervous, or indifferent?\n*  What",
+      "scrambled_text": "This is a great start to a story!  It sets the scene and introduces a bit of intrigue.  \n\nHere are some ways you could expand on this sentence:\n\n**Add sensory details:**\n\n* The street performer noticed the crowd starting to gather, the murmur of their voices a low hum against the backdrop of",
+      "effect": {
+        "first_divergence_token": 9,
+        "first_divergence_word": 24,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.140625
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v0",
+      "prompt": "The restaurant was absolutely terrible from the moment we walked in.",
+      "baseline_text": "That sounds like a really disappointing experience! \n\nI'm sorry to hear that.  \n\nWould you like to tell me more about what made it terrible?  Knowing the specifics might help others avoid a similar experience or even give you some ideas for how to handle it. \n\n",
+      "scrambled_text": "That sounds like a really disappointing experience! \n\nI'm sorry to hear that.  \n\nWould you like to tell me more about what made it terrible?  Knowing the specifics might help others avoid a similar experience or even give you some ideas for how to handle it. \n\n",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v1",
+      "prompt": "I can honestly say it was the best decision I ever made.",
+      "baseline_text": "That's wonderful to hear! \n\nI'm glad you made a decision that brought you such positive feelings.  \n\nIs there anything you'd like to share about the decision? I'm always happy to listen. \ud83d\ude0a\n",
+      "scrambled_text": "That's wonderful to hear! \n\nI'm glad you made a decision that brought you such positive feelings.  \n\nIs there anything you'd like to share about the decision? I'm always happy to listen. \ud83d\ude0a\n",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v2",
+      "prompt": "The movie was fine, nothing special, exactly what you'd expect.",
+      "baseline_text": "That's a fair assessment! Sometimes a \"fine\" movie is exactly what you need.  \n\nWhat kind of movie was it?  Maybe knowing the genre would help me understand your expectations and why it met them. \ud83d\ude0a \n\n",
+      "scrambled_text": "That's a fair assessment! Sometimes \"fine\" is exactly what you're looking for in a movie.  \n\nWhat kind of movie was it? Maybe knowing the genre would help me understand your expectations and why it met them.  \n\n",
+      "effect": {
+        "first_divergence_token": 8,
+        "first_divergence_word": 5,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.1509433962264151
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v3",
+      "prompt": "This has to be the most beautiful place I've ever seen.",
+      "baseline_text": "I'm glad you're enjoying the view! \n\nAs a text-only model, I can't actually see anything.  \n\nCan you tell me more about what makes this place so beautiful?  What are you seeing?  \ud83d\ude0a\n",
+      "scrambled_text": "I'm glad you're enjoying the view! \n\nAs a text-only model, I can't actually see anything.  \n\nCan you tell me more about what makes this place so beautiful?  What are you seeing?  \ud83d\ude0a\n",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v4",
+      "prompt": "The whole experience was deeply disappointing.",
+      "baseline_text": "I'm sorry to hear that you had a disappointing experience. \n\nCould you tell me more about what happened? Understanding the specifics will help me offer more relevant support or advice. \n\nFor example, was it:\n\n* **A product or service that didn't meet your expectations?**\n* **",
+      "scrambled_text": "I'm sorry to hear that you had a disappointing experience. \n\nCould you tell me more about what happened? Understanding the specifics will help me offer more relevant support or advice. \n\nFor example, was it:\n\n* **A product or service that didn't meet your expectations?**\n* **",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v5",
+      "prompt": "I have mixed feelings about what happened next.",
+      "baseline_text": "I understand. Mixed feelings are completely normal, especially when something significant happens. \n\nCould you tell me more about what happened? Sharing your thoughts and feelings might help you process them better. I'm here to listen without judgment.\n",
+      "scrambled_text": "I understand. Mixed feelings are completely normal, especially when something significant happens. \n\nCould you tell me more about what happened? Sharing your thoughts and feelings might help you process them better. I'm here to listen without judgment.\n",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v6",
+      "prompt": "Looking back, I realize how naive I was to think it would work.",
+      "baseline_text": "It's okay to realize that you were naive.  \n\nEveryone makes mistakes and learns from them. It takes courage to acknowledge our past naivet\u00e9 and use it as a stepping stone for growth. \n\nWhat can you learn from this experience? How can you apply that knowledge to future situations? \n\nI",
+      "scrambled_text": "It's okay to realize that you were naive.  \n\nEveryone makes mistakes and learns from them. It takes courage to acknowledge our past naivet\u00e9 and use it as a stepping stone for growth. \n\nWhat can you learn from this experience? What would you do differently now?  \n\nRemember, it'",
+      "effect": {
+        "first_divergence_token": 51,
+        "first_divergence_word": 39,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.796875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_09",
+      "variant_id": "v7",
+      "prompt": "The book exceeded every expectation I had going in.",
+      "baseline_text": "That's fantastic to hear! \n\nIt's always so satisfying when a book truly blows you away.  \n\nWhat was it about the book that exceeded your expectations?  I'd love to hear more about what made it so special. \ud83d\ude0a \n\n",
+      "scrambled_text": "That's fantastic to hear! \n\nIt's always so satisfying when a book truly surpasses your expectations.  \n\nWhat about it exceeded your expectations?  The plot, the characters, the writing style? I'd love to hear more! \n\n",
+      "effect": {
+        "first_divergence_token": 19,
+        "first_divergence_word": 12,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.3333333333333333
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v0",
+      "prompt": "The submarine had been underwater for three weeks.",
+      "baseline_text": "That's a long time to be submerged!  \n\nThis sentence makes me wonder:\n\n* **What mission is the submarine on?**  Is it a research mission, a military operation, or something else entirely?\n* **How are the crew members doing?**  Three weeks underwater can be mentally and",
+      "scrambled_text": "That's a long time to be underwater!  \n\nThis sentence makes me wonder:\n\n* **What kind of mission is the submarine on?**  Is it a research mission, a military operation, or something else entirely?\n* **How are the crew members doing?**  Three weeks is a significant",
+      "effect": {
+        "first_divergence_token": 8,
+        "first_divergence_word": 6,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v1",
+      "prompt": "At the summit of Everest, every breath was a struggle.",
+      "baseline_text": "This is a great start to a sentence! It immediately sets a scene of intense physical challenge and high altitude. \n\nHere are some ways you could expand on this sentence, depending on the tone and direction you want to take:\n\n**Focusing on the physical struggle:**\n\n* At the summit of Everest, every breath",
+      "scrambled_text": "This is a great start to a sentence! It immediately sets a scene of intense physical challenge and high altitude. \n\nHere are some ways you could expand on this sentence, depending on the tone and direction you want to take:\n\n**Focusing on the physical struggle:**\n\n* At the summit of Everest, every breath",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v2",
+      "prompt": "The casino floor was a maze of flashing lights and desperate faces.",
+      "baseline_text": "That's a great start! It immediately sets a vivid scene and hints at the atmosphere of the casino. \n\nHere are some ways you could expand on this sentence:\n\n**Add sensory details:**\n\n*  \"...the casino floor was a maze of flashing lights, the air thick with the scent of stale cigarettes",
+      "scrambled_text": "That's a great start! It immediately sets a vivid scene and hints at the atmosphere of the casino. \n\nHere are some ways you could expand on this sentence and make it even more impactful:\n\n**Adding sensory details:**\n\n* **Sound:** \"...a maze of flashing lights and desperate faces, punctuated by",
+      "effect": {
+        "first_divergence_token": 34,
+        "first_divergence_word": 27,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.53125
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v3",
+      "prompt": "Deep in the Amazon rainforest, the sounds never stopped.",
+      "baseline_text": "That's a great start! It immediately sets a vivid scene.  \n\nHere are some ways you could expand on this:\n\n**Sensory Details:**\n\n* **Sight:** Describe the dense canopy, the dappled sunlight filtering through the leaves, the vibrant colors of exotic flowers or insects.\n* **Smell:**",
+      "scrambled_text": "That's a great start! It immediately sets a vivid scene.  \n\nHere are some ways you could expand on this:\n\n**Sensory Details:**\n\n* **Sight:** Describe the dappled sunlight filtering through the dense canopy, the vibrant green of the foliage, the movement of insects and animals.\n* **",
+      "effect": {
+        "first_divergence_token": 38,
+        "first_divergence_word": 25,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.59375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v4",
+      "prompt": "The space station orbited silently above the blue Earth.",
+      "baseline_text": "This is a great start to a story! It sets a beautiful and peaceful scene. \n\nHere are some ways you could build on this:\n\n**Expand on the setting:**\n\n* **Describe the space station:** Is it sleek and modern, or old and weathered? What does it look like from the outside?",
+      "scrambled_text": "This is a great start to a story! It sets a peaceful and contemplative scene. \n\nHere are some ways you could expand on this:\n\n**Focus on the characters:**\n\n* Who is on the space station? What are they doing? \n* Are they alone, or are there others with them?",
+      "effect": {
+        "first_divergence_token": 12,
+        "first_divergence_word": 11,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.1875
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v5",
+      "prompt": "The prison cell measured six feet by eight feet.",
+      "baseline_text": "That's a pretty standard size for a prison cell.  \n\nIs there anything else you'd like to know about the cell, or are you using this as a starting point for a story?  I can help you brainstorm if you'd like! \n\n",
+      "scrambled_text": "That's a pretty standard size for a prison cell.  \n\nIs there anything else you'd like to know about the cell, or are you using this as a starting point for a story?  I can help you brainstorm if you'd like! \n\n",
+      "effect": {
+        "first_divergence_token": null,
+        "first_divergence_word": null,
+        "identical": true,
+        "prefix_same_frac_tokens": 1.0
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v6",
+      "prompt": "The bustling Tokyo intersection made Times Square look quiet.",
+      "baseline_text": "This is a great sentence! It's a vivid comparison that effectively conveys the energy and scale of Tokyo's intersections. \n\nHere's why it works:\n\n* **Strong Contrast:**  You juxtapose the familiar image of Times Square, known for its crowds and bright lights, with the even more overwhelming",
+      "scrambled_text": "This is a great sentence! It's a vivid comparison that effectively conveys the energy and scale of Tokyo's intersections. \n\nHere's why it works:\n\n* **Strong Contrast:**  You juxtapose the familiar image of Times Square, known for its crowds and bright lights, with the even more intense",
+      "effect": {
+        "first_divergence_token": 63,
+        "first_divergence_word": 45,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.984375
+      },
+      "hook_fired": true
+    },
+    {
+      "group_id": "group_10",
+      "variant_id": "v7",
+      "prompt": "In the middle of the desert, the silence was absolute.",
+      "baseline_text": "That's a great start! It immediately sets a scene of stark isolation and stillness.  \n\nTo make it even more evocative, you could consider adding some sensory details:\n\n* **Sight:**  \"The sun beat down on the endless expanse of sand, shimmering in the heat haze.\"\n* **Sound:**",
+      "scrambled_text": "That's a great start! It immediately sets a strong, evocative scene.  \n\nHere are some ways you could build on this:\n\n**Sensory Details:**\n\n* **Sight:**  Describe the color of the sand, the way the sun beats down, any distant landmarks.\n* **Sound:** Even in",
+      "effect": {
+        "first_divergence_token": 11,
+        "first_divergence_word": 8,
+        "identical": false,
+        "prefix_same_frac_tokens": 0.171875
+      },
+      "hook_fired": true
+    }
+  ]
+}
