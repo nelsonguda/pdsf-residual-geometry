@@ -1,12 +1,25 @@
 # Behavioral classification corpora
 
-Paper 1 §6 and §7.3 classify what an intervention *does to the output*, not just whether the output changed. That classification is a supervised judgment over 3,750 generation pairs, and it is the one part of the paper that cannot be reproduced by re-running the pipeline. Both corpora are published here in full, including the reasoning text for every cell.
+Paper 1 §5.2, §6 and §7.3 classify what an intervention *does to the output*, not just whether the output changed. For the persistent-rotation conditions that classification is a supervised judgment over 3,750 generation pairs — the one part of the paper that re-running the pipeline cannot reproduce. Everything is published here in full, including the reasoning text for every judged cell.
 
 | file | cells | canonical for | backs |
 |---|---|---|---|
 | `all_classifications_v4.json` | 2,950 | D-scramble, S-scramble, F-topK, Random | Table 3, Table 4, Table B.7-1 (four of five rows), §6.4 |
 | `all_classifications_v5_fdynamic_audit.json` | 800 | F-dynamic rotation | Table B.7-1 (F-dynamic row), §7.3 |
+| `f_structure_classification.json` | 1,680 | F-mix, F-attenuate at ~12% depth | Table B.6-1, §5.2 |
+| `f_structure_70pct_review.json` | 739 | the ~70%-depth adjudication | Appendix B.6's reclassification claim |
+| `classify_f_structure.py` | — | regenerates `f_structure_classification.json` | — |
 | `MR_classification_guide.md` | — | the taxonomy itself | Appendix A.5 |
+
+**Two instruments produced these labels, and conflating them would misread the evidence.**
+
+The **v4 and v5 corpora are supervised judgments** — a language model read each generation pair against a written rubric, with human spot-checking. Nothing regenerates them.
+
+The **F-structure labels are rule-based**. A deterministic classifier assigns them from the text pair; `python3 classify_f_structure.py` reproduces `f_structure_classification.json` exactly, and every record names the rule that fired. `f_structure_70pct_review.json` is mostly the same rule pass — of its 739 records, 8 carry a hand-assigned label, 58 were settled by a secondary rule pass, and 673 are primary rule output. Check the `note` prefix (`MANUAL:` / `RESOLVED:` / neither) to tell which.
+
+That is why the classifier ships alongside its output. **The script is the claim.** A reader who doubts Table B.6-1 is really doubting how zero lexical overlap is treated in non-Latin scripts, or where the degeneracy thresholds sit — visible only if the rules and the per-record `rule` field are both in front of them. Read the header of `classify_f_structure.py` first; it is the place to push back.
+
+**One caveat we would rather state than bury.** The only independent human reading these F-structure pairs ever received was a 120-item sample taken during development. On the 80 F-mix / F-attenuate items it covers, the classifier agrees with the reader **59/80 = 73.8%** of the time. The disagreements are systematic: the classifier assigns `Mode_stance_change` or `Failure_mode` where the reader saw a minor reframe, chiefly on CJK pairs where whitespace tokenization understates overlap. The `Identical` and `Minor_reframe` counts are robust; the `Mode_stance_change` and `Failure_mode` counts should be read as heuristic output that a human reader would partly dispute.
 
 The v4 file also carries a partial F-dynamic subset (193 cells) from an earlier pass. **It is superseded by the v5 audit and must not be used** — the v5 audit re-classified all 800 F-dynamic cells under uniform v4 rules with a baseline-degeneracy screen. Filter on `condition != "F-dynamic"` when working with v4.
 
@@ -50,9 +63,24 @@ Verified 2026-08-07: this reproduces all 25 cells of Table B.7-1 — every count
 
 The v4 corpus has no equivalent screen — it predates the instrument. This is a real asymmetry between the two corpora and is why they are kept as separate files rather than merged.
 
+## The F-structure interventions (Table B.6-1)
+
+`f_structure_classification.json` covers F-mix and F-attenuate at ~12% depth: 10 instruction-tuned models × 84 Diverse prompts × 2 conditions = 1,680 trials. Its five outcome categories (Identical, Minor_reframe, Mode_stance_change, Topic_drift, Failure_mode) are the six-category heuristic's successor, not the four-category collapse used for the persistent-rotation conditions — the two taxonomies are not interchangeable.
+
+To reproduce Table B.6-1, or to check the classifier against your own reading:
+
+```
+cd data/classification
+python3 classify_f_structure.py
+```
+
+It reads only `../behavioral_interventions/`, needs nothing outside the standard library, and prints its counts against the published ones. Verified 2026-08-10: all ten cells match.
+
+`f_structure_70pct_review.json` is a different kind of record. At ~70% depth the two heuristic categories with the worst error rate — `topic_drift` and `catastrophic_redirect` — were re-read one by one and reassigned; those 739 adjudications (F-mix and F-attenuate only; the source review also covered F-transplant, which is out of scope for Paper 1) are what the file holds, with the original label, the reviewer's new label, the Jaccard score the heuristic used, and the stated reason. Because a person made those calls, the ~70% distribution is **not** script-reproducible — running the classifier on the ~70% files gives close but not identical counts, and the difference is exactly the adjudication.
+
 ## Provenance and its limits
 
-Both corpora were classified by a language model (`claude_opus_4_7` via Cowork) working from `MR_classification_guide.md`, with human spot-checking by the author: 10 cells per pass × 6 passes plus a 50-cell calibration for v5, and per-batch review sheets for v4. `all_classifications_v5_fdynamic_audit.json` carries the audit trail in its `metadata` block; every record in both files carries a free-text `reasoning` field and a `confidence` level, and `borderline: true` marks cells the classifier itself flagged as near a category boundary.
+The v4 and v5 corpora were classified by a language model (`claude_opus_4_7` via Cowork) working from `MR_classification_guide.md`, with human spot-checking by the author: 10 cells per pass × 6 passes plus a 50-cell calibration for v5, and per-batch review sheets for v4. `all_classifications_v5_fdynamic_audit.json` carries the audit trail in its `metadata` block; every record in both files carries a free-text `reasoning` field and a `confidence` level, and `borderline: true` marks cells the classifier itself flagged as near a category boundary.
 
 This is a supervised-LLM classification with human audit, not independent multi-rater human coding, and no inter-rater reliability statistic is reported because there is only one rater. The reasoning text is published precisely so a reader can disagree with individual calls and recount.
 
