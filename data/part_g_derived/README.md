@@ -40,7 +40,7 @@ GPT-OSS 120B was re-run on 2026-07-02 under native MXFP4. Paper 1 reports the po
 `partG_rotation_recovery_angles.json` gives, per model and prompt set, the angle of D and of S relative to their unperturbed orientation at every post-intervention layer. Two positions are read from it:
 
 - **Peak** — the angle at the intervention layer itself (the key equal to `scramble_layer`), not the maximum over layers.
-- **L−2** — the penultimate layer, `layers[-2]`. The final layer is excluded because the LM-head projection inflates all residual perturbations uniformly; Mistral 7B, for instance, reads 0.59° at L−2 and 48.70° at the final layer under D-rotation.
+- **L−2** — the penultimate layer, `layers[-2]`. The final layer is excluded because the LM-head projection inflates all residual perturbations uniformly; Mistral 7B, for instance, reads 0.59° at L−2 and 39.48° at the final layer under D-rotation on SpecA.
 
 Verified 2026-08-07: every value quoted in Appendix A.4 reproduces from this file — SpecA D-rotation peak 100.5–103.5° and L−2 0.19–1.72° in the seven dense models, with GPT-OSS 20B 1.76°, Mixtral 4.30°, GPT-OSS 120B 4.70°; Diverse D-rotation L−2 0.30–1.58° dense, 3.24° / 4.77° / 29.98°; and the S-rotation figures for both sets.
 
