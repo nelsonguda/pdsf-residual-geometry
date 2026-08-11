@@ -6,11 +6,11 @@ Three things do not work that way, and those are what you will find below.
 
 | directory | what it is | why it is here | size |
 |---|---|---|---|
-| `classification/` | 3,750 human-supervised behavioral classifications of intervened model outputs | a judgment, not a computation — rerunning the pipeline does not reproduce it | 2.5 MB |
-| `behavioral_interventions/` | 121 files of baseline/intervened generation pairs across 10 models × 5 prompt-set conditions | the text the classifications refer to; without it the corpus above cannot be audited | 12 MB |
+| `classification/` | 3,750 supervised behavioral classifications of intervened model outputs, plus 1,680 rule-classified F-structure trials and the classifier that produced them | the supervised half is a judgment, not a computation — rerunning the pipeline does not reproduce it | 3.2 MB |
+| `behavioral_interventions/` | 121 files of baseline/intervened generation pairs — ten intervention conditions across thirteen model keys (10 instruction-tuned + 3 base) | the text the classifications refer to; without it the corpus above cannot be audited | 12 MB |
 | `part_g_derived/` | per-prompt KL and rotation-recovery arrays extracted from the Part G single-pass intervention files | the source files are 1.6 GB and single files reach 93 MB, past GitHub's limits; these 400 KB reproduce the published tables exactly | 0.4 MB |
 
-Total ≈ 14.5 MB.
+Total ≈ 15 MB.
 
 ## What is deliberately not here
 
@@ -21,12 +21,30 @@ Total ≈ 14.5 MB.
 
 ## Standards compliance
 
-Every JSON file in this directory parses under strict RFC 8259 — no bare `NaN`, `Infinity` or `-Infinity` tokens, which Python emits by default but `JSON.parse`, Go's `encoding/json`, `serde_json` and R's `jsonlite` all reject. Verified with `sanitize_json_nonfinite.py --check` over the whole tree; 134 files scanned, zero rewrites needed. The four files in `part_g_derived/` were written with `allow_nan=False`.
+Every JSON file in this directory parses under strict RFC 8259 — no bare `NaN`, `Infinity` or `-Infinity` tokens, which Python emits by default but `JSON.parse`, Go's `encoding/json`, `serde_json` and R's `jsonlite` all reject. All 129 JSON files here were checked; none needed rewriting, and the four files in `part_g_derived/` were written with `allow_nan=False`. To re-check:
+
+```python
+import json, pathlib
+
+def strict(path):
+    def reject(tok):
+        raise ValueError(tok)
+    json.loads(path.read_text(), parse_constant=reject)
+
+for p in sorted(pathlib.Path('.').rglob('*.json')):
+    try:
+        strict(p)
+    except ValueError as e:
+        print('non-compliant:', p, e)
+```
+
+Any JSON parser outside Python will do just as well — that is the point.
 
 ## Reproducing the published tables from this directory
 
 Each subdirectory's README gives the exact recipe. In summary:
 
 - **Table 3 and Table B.7-1** (behavioral category distribution, all 25 cells) — collapse `final_subtype` in the two classification corpora. Verified 2026-08-07: every count and percentage matches.
+- **Table B.6-1** (F-structure intervention outcomes, all 10 cells) — run `python3 classify_f_structure.py` from `classification/`. Verified 2026-08-10: exact.
 - **Table A.4-1 and the KL hierarchy in §5.1 / Figure 6** — aggregate `part_g_derived/partG_kl_divergence_per_prompt.json` under the convention recorded in its `_schema` block. Verified: all 14 rows, means and SEMs.
 - **The Part-G layer-angle paragraph in Appendix A.4** — read peaks and L−2 angles from `part_g_derived/partG_rotation_recovery_angles.json`. Verified: every quoted range and per-model value.
