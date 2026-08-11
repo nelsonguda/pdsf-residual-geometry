@@ -37,6 +37,7 @@ pdsf-residual-geometry/
 │   ├── classification/          #   behavioral classifications, the taxonomy guide, and a classifier
 │   ├── behavioral_interventions/#   121 files of baseline/intervened generation pairs
 │   └── part_g_derived/          #   per-prompt KL and rotation-recovery arrays
+├── supplement/                  # The paper's supplementary materials PDF
 ├── CHANGELOG.md
 ├── LICENSE
 ├── .gitignore
@@ -46,6 +47,10 @@ pdsf-residual-geometry/
 ### A note on `data/`
 
 Most of the paper's numbers are deterministic output of the notebook — clone, run, and you get them, which is why they are not duplicated in the repository. Three things do not work that way, and those are what `data/` contains: the behavioral classifications (a supervised judgment, not a computation), the generation pairs those classifications refer to, and 400 KB of Part G extracts standing in for 1.6 GB of source files that exceed GitHub's limits. Total ≈ 15 MB. See `data/README.md`, and the README in each subdirectory, for what reproduces which table.
+
+### A note on `supplement/`
+
+The paper's per-model metric tables and three extra intervention examples were moved out of the appendices to keep the reading copy compact. They are in `supplement/Paper_1_supplementary_materials.pdf`, which the manuscript cites by name (Tables B.5-2, B.6-2, B.7-1b, B.7-2, B.7-3, B.7-4, C.3, S1, and §S6). Every table in it recomputes from `data/` — each section names its source file.
 
 ## Quick Start
 
