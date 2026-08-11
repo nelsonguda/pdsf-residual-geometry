@@ -14,6 +14,10 @@ WHAT THIS IS
 THE RULES, IN ORDER
     1. Either side degenerate (word/trigram/sentence/line repetition, too short,
        truncation stutter)                                     -> Failure_mode
+       Length and repetition are measured over tokenize(), which falls back to
+       characters for scripts written without inter-word spaces. See the comment
+       above CHARS_PER_TOKEN_MAX; before 2026-08-11 this step used a bare
+       text.split() and misread fluent Chinese and Japanese as fragments.
     2. Writing system changes between baseline and intervention -> Mode_stance_change
     3. Topic-word overlap >= 0.10, with a meta-commentary register shift
        on exactly one side                                     -> Mode_stance_change
@@ -45,12 +49,25 @@ USAGE
     and needs nothing but the Python standard library.
 
 VERIFIED
-    2026-08-10 — reproduces all ten cells of Table B.6-1 exactly:
-    F-mix 51 / 570 / 120 / 19 / 80, F-attenuate 326 / 391 / 60 / 11 / 52.
+    2026-08-11 — reproduces all ten cells of Table B.6-1 exactly:
+    F-mix 51 / 622 / 127 / 19 / 21, F-attenuate 326 / 425 / 65 / 11 / 13.
+
+REVISION 2026-08-11 — CJK tokenization
+    The degeneracy test previously tokenized on whitespace. Chinese and Japanese
+    are written without inter-word spaces, so a fluent paragraph scored as a
+    one- or two-token fragment and was labelled Failure_mode. 98 of the 1,680
+    trials were affected — 97 in Mandarin, Japanese or Korean regimes, and one
+    English-prompt trial whose intervention switched into Chinese. All 98 moved
+    out of Failure_mode (86 to Minor_reframe, 12 to Mode_stance_change); no cell
+    moved into it, and Identical and Topic_drift are unchanged at both depths.
+    The superseded distribution was F-mix 51 / 570 / 120 / 19 / 80 and
+    F-attenuate 326 / 391 / 60 / 11 / 52.
 
     Note it does NOT reproduce the ~70%-depth distribution. Those trials had the
     two worst-performing heuristic categories re-read and reassigned by hand; that
     adjudication is in f_structure_70pct_review.json and is not script-derivable.
+    The same tokenization fix was applied there as a delta over the reviewed
+    labels, so Table B.6-2 moves too.
 """
 
 import argparse
@@ -64,11 +81,13 @@ MODELS = ['mistral_7b', 'llama_8b', 'gemma_9b', 'qwen_14b', 'gpt_oss_20b',
           'gemma_27b', 'mixtral_8x7b', 'llama_70b', 'qwen_72b', 'gpt_oss_120b']
 CONDITIONS = {'F_mix': 'F_early_mix', 'F_attenuate': 'F_early_attenuate'}
 
+# Table B.6-1 as published in the revision of 2026-08-11. The superseded
+# pre-CJK-fix values are recorded in the REVISION note in the module docstring.
 EXPECTED = {
-    'F_mix':       {'Identical': 51, 'Minor_reframe': 570, 'Mode_stance_change': 120,
-                    'Topic_drift': 19, 'Failure_mode': 80},
-    'F_attenuate': {'Identical': 326, 'Minor_reframe': 391, 'Mode_stance_change': 60,
-                    'Topic_drift': 11, 'Failure_mode': 52},
+    'F_mix':       {'Identical': 51, 'Minor_reframe': 622, 'Mode_stance_change': 127,
+                    'Topic_drift': 19, 'Failure_mode': 21},
+    'F_attenuate': {'Identical': 326, 'Minor_reframe': 425, 'Mode_stance_change': 65,
+                    'Topic_drift': 11, 'Failure_mode': 13},
 }
 
 
@@ -92,10 +111,33 @@ def detect_script(text):
                 scripts['Latin'] += 1
     return scripts.most_common(1)[0][0] if scripts else 'Unknown'
 
+# Chinese and Japanese are written without inter-word spaces, so text.split()
+# returns one or two "words" for a fluent paragraph and every length-based
+# heuristic below misreads it as a fragment. Measured across the 3,360 texts in
+# this corpus, characters-per-whitespace-token sits at or below 7.5 (95th pct)
+# for every space-separated regime -- including Korean, which does use spaces --
+# and at 30+ for Mandarin and Japanese. A threshold of 12 separates them with a
+# wide margin on both sides.
+CHARS_PER_TOKEN_MAX = 12
+
+
+def tokenize(text):
+    """Whitespace tokens, falling back to characters for space-free scripts.
+
+    Returning characters for Chinese and Japanese gives the length, repetition
+    and unique-ratio tests below a unit comparable to a word in a spaced script.
+    """
+    words = text.split()
+    stripped = ''.join(words)
+    if words and len(stripped) / len(words) > CHARS_PER_TOKEN_MAX:
+        return list(stripped)
+    return words
+
+
 def is_degenerate(text):
     if not text or len(text.strip()) < 10:
         return True, 'too_short'
-    words = text.split()
+    words = tokenize(text)
     if len(words) < 3:
         return True, 'too_few_words'
     wc = Counter(w.lower() for w in words)

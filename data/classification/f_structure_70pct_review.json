@@ -15,7 +15,8 @@
    "MANUAL:": "hand-assigned after reading the pair (8 records here)",
    "RESOLVED:": "assigned by a secondary rule pass over review-flagged items (58 records here)",
    "other": "primary rule-based reclassifier (673 records here)"
-  }
+  },
+  "revision_2026_08_11": "CJK tokenization fix applied as a delta over the April reviewed labels. is_degenerate() now measures length over a script-aware tokenizer; fluent Chinese and Japanese are no longer read as 1-2 token fragments. 71 cells at this depth move out of Failure_mode (55 to Minor_reframe, 16 to Mode_stance_change). Hand-assigned labels (note prefix 'MANUAL:') were not overwritten. Superseded Table B.6-2: F-mix 81/543/133/15/68, F-attenuate 398/354/50/6/32."
  },
  "records": [
   {
@@ -1484,9 +1485,9 @@
    "prompt_key": "group_11_v2",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "topic_drift",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.25,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "llama_70b",
@@ -2054,9 +2055,9 @@
    "prompt_key": "group_11_v3",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "topic_drift",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.1667,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "llama_8b",
@@ -3354,9 +3355,9 @@
    "prompt_key": "group_10_v2",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "topic_drift",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.1538,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_14b",
@@ -4264,9 +4265,9 @@
    "prompt_key": "group_10_v0",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gemma_27b",
@@ -4274,9 +4275,9 @@
    "prompt_key": "group_10_v2",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gemma_27b",
@@ -4304,9 +4305,9 @@
    "prompt_key": "group_11_v1",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0588,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gemma_27b",
@@ -4434,9 +4435,9 @@
    "prompt_key": "group_11_v1",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0556,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gemma_27b",
@@ -4514,9 +4515,9 @@
    "prompt_key": "group_10_v2",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gemma_9b",
@@ -4604,9 +4605,9 @@
    "prompt_key": "group_10_v2",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gemma_9b",
@@ -4614,9 +4615,9 @@
    "prompt_key": "group_10_v3",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Mode_stance_change",
    "jaccard": 0.0833,
-   "note": "intervention degenerate: word_repetition:*(2/5)"
+   "note": "intervention degenerate: word_repetition:*(2/5) | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gemma_9b",
@@ -4754,9 +4755,9 @@
    "prompt_key": "group_10_v0",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_120b",
@@ -4774,9 +4775,9 @@
    "prompt_key": "group_10_v3",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Mode_stance_change",
    "jaccard": 0.0769,
-   "note": "intervention degenerate: too_few_words"
+   "note": "intervention degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_120b",
@@ -4934,9 +4935,9 @@
    "prompt_key": "group_10_v0",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_120b",
@@ -4944,9 +4945,9 @@
    "prompt_key": "group_10_v1",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_120b",
@@ -4964,9 +4965,9 @@
    "prompt_key": "group_10_v3",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Mode_stance_change",
    "jaccard": 0.0769,
-   "note": "intervention degenerate: too_few_words"
+   "note": "intervention degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_120b",
@@ -4984,9 +4985,9 @@
    "prompt_key": "group_11_v2",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "intervention degenerate: too_few_words"
+   "note": "intervention degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_120b",
@@ -5134,9 +5135,9 @@
    "prompt_key": "group_10_v0",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0714,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_20b",
@@ -5144,9 +5145,9 @@
    "prompt_key": "group_10_v1",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_20b",
@@ -5154,9 +5155,9 @@
    "prompt_key": "group_11_v0",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0714,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_20b",
@@ -5164,9 +5165,9 @@
    "prompt_key": "group_11_v2",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Mode_stance_change",
    "jaccard": 0.0667,
-   "note": "intervention degenerate: too_few_words"
+   "note": "intervention degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_20b",
@@ -5174,9 +5175,9 @@
    "prompt_key": "group_11_v3",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0588,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_20b",
@@ -5414,9 +5415,9 @@
    "prompt_key": "group_10_v0",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_20b",
@@ -5424,9 +5425,9 @@
    "prompt_key": "group_10_v1",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_20b",
@@ -5434,9 +5435,9 @@
    "prompt_key": "group_10_v2",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_20b",
@@ -5444,9 +5445,9 @@
    "prompt_key": "group_11_v0",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Mode_stance_change",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_20b",
@@ -5454,9 +5455,9 @@
    "prompt_key": "group_11_v1",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_20b",
@@ -5464,9 +5465,9 @@
    "prompt_key": "group_11_v2",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Mode_stance_change",
    "jaccard": 0.0,
-   "note": "intervention degenerate: too_few_words"
+   "note": "intervention degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_20b",
@@ -5474,9 +5475,9 @@
    "prompt_key": "group_11_v3",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "gpt_oss_20b",
@@ -5674,9 +5675,9 @@
    "prompt_key": "group_10_v0",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "llama_70b",
@@ -5684,9 +5685,9 @@
    "prompt_key": "group_10_v2",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "llama_70b",
@@ -5694,9 +5695,9 @@
    "prompt_key": "group_11_v0",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "llama_70b",
@@ -5704,9 +5705,9 @@
    "prompt_key": "group_11_v2",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "llama_70b",
@@ -5954,9 +5955,9 @@
    "prompt_key": "group_11_v1",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "llama_8b",
@@ -6014,9 +6015,9 @@
    "prompt_key": "group_10_v2",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "mistral_7b",
@@ -6164,9 +6165,9 @@
    "prompt_key": "group_10_v0",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.1429,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "mistral_7b",
@@ -6174,9 +6175,9 @@
    "prompt_key": "group_10_v2",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "mistral_7b",
@@ -6184,9 +6185,9 @@
    "prompt_key": "group_10_v3",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "mistral_7b",
@@ -6314,9 +6315,9 @@
    "prompt_key": "group_11_v1",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Mode_stance_change",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "mixtral_8x7b",
@@ -6724,9 +6725,9 @@
    "prompt_key": "group_10_v0",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_14b",
@@ -6734,9 +6735,9 @@
    "prompt_key": "group_10_v1",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_14b",
@@ -6744,9 +6745,9 @@
    "prompt_key": "group_10_v3",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_14b",
@@ -6754,9 +6755,9 @@
    "prompt_key": "group_11_v0",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_14b",
@@ -6764,9 +6765,9 @@
    "prompt_key": "group_11_v3",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_14b",
@@ -6934,9 +6935,9 @@
    "prompt_key": "group_10_v0",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_14b",
@@ -6944,9 +6945,9 @@
    "prompt_key": "group_10_v1",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_14b",
@@ -6954,9 +6955,9 @@
    "prompt_key": "group_10_v2",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_14b",
@@ -6964,9 +6965,9 @@
    "prompt_key": "group_10_v3",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_14b",
@@ -6974,9 +6975,9 @@
    "prompt_key": "group_11_v0",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0833,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_14b",
@@ -6984,9 +6985,9 @@
    "prompt_key": "group_11_v1",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "intervention degenerate: too_few_words"
+   "note": "intervention degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_14b",
@@ -6994,9 +6995,9 @@
    "prompt_key": "group_11_v2",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_14b",
@@ -7004,9 +7005,9 @@
    "prompt_key": "group_11_v3",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_14b",
@@ -7124,9 +7125,9 @@
    "prompt_key": "group_10_v2",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_72b",
@@ -7134,9 +7135,9 @@
    "prompt_key": "group_10_v3",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "intervention degenerate: too_few_words"
+   "note": "intervention degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_72b",
@@ -7144,9 +7145,9 @@
    "prompt_key": "group_11_v0",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0667,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_72b",
@@ -7264,9 +7265,9 @@
    "prompt_key": "group_10_v0",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0714,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_72b",
@@ -7274,9 +7275,9 @@
    "prompt_key": "group_10_v1",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_72b",
@@ -7284,9 +7285,9 @@
    "prompt_key": "group_10_v2",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0526,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_72b",
@@ -7294,9 +7295,9 @@
    "prompt_key": "group_10_v3",
    "linguistic_regime": "Mandarin Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "intervention degenerate: too_few_words"
+   "note": "intervention degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_72b",
@@ -7324,9 +7325,9 @@
    "prompt_key": "group_11_v3",
    "linguistic_regime": "Japanese Narrative",
    "heuristic_label": "catastrophic_redirect",
-   "reviewed_label": "Failure_mode",
+   "reviewed_label": "Minor_reframe",
    "jaccard": 0.0,
-   "note": "baseline degenerate: too_few_words"
+   "note": "baseline degenerate: too_few_words | CJKFIX 2026-08-11: was Failure_mode; whitespace tokenizer misread space-free script as a fragment"
   },
   {
    "model": "qwen_72b",
